@@ -28,6 +28,8 @@ public class PlaneTestMutation {
         point3 = null;
     }
     
+    /* Testing the set(Vector3 point1, Vector3 point2, Vector3 point3) function */
+    
     @Test
     public void xyPlaneTest() {
         point1 = new Vector3(0, 0, 5);

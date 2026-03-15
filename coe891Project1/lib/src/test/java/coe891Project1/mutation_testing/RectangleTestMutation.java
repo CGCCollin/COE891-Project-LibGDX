@@ -24,6 +24,8 @@ public class RectangleTestMutation {
         pos  = null;
     }
     
+    /* Testing the getPosition(Vector2 position) functions */
+    
     @Test
     public void positionSetCorrectlyTest() {
         rect = new Rectangle(1, 2, 3, 4);
