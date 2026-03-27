@@ -20,7 +20,7 @@ public class ColorLerpTestISP {
 		this.color = new Color();
 	}
 
-	@ParameterizedTest (name = "{index}: t={4} | Expected r={5}, g={6}, b={7}, a={8}")
+	@ParameterizedTest (name = "{index}: t={0} | Expected r={1}, g={2}, b={3}, a={4}")
 	@CsvSource({"-1, 0, 0, 0, 0",
 				" 0, 0, 0, 0, 0",
 				"1, 0.5, 0.5, 0.5, 0.5",

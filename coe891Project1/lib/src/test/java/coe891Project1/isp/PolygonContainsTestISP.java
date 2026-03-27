@@ -15,7 +15,7 @@ public class PolygonContainsTestISP {
     private float testVertices[] = { 0, 0, 1, 0, 1, 1, 0, 1 }; // unit square
 	private Polygon polygon = new Polygon(testVertices);
 
-	@ParameterizedTest (name = "{index}: x={4} , y={5} | expected x={6}")
+	@ParameterizedTest (name = "{index}: x={0} , y={1} | expected x={2}")
 	@CsvSource({"0.5f, 0.5f, true",
 				"0f, 0f, true",
 				"2f, 2f, false"

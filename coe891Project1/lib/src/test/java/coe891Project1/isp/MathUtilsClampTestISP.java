@@ -13,7 +13,7 @@ import com.badlogic.gdx.math.MathUtils;
 
 public class MathUtilsClampTestISP {
 
-	@ParameterizedTest (name = "{index}: value={4}, min r={5}, max={6} | expected value={7}")
+	@ParameterizedTest (name = "{index}: value={0}, min r={1}, max={2} | expected value={3}")
 	@CsvSource({"-1, 0, 10, 0",
 				" 5, 0, 10, 5",
 				"11, 0, 10, 10"

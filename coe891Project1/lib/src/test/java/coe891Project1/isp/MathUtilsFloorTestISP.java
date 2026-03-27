@@ -13,7 +13,7 @@ import com.badlogic.gdx.math.MathUtils;
 
 public class MathUtilsFloorTestISP {
 
-	@ParameterizedTest (name = "{index}: input={4}, expected value={5}")
+	@ParameterizedTest (name = "{index}: input={0}, expected value={1}")
 	@CsvSource({"0.9f, 0",
 				"1f, 1",
 				"1.1f, 1"
