@@ -14,7 +14,7 @@ import com.badlogic.gdx.math.Circle;
 public class CircleOverlapsTestISP {
 	private Circle circle1 = new Circle(0,0,3); // unit circle
 
-	@ParameterizedTest (name = "{index}: x={4} , y={5}, radius={6} | expected={7}")
+	@ParameterizedTest (name = "{index}: x={0} , y={1}, radius={2} | expected={3}")
 	@CsvSource({"0, 0, 1f, true",
 				"4, 0, 2, true",
 				"5, 5, 1, false"

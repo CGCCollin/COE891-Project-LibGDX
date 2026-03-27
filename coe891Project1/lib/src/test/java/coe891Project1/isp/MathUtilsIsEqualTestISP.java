@@ -13,7 +13,7 @@ import com.badlogic.gdx.math.MathUtils;
 
 public class MathUtilsIsEqualTestISP {
 
-	@ParameterizedTest (name = "{index}: a={4}, b={5}, tolerance={6}| expected value={7}")
+	@ParameterizedTest (name = "{index}: a={0}, b={1}, tolerance={2}| expected value={3}")
 	@CsvSource({"0.5f, 0, 1, true",
 				"1, 0, 1, true",
 				"-2, 0, 1, false"

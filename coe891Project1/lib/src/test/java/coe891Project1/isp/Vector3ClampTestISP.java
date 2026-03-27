@@ -20,7 +20,7 @@ public class Vector3ClampTestISP {
 		this.vector = new Vector3(1,1,1); //length = 1.73
 		
 	}
-	@ParameterizedTest (name = "{index}: min={4} , max={5} | expected x={6}, y={7}, z={8}")
+	@ParameterizedTest (name = "{index}: min={0} , max={1} | expected x={2}, y={3}, z={4}")
 	@CsvSource({"0f, 1f, 0.57735026f, 0.57735026f, 0.57735026f",
 				"0f, 2f, 1f, 1f, 1f",
 				"2f, 3f, 1.1547005f, 1.1547005f, 1.1547005f"
