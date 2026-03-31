@@ -1,19 +1,13 @@
 package coe891Project1.logicTesting;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
-import static org.junit.Assert.*;
-
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import com.badlogic.gdx.math.Circle;
 
 public class CircleTestLogic {
-    private static final Object Object = null;
 
 	@Test
     public void testContains_True_WhenPointInside() {
