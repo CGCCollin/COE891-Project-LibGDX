@@ -6,7 +6,8 @@ package coe891Project1.mutation_testing;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import com.badlogic.gdx.math.Plane;
+import coe891Project1.mutants.PlaneMutant;
+import coe891Project1.mutants.PlaneMutant.PlaneSide;
 import com.badlogic.gdx.math.Vector3;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -15,14 +16,14 @@ import org.junit.jupiter.api.BeforeEach;
  * @author matthewhvizdos
  */
 public class PlaneTestMutation {
-    private Plane   plane  = null;
+    private PlaneMutant   plane  = null;
     private Vector3 point1 = null;
     private Vector3 point2 = null;
     private Vector3 point3 = null;
     
     @BeforeEach
     public void before() {
-        plane  = new Plane();
+        plane  = new PlaneMutant();
         point1 = null;
         point2 = null;
         point3 = null;
@@ -90,6 +91,53 @@ public class PlaneTestMutation {
         
         assertNotEquals(0f, plane.distance(new Vector3(0,0,0)), 0.0001);
     
+    }
+    
+    // test point func:
+    
+    @Test
+    public void pointOnPlaneTest() {
+        plane = new PlaneMutant(new Vector3(0,0,1), 0);
+
+        PlaneSide result = plane.testPoint(0,0,0);
+
+        assertEquals(PlaneSide.OnPlane, result);
+    }
+
+    @Test
+    public void pointInFrontOfPlaneTest() {
+        plane = new PlaneMutant(new Vector3(0,0,1), 0);
+
+        PlaneSide result = plane.testPoint(0,0,5);
+
+        assertEquals(PlaneSide.Front, result);
+    }
+
+    @Test
+    public void pointBehindPlaneTest() {
+        plane = new PlaneMutant(new Vector3(0,0,1), 0);
+
+        PlaneSide result = plane.testPoint(0,0,-5);
+
+        assertEquals(PlaneSide.Back, result);
+    }
+
+    @Test
+    public void nonAxisPlaneFrontTest() {
+        plane = new PlaneMutant(new Vector3(1,1,1), 0);
+
+        PlaneSide result = plane.testPoint(5,5,5);
+
+        assertEquals(PlaneSide.Front, result);
+    }
+
+    @Test
+    public void nonAxisPlaneBackTest() {
+        plane = new PlaneMutant(new Vector3(1,1,1), 0);
+
+        PlaneSide result = plane.testPoint(-5,-5,-5);
+
+        assertEquals(PlaneSide.Back, result);
     }
     
 }
