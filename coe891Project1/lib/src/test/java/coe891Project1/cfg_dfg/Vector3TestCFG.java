@@ -20,14 +20,12 @@ public class Vector3TestCFG {
 	
 	
 	@Test
-	@Disabled
 	public void t1_fromString() {
 		Vector3 v = new Vector3();
 		Assertions.assertThrows(GdxRuntimeException.class, () ->{
 			v.fromString("");
 		});
 	}
-	@Disabled
 	@Test
 	public void t2_fromString() {
 		Vector3 v = new Vector3();
@@ -35,7 +33,7 @@ public class Vector3TestCFG {
 			v.fromString("(a,b,c)");
 		});
 	}
-	@Disabled
+
 	@Test
 	public void t3_fromString() {
 		Vector3 v = new Vector3();
