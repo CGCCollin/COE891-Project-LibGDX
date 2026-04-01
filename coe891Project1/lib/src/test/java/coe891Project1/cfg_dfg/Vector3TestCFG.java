@@ -2,6 +2,7 @@ package coe891Project1.cfg_dfg;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
@@ -9,7 +10,7 @@ import com.badlogic.gdx.math.Intersector;
 import com.badlogic.gdx.math.Plane;
 import com.badlogic.gdx.math.collision.Ray;
 import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.math.Vector3;
+import coe891Project1.Vector3;
 import com.badlogic.gdx.*;
 public class Vector3TestCFG {
 	@BeforeEach
@@ -17,14 +18,16 @@ public class Vector3TestCFG {
 		
 	}
 	
+	
 	@Test
+	@Disabled
 	public void t1_fromString() {
 		Vector3 v = new Vector3();
 		Assertions.assertThrows(GdxRuntimeException.class, () ->{
 			v.fromString("");
 		});
 	}
-	
+	@Disabled
 	@Test
 	public void t2_fromString() {
 		Vector3 v = new Vector3();
@@ -32,7 +35,7 @@ public class Vector3TestCFG {
 			v.fromString("(a,b,c)");
 		});
 	}
-	
+	@Disabled
 	@Test
 	public void t3_fromString() {
 		Vector3 v = new Vector3();

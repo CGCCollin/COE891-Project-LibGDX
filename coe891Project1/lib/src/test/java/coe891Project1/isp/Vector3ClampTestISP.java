@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import com.badlogic.gdx.math.Vector3;
+import coe891Project1.Vector3;
 
 public class Vector3ClampTestISP {
 

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import com.badlogic.gdx.math.Circle;
+import coe891Project1.Circle;
 
 public class CircleOverlapsTestISP {
 	private Circle circle1 = new Circle(0,0,3); // unit circle
