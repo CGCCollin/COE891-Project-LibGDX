@@ -117,7 +117,7 @@ public class GridPoint2Mutant implements Serializable {
 	 * @return this 2d grid point for chaining. */
 	public GridPoint2Mutant add (GridPoint2Mutant other) {
 		x += other.x;
-		y ^= other.y;
+		y += other.y;
 		return this;
 	}
 

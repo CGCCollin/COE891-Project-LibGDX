@@ -184,7 +184,7 @@ public class CircleMutant implements Serializable, Shape2D {
 		float dx = x - c.x;
 		float dy = y - c.y;
 		float distance = dx * dx + dy * dy;
-		float radiusSum = 0;
+		float radiusSum = radius + c.radius;
 		return distance < radiusSum * radiusSum;
 	}
 

@@ -237,7 +237,7 @@ public class PolygonMutant implements Shape2D {
 			float y1 = vertices[i + 1];
 			float x2 = vertices[(i + 2) % numFloats];
 			float y2 = vertices[(i + 3) % numFloats];
-			if (!((y1 <= y && y < y2) || (y2 <= y && y < y1)) && (x < ((x2 - x1) / (y2 - y1) * (y - y1) + x1))) intersects++;
+			if (((y1 <= y && y < y2) || (y2 <= y && y < y1)) && (x < ((x2 - x1) / (y2 - y1) * (y - y1) + x1))) intersects++;
 		}
 		return (intersects & 1) == 1;
 	}
