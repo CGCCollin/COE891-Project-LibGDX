@@ -14,14 +14,6 @@ import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.FloatArray;
 
 public class IntersectorTestLogic {
-
-    // ------------------------------------------------
-    // isPointInPolygon(float[] polygon, int offset, int count, float x, float y)
-    //
-    // Use a simple square:
-    // (0,0), (10,0), (10,10), (0,10)
-    // ------------------------------------------------
-
     @Test
     public void testIsPointInPolygon_True_WhenInside() {
         float[] square = {0f, 0f, 10f, 0f, 10f, 10f, 0f, 10f};
@@ -31,7 +23,7 @@ public class IntersectorTestLogic {
 
     @Test
     public void testIsPointInPolygon_False_WhenOutside() {
-        float[] square = {0f, 0f, 10f, 0f, 10f, 10f, 0f, 10f};
+        float[] square = {0, 0, 10, 0, 10, 10, 0, 10};
 
         assertFalse(Intersector.isPointInPolygon(square, 0, square.length, 15f, 5f));
     }
@@ -40,11 +32,11 @@ public class IntersectorTestLogic {
     public void testIsPointInPolygon_True_ForConcavePolygonInside() {
         // Concave polygon shaped a bit like an arrow / dented quad
         float[] concave = {
-            0f, 0f,
-            4f, 0f,
-            4f, 4f,
-            2f, 2f,
-            0f, 4f
+            0, 0,
+            4, 0,
+            4, 4,
+            2, 2,
+            0, 4
         };
 
         assertTrue(Intersector.isPointInPolygon(concave, 0, concave.length, 1f, 1f));
@@ -53,41 +45,31 @@ public class IntersectorTestLogic {
     @Test
     public void testIsPointInPolygon_False_ForConcavePolygonInDent() {
         float[] concave = {
-            0f, 0f,
-            4f, 0f,
-            4f, 4f,
-            2f, 2f,
-            0f, 4f
+            0, 0,
+            4, 0,
+            4, 4,
+            2, 2,
+            0, 4
         };
 
         // A point in the "dent" area that should not count as inside
         assertFalse(Intersector.isPointInPolygon(concave, 0, concave.length, 3f, 3f));
     }
 
-    // ------------------------------------------------
-    // intersectPolygons(FloatArray polygon1, FloatArray polygon2)
-    //
-    // Paths:
-    // 1) polygon2 point inside polygon1
-    // 2) polygon1 point inside polygon2
-    // 3) edges intersect
-    // 4) separate polygons
-    // ------------------------------------------------
-
     @Test
     public void testIntersectPolygons_True_WhenPolygon2InsidePolygon1() {
         FloatArray outer = new FloatArray(new float[] {
-            0f, 0f,
-            10f, 0f,
-            10f, 10f,
-            0f, 10f
+            0, 0,
+            10, 0,
+            10, 10,
+            0, 10
         });
 
         FloatArray inner = new FloatArray(new float[] {
-            2f, 2f,
-            4f, 2f,
-            4f, 4f,
-            2f, 4f
+            2, 2,
+            4, 2,
+            4, 4,
+            2, 4
         });
 
         assertTrue(Intersector.intersectPolygons(outer, inner));
@@ -96,17 +78,17 @@ public class IntersectorTestLogic {
     @Test
     public void testIntersectPolygons_True_WhenPolygon1InsidePolygon2() {
         FloatArray inner = new FloatArray(new float[] {
-            2f, 2f,
-            4f, 2f,
-            4f, 4f,
-            2f, 4f
+            2, 2,
+            4, 2,
+            4, 4,
+            2, 4
         });
 
         FloatArray outer = new FloatArray(new float[] {
-            0f, 0f,
-            10f, 0f,
-            10f, 10f,
-            0f, 10f
+            0, 0,
+            10, 0,
+            10, 10,
+            0, 10
         });
 
         assertTrue(Intersector.intersectPolygons(inner, outer));
@@ -115,17 +97,17 @@ public class IntersectorTestLogic {
     @Test
     public void testIntersectPolygons_True_WhenEdgesCrossButNoVertexContained() {
         FloatArray p1 = new FloatArray(new float[] {
-            0f, 0f,
-            4f, 0f,
-            4f, 4f,
-            0f, 4f
+            0, 0,
+            4, 0,
+            4, 4,
+            0, 4
         });
 
         FloatArray p2 = new FloatArray(new float[] {
-            2f, -1f,
-            6f, -1f,
-            6f, 3f,
-            2f, 3f
+            2, -1,
+            6, -1,
+            6, 3,
+            2, 3
         });
 
         assertTrue(Intersector.intersectPolygons(p1, p2));
@@ -134,29 +116,21 @@ public class IntersectorTestLogic {
     @Test
     public void testIntersectPolygons_False_WhenSeparate() {
         FloatArray p1 = new FloatArray(new float[] {
-            0f, 0f,
-            2f, 0f,
-            2f, 2f,
-            0f, 2f
+            0, 0,
+            2, 0,
+            2, 2,
+            0, 2
         });
 
         FloatArray p2 = new FloatArray(new float[] {
-            5f, 5f,
-            7f, 5f,
-            7f, 7f,
-            5f, 7f
+            5, 5,
+            7, 5,
+            7, 7,
+            5, 7
         });
 
         assertFalse(Intersector.intersectPolygons(p1, p2));
     }
-
-    // ------------------------------------------------
-    // intersectPlanes(Plane a, Plane b, Plane c, Vector3 intersection)
-    //
-    // Need:
-    // - true case with unique intersection
-    // - false case when determinant is ~0 (parallel / dependent planes)
-    // ------------------------------------------------
 
     @Test
     public void testIntersectPlanes_True_WhenThreePlanesMeetAtOnePoint() {

@@ -6,90 +6,82 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
 import com.badlogic.gdx.math.Circle;
+import com.badlogic.gdx.math.Rectangle;
 
 public class CircleTestLogic {
 
 	@Test
     public void testContains_True_WhenPointInside() {
-        Circle c = new Circle(0f, 0f, 5f);
+        Circle c = new Circle(0, 0, 5);
 
-        assertTrue(c.contains(1f, 1f));
+        assertTrue(c.contains(1, 1));
     }
 
     @Test
     public void testContains_True_WhenPointOnBoundary() {
-        Circle c = new Circle(0f, 0f, 5f);
+        Circle c = new Circle(0, 0, 5);
 
         // 3^2 + 4^2 = 25 = 5^2
-        assertTrue(c.contains(3f, 4f));
+        assertTrue(c.contains(3, 4));
     }
 
     @Test
     public void testContains_False_WhenPointOutside() {
-        Circle c = new Circle(0f, 0f, 5f);
+        Circle c = new Circle(0, 0, 5);
 
-        assertFalse(c.contains(6f, 0f));
+        assertFalse(c.contains(6, 0));
     }
-
-    // -----------------------------
-    // equals(Object o)
-    // Paths:
-    // 1) o == this -> true
-    // 2) o == null -> false
-    // 3) wrong class -> false
-    // 4) same x,y,radius -> true
-    // 5) one differing field -> false
-    // -----------------------------
 
     @Test
     public void testEquals_True_WhenSameReference() {
-        Circle c = new Circle(1f, 2f, 3f);
+        Circle c = new Circle(1, 2, 3);
 
         assertTrue(c.equals(c));
     }
 
     @Test
     public void testEquals_False_WhenNull() {
-        Circle c = new Circle(1f, 2f, 3f);
+        Circle c = new Circle(1, 2, 3);
 
         assertFalse(c.equals(null));
     }
 
-    @Test
+    @SuppressWarnings("unlikely-arg-type")
+	@Test
     public void testEquals_False_WhenDifferentClass() {
-        Circle c = new Circle(1f, 2f, 3f);
+        Circle c = new Circle(1, 2, 3);
 
-        assertFalse(c.equals("string"));
+        assertFalse(c.equals(new Rectangle(1, 2, 3, 4)));
     }
 
     @Test
     public void testEquals_True_WhenSameValues() {
-        Circle c1 = new Circle(1f, 2f, 3f);
-        Circle c2 = new Circle(1f, 2f, 3f);
+        Circle c1 = new Circle(1, 2, 3);
+        Circle c2 = new Circle(1, 2, 3);
 
         assertTrue(c1.equals(c2));
     }
 
     @Test
     public void testEquals_False_WhenDifferentX() {
-        Circle c1 = new Circle(1f, 2f, 3f);
-        Circle c2 = new Circle(9f, 2f, 3f);
+        Circle c1 = new Circle(1, 2, 3);
+        Circle c2 = new Circle(9, 2, 3);
 
         assertFalse(c1.equals(c2));
     }
 
     @Test
     public void testEquals_False_WhenDifferentY() {
-        Circle c1 = new Circle(1f, 2f, 3f);
-        Circle c2 = new Circle(1f, 9f, 3f);
+        Circle c1 = new Circle(1, 2, 3);
+        Circle c2 = new Circle(1, 9, 3);
 
         assertFalse(c1.equals(c2));
     }
 
     @Test
     public void testEquals_False_WhenDifferentRadius() {
-        Circle c1 = new Circle(1f, 2f, 3f);
-        Circle c2 = new Circle(1f, 2f, 9f);
+        Circle c1 = new Circle(1, 2, 3);
+        Circle c2 = new Circle(1, 2, 9);
 
         assertFalse(c1.equals(c2));
     }
