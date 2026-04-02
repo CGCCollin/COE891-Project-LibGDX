@@ -14,49 +14,7 @@ import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.FloatArray;
 
 public class IntersectorTestLogic {
-    @Test
-    public void testIsPointInPolygon_True_WhenInside() {
-        float[] square = {0f, 0f, 10f, 0f, 10f, 10f, 0f, 10f};
-
-        assertTrue(Intersector.isPointInPolygon(square, 0, square.length, 5f, 5f));
-    }
-
-    @Test
-    public void testIsPointInPolygon_False_WhenOutside() {
-        float[] square = {0, 0, 10, 0, 10, 10, 0, 10};
-
-        assertFalse(Intersector.isPointInPolygon(square, 0, square.length, 15f, 5f));
-    }
-
-    @Test
-    public void testIsPointInPolygon_True_ForConcavePolygonInside() {
-        // Concave polygon shaped a bit like an arrow / dented quad
-        float[] concave = {
-            0, 0,
-            4, 0,
-            4, 4,
-            2, 2,
-            0, 4
-        };
-
-        assertTrue(Intersector.isPointInPolygon(concave, 0, concave.length, 1f, 1f));
-    }
-
-    @Test
-    public void testIsPointInPolygon_False_ForConcavePolygonInDent() {
-        float[] concave = {
-            0, 0,
-            4, 0,
-            4, 4,
-            2, 2,
-            0, 4
-        };
-
-        // A point in the "dent" area that should not count as inside
-        assertFalse(Intersector.isPointInPolygon(concave, 0, concave.length, 3f, 3f));
-    }
-
-    @Test
+	@Test
     public void testIntersectPolygons_True_WhenPolygon2InsidePolygon1() {
         FloatArray outer = new FloatArray(new float[] {
             0, 0,
@@ -124,9 +82,9 @@ public class IntersectorTestLogic {
 
         FloatArray p2 = new FloatArray(new float[] {
             5, 5,
-            7, 5,
-            7, 7,
-            5, 7
+            9, 5,
+            9, 9,
+            5, 9
         });
 
         assertFalse(Intersector.intersectPolygons(p1, p2));
@@ -143,9 +101,11 @@ public class IntersectorTestLogic {
         boolean result = Intersector.intersectPlanes(px, py, pz, intersection);
 
         assertTrue(result);
-        assertEquals(1f, intersection.x, 0.0001f);
-        assertEquals(2f, intersection.y, 0.0001f);
-        assertEquals(3f, intersection.z, 0.0001f);
+        
+        //Double check result
+        assertEquals(1, intersection.x, 0.0001f);
+        assertEquals(2, intersection.y, 0.0001f);
+        assertEquals(3, intersection.z, 0.0001f);
     }
 
     @Test

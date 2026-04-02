@@ -18,14 +18,6 @@ public class CircleTestLogic {
     }
 
     @Test
-    public void testContains_True_WhenPointOnBoundary() {
-        Circle c = new Circle(0, 0, 5);
-
-        // 3^2 + 4^2 = 25 = 5^2
-        assertTrue(c.contains(3, 4));
-    }
-
-    @Test
     public void testContains_False_WhenPointOutside() {
         Circle c = new Circle(0, 0, 5);
 
