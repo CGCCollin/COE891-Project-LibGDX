@@ -1,0 +1,26 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "merge",
+  "brief": "public RectangleMutant merge(float x, float y){}",
+  "methodSignature": "merge(float, float)",
+  "sourceCode": "public RectangleMutant merge(float x, float y) {\n\t\tfloat minX = Math.min(this.x, x);\n\t\tfloat maxX = Math.max(this.x + width, x);\n\t\tthis.x = minX;\n\t\tthis.width = maxX - minX;\n\n\t\tfloat minY = Math.min(this.y, y);\n\t\tfloat maxY = Math.max(this.y + height, y);\n\t\tthis.y = minY;\n\t\tthis.height = maxY - minY;\n\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "java.lang.Math": [
+      "max(float, float)",
+      "min(float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Merges this rectangle with a point. The rectangle should not have negative\n * width or negative height.\n *\n * @param x the x coordinate of the point\n * @param y the y coordinate of the point\n * @return this rectangle for chaining\n */\npublic RectangleMutant merge(float x, float y) {\n    float minX = Math.min(this.x, x);\n    float maxX = Math.max(this.x + width, x);\n    this.x = minX;\n    this.width = maxX - minX;\n    float minY = Math.min(this.y, y);\n    float maxY = Math.max(this.y + height, y);\n    this.y = minY;\n    this.height = maxY - minY;\n    return this;\n}",
+  "method_comment": "\n\t * Merges this rectangle with a point. The rectangle should not have negative\n\t * width or negative height.\n\t * \n\t * @param x the x coordinate of the point\n\t * @param y the y coordinate of the point\n\t * @return this rectangle for chaining\n\t ",
+  "method_annotation": ""
+}

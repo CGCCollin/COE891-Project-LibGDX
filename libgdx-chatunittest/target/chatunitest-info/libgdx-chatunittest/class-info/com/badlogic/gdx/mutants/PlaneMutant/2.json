@@ -1,0 +1,24 @@
+{
+  "className": "PlaneMutant",
+  "methodName": "distance",
+  "brief": "public float distance(Vector3 point){}",
+  "methodSignature": "distance(Vector3)",
+  "sourceCode": "public float distance(Vector3 point) {\n\t\treturn normal.dot(point) + d;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector3"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "dot(Vector3)"
+    ]
+  },
+  "full_method_info": "/**\n * Calculates the shortest signed distance between the plane and the given\n * point.\n *\n * @param point The point\n * @return the shortest signed distance between the plane and the point\n */\npublic float distance(Vector3 point) {\n    return normal.dot(point) + d;\n}",
+  "method_comment": "\n\t * Calculates the shortest signed distance between the plane and the given\n\t * point.\n\t * \n\t * @param point The point\n\t * @return the shortest signed distance between the plane and the point\n\t ",
+  "method_annotation": ""
+}

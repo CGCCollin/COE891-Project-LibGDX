@@ -1,0 +1,54 @@
+package com.badlogic.gdx.mutants;
+
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import com.badlogic.gdx.math.*;
+import java.io.Serializable;
+
+public class PlaneMutant_testPoint_4_0_Test {
+
+    @Test
+    void testPoint_OnPlane() throws Exception {
+        // Create a plane with normal (1, 0, 0) and d = 0
+        Vector3 normal = new Vector3(1, 0, 0);
+        float d = 0;
+        PlaneMutant plane = new PlaneMutant(normal, d);
+        // Test point that lies on the plane
+        assertEquals(PlaneSide.OnPlane, plane.testPoint(0, 0, 0));
+    }
+
+    @Test
+    void testPoint_Back() throws Exception {
+        // Create a plane with normal (1, 0, 0) and d = -2
+        Vector3 normal = new Vector3(1, 0, 0);
+        float d = -2;
+        PlaneMutant plane = new PlaneMutant(normal, d);
+        // Test point that lies in the "back" direction
+        assertEquals(PlaneSide.Back, plane.testPoint(3, 0, 0));
+    }
+
+    @Test
+    void testPoint_Front() throws Exception {
+        // Create a plane with normal (1, 0, 0) and d = 2
+        Vector3 normal = new Vector3(1, 0, 0);
+        float d = 2;
+        PlaneMutant plane = new PlaneMutant(normal, d);
+        // Test point that lies in the "front" direction
+        assertEquals(PlaneSide.Front, plane.testPoint(-3, 0, 0));
+    }
+}
+
+--------------------------------------------
+Error in PlaneMutant_testPoint_4_0_Test: line 21 : cannot find symbol
+  symbol:   variable PlaneSide
+  location: class com.badlogic.gdx.mutants.PlaneMutant_testPoint_4_0_Test
+Error in PlaneMutant_testPoint_4_0_Test: line 31 : cannot find symbol
+  symbol:   variable PlaneSide
+  location: class com.badlogic.gdx.mutants.PlaneMutant_testPoint_4_0_Test
+Error in PlaneMutant_testPoint_4_0_Test: line 41 : cannot find symbol
+  symbol:   variable PlaneSide
+  location: class com.badlogic.gdx.mutants.PlaneMutant_testPoint_4_0_Test

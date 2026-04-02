@@ -1,0 +1,22 @@
+{
+  "className": "Circle",
+  "methodName": "hashCode",
+  "brief": "@Override\r\n\tpublic int hashCode (){}",
+  "methodSignature": "hashCode()",
+  "sourceCode": "@Override\n\tpublic int hashCode () {\n\t\tfinal int prime = 41;\n\t\tint result = 1;\n\t\tresult = prime * result + NumberUtils.floatToRawIntBits(radius);\n\t\tresult = prime * result + NumberUtils.floatToRawIntBits(x);\n\t\tresult = prime * result + NumberUtils.floatToRawIntBits(y);\n\t\treturn result;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {
+    "com.badlogic.gdx.utils.NumberUtils": [
+      "floatToRawIntBits(float)"
+    ]
+  },
+  "full_method_info": "@Override\npublic int hashCode() {\n    final int prime = 41;\n    int result = 1;\n    result = prime * result + NumberUtils.floatToRawIntBits(radius);\n    result = prime * result + NumberUtils.floatToRawIntBits(x);\n    result = prime * result + NumberUtils.floatToRawIntBits(y);\n    return result;\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

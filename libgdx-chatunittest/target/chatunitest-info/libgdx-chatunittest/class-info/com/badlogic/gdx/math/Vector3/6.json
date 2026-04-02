@@ -1,0 +1,18 @@
+{
+  "className": "Vector3",
+  "methodName": "cpy",
+  "brief": "@Override\r\n\tpublic Vector3 cpy (){}",
+  "methodSignature": "cpy()",
+  "sourceCode": "@Override\n\tpublic Vector3 cpy () {\n\t\treturn new Vector3(this);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "@Override\npublic Vector3 cpy() {\n    return new Vector3(this);\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

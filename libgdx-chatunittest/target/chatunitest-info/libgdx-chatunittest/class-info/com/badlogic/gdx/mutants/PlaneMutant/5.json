@@ -1,0 +1,24 @@
+{
+  "className": "PlaneMutant",
+  "methodName": "isFrontFacing",
+  "brief": "public boolean isFrontFacing(Vector3 direction){}",
+  "methodSignature": "isFrontFacing(Vector3)",
+  "sourceCode": "public boolean isFrontFacing(Vector3 direction) {\n\t\tfloat dot = normal.dot(direction);\n\t\treturn dot <= 0;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector3"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "dot(Vector3)"
+    ]
+  },
+  "full_method_info": "/**\n * Returns whether the plane is facing the direction vector. Think of the\n * direction vector as the direction a camera looks in.\n * This method will return true if the front side of the plane determined by its\n * normal faces the camera.\n *\n * @param direction the direction\n * @return whether the plane is front facing\n */\npublic boolean isFrontFacing(Vector3 direction) {\n    float dot = normal.dot(direction);\n    return dot <= 0;\n}",
+  "method_comment": "\n\t * Returns whether the plane is facing the direction vector. Think of the\n\t * direction vector as the direction a camera looks in.\n\t * This method will return true if the front side of the plane determined by its\n\t * normal faces the camera.\n\t * \n\t * @param direction the direction\n\t * @return whether the plane is front facing\n\t ",
+  "method_annotation": ""
+}

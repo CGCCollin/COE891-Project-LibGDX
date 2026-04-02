@@ -1,0 +1,18 @@
+{
+  "className": "PolygonMutant",
+  "methodName": "getOriginX",
+  "brief": "public float getOriginX(){}",
+  "methodSignature": "getOriginX()",
+  "sourceCode": "public float getOriginX() {\n\t\treturn originX;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the x-coordinate of the polygon's origin point.\n */\npublic float getOriginX() {\n    return originX;\n}",
+  "method_comment": " Returns the x-coordinate of the polygon's origin point. ",
+  "method_annotation": ""
+}

@@ -1,0 +1,25 @@
+{
+  "className": "Vector3",
+  "methodName": "mul",
+  "brief": "public Vector3 mul (Matrix3 matrix){}",
+  "methodSignature": "mul(Matrix3)",
+  "sourceCode": "public Vector3 mul (Matrix3 matrix) {\n\t\tfinal float[] l_mat = matrix.val;\n\t\treturn set(x * l_mat[Matrix3.M00] + y * l_mat[Matrix3.M01] + z * l_mat[Matrix3.M02],\n\t\t\tx * l_mat[Matrix3.M10] + y * l_mat[Matrix3.M11] + z * l_mat[Matrix3.M12],\n\t\t\tx * l_mat[Matrix3.M20] + y * l_mat[Matrix3.M21] + z * l_mat[Matrix3.M22]);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Matrix3"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Matrix3": [],
+    "com.badlogic.gdx.math.Vector3": [
+      "set(float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Left-multiplies the vector by the given matrix.\n * @param matrix The matrix\n * @return This vector for chaining\n */\npublic Vector3 mul(Matrix3 matrix) {\n    final float[] l_mat = matrix.val;\n    return set(x * l_mat[Matrix3.M00] + y * l_mat[Matrix3.M01] + z * l_mat[Matrix3.M02], x * l_mat[Matrix3.M10] + y * l_mat[Matrix3.M11] + z * l_mat[Matrix3.M12], x * l_mat[Matrix3.M20] + y * l_mat[Matrix3.M21] + z * l_mat[Matrix3.M22]);\n}",
+  "method_comment": " Left-multiplies the vector by the given matrix.\n\t * @param matrix The matrix\n\t * @return This vector for chaining ",
+  "method_annotation": ""
+}

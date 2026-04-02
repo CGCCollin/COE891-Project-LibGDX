@@ -1,0 +1,25 @@
+{
+  "className": "Vector3",
+  "methodName": "dst2",
+  "brief": "public static float dst2 (final float x1, final float y1, final float z1, final float x2, final float y2, final float z2){}",
+  "methodSignature": "dst2(float, float, float, float, float, float)",
+  "sourceCode": "public static float dst2 (final float x1, final float y1, final float z1, final float x2, final float y2, final float z2) {\n\t\tfinal float a = x2 - x1;\n\t\tfinal float b = y2 - y1;\n\t\tfinal float c = z2 - z1;\n\t\treturn a * a + b * b + c * c;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * @return the squared distance between the given points\n */\npublic static float dst2(final float x1, final float y1, final float z1, final float x2, final float y2, final float z2) {\n    final float a = x2 - x1;\n    final float b = y2 - y1;\n    final float c = z2 - z1;\n    return a * a + b * b + c * c;\n}",
+  "method_comment": " @return the squared distance between the given points ",
+  "method_annotation": ""
+}

@@ -1,0 +1,22 @@
+{
+  "className": "MathUtils",
+  "methodName": "clamp",
+  "brief": "static public double clamp (double value, double min, double max){}",
+  "methodSignature": "clamp(double, double, double)",
+  "sourceCode": "static public double clamp (double value, double min, double max) {\n\t\tif (value < min) return min;\n\t\tif (value > max) return max;\n\t\treturn value;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "double",
+    "double",
+    "double"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "static public double clamp(double value, double min, double max) {\n    if (value < min)\n        return min;\n    if (value > max)\n        return max;\n    return value;\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

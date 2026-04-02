@@ -1,0 +1,26 @@
+{
+  "className": "Plane",
+  "methodName": "testPoint",
+  "brief": "public PlaneSide testPoint (float x, float y, float z){}",
+  "methodSignature": "testPoint(float, float, float)",
+  "sourceCode": "public PlaneSide testPoint (float x, float y, float z) {\n\t\tfloat dist = normal.dot(x, y, z) + d;\n\n\t\tif (dist == 0)\n\t\t\treturn PlaneSide.OnPlane;\n\t\telse if (dist < 0)\n\t\t\treturn PlaneSide.Back;\n\t\telse\n\t\t\treturn PlaneSide.Front;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "dot(float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Returns on which side the given point lies relative to the plane and its normal. PlaneSide.Front refers to the side the\n * plane normal points to.\n *\n * @param x\n * @param y\n * @param z\n * @return The side the point lies relative to the plane\n */\npublic PlaneSide testPoint(float x, float y, float z) {\n    float dist = normal.dot(x, y, z) + d;\n    if (dist == 0)\n        return PlaneSide.OnPlane;\n    else if (dist < 0)\n        return PlaneSide.Back;\n    else\n        return PlaneSide.Front;\n}",
+  "method_comment": " Returns on which side the given point lies relative to the plane and its normal. PlaneSide.Front refers to the side the\n\t * plane normal points to.\n\t * \n\t * @param x\n\t * @param y\n\t * @param z\n\t * @return The side the point lies relative to the plane ",
+  "method_annotation": ""
+}

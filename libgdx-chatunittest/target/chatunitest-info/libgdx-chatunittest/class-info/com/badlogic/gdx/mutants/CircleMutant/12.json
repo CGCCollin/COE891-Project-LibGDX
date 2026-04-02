@@ -1,0 +1,22 @@
+{
+  "className": "CircleMutant",
+  "methodName": "overlaps",
+  "brief": "public boolean overlaps(CircleMutant c){}",
+  "methodSignature": "overlaps(CircleMutant)",
+  "sourceCode": "public boolean overlaps(CircleMutant c) {\n\t\tfloat dx = x - c.x;\n\t\tfloat dy = y - c.y;\n\t\tfloat distance = dx * dx + dy * dy;\n\t\tfloat radiusSum = radius + c.radius;\n\t\treturn distance < radiusSum * radiusSum;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "CircleMutant"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.mutants.CircleMutant": []
+  },
+  "full_method_info": "/**\n * @param c the other {@link Circle}\n * @return whether this circle overlaps the other circle.\n */\npublic boolean overlaps(CircleMutant c) {\n    float dx = x - c.x;\n    float dy = y - c.y;\n    float distance = dx * dx + dy * dy;\n    float radiusSum = radius + c.radius;\n    return distance < radiusSum * radiusSum;\n}",
+  "method_comment": "\n\t * @param c the other {@link Circle}\n\t * @return whether this circle overlaps the other circle.\n\t ",
+  "method_annotation": ""
+}

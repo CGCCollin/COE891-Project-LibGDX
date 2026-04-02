@@ -1,0 +1,21 @@
+{
+  "className": "PolygonMutant",
+  "methodName": "setPosition",
+  "brief": "public void setPosition(float x, float y){}",
+  "methodSignature": "setPosition(float, float)",
+  "sourceCode": "public void setPosition(float x, float y) {\n\t\tthis.x = x;\n\t\tthis.y = y;\n\t\tdirty = true;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the polygon's position within the world.\n */\npublic void setPosition(float x, float y) {\n    this.x = x;\n    this.y = y;\n    dirty = true;\n}",
+  "method_comment": " Sets the polygon's position within the world. ",
+  "method_annotation": ""
+}

@@ -1,0 +1,25 @@
+{
+  "className": "Color",
+  "methodName": "fromHsv",
+  "brief": "public Color fromHsv (float[] hsv){}",
+  "methodSignature": "fromHsv(float[])",
+  "sourceCode": "public Color fromHsv (float[] hsv) {\n\t\treturn fromHsv(hsv[0], hsv[1], hsv[2]);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float[]"
+  ],
+  "dependentMethods": {
+    "float": [],
+    "com.badlogic.gdx.graphics.Color": [
+      "fromHsv(float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets RGB components using the specified Hue-Saturation-Value. This is a convenient method for\n * {@link #fromHsv(float, float, float)}. This is the inverse of {@link #toHsv(float[])}.\n * @param hsv The Hue, Saturation and Value components in that order.\n * @return The modified Color for chaining.\n */\npublic Color fromHsv(float[] hsv) {\n    return fromHsv(hsv[0], hsv[1], hsv[2]);\n}",
+  "method_comment": " Sets RGB components using the specified Hue-Saturation-Value. This is a convenient method for\n\t * {@link #fromHsv(float, float, float)}. This is the inverse of {@link #toHsv(float[])}.\n\t * @param hsv The Hue, Saturation and Value components in that order.\n\t * @return The modified Color for chaining. ",
+  "method_annotation": ""
+}

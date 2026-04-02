@@ -1,0 +1,21 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "setPosition",
+  "brief": "public RectangleMutant setPosition(float x, float y){}",
+  "methodSignature": "setPosition(float, float)",
+  "sourceCode": "public RectangleMutant setPosition(float x, float y) {\n\t\tthis.x = x;\n\t\tthis.y = y;\n\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the x and y-coordinates of the bottom left corner\n *\n * @param x The x-coordinate\n * @param y The y-coordinate\n * @return this rectangle for chaining\n */\npublic RectangleMutant setPosition(float x, float y) {\n    this.x = x;\n    this.y = y;\n    return this;\n}",
+  "method_comment": "\n\t * Sets the x and y-coordinates of the bottom left corner\n\t * \n\t * @param x The x-coordinate\n\t * @param y The y-coordinate\n\t * @return this rectangle for chaining\n\t ",
+  "method_annotation": ""
+}

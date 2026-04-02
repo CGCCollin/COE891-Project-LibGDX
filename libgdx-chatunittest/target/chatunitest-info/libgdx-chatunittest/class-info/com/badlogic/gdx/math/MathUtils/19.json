@@ -1,0 +1,24 @@
+{
+  "className": "MathUtils",
+  "methodName": "random",
+  "brief": "static public long random (long range){}",
+  "methodSignature": "random(long)",
+  "sourceCode": "static public long random (long range) {\n\t\t// Uses the lower-bounded overload defined below, which is simpler and doesn't lose much optimization.\n\t\treturn random(0L, range);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "long"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.MathUtils": [
+      "random(long, long)"
+    ]
+  },
+  "full_method_info": "/**\n * Returns a random number between 0 (inclusive) and the specified value (inclusive).\n */\nstatic public long random(long range) {\n    // Uses the lower-bounded overload defined below, which is simpler and doesn't lose much optimization.\n    return random(0L, range);\n}",
+  "method_comment": " Returns a random number between 0 (inclusive) and the specified value (inclusive). ",
+  "method_annotation": ""
+}

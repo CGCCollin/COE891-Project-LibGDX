@@ -1,0 +1,22 @@
+{
+  "className": "MathUtils",
+  "methodName": "randomBoolean",
+  "brief": "static public boolean randomBoolean (){}",
+  "methodSignature": "randomBoolean()",
+  "sourceCode": "static public boolean randomBoolean () {\n\t\treturn random.nextBoolean();\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {
+    "java.util.Random": [
+      "nextBoolean()"
+    ]
+  },
+  "full_method_info": "/**\n * Returns a random boolean value.\n */\nstatic public boolean randomBoolean() {\n    return random.nextBoolean();\n}",
+  "method_comment": " Returns a random boolean value. ",
+  "method_annotation": ""
+}

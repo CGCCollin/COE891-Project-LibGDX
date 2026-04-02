@@ -1,0 +1,20 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "setX",
+  "brief": "public RectangleMutant setX(float x){}",
+  "methodSignature": "setX(float)",
+  "sourceCode": "public RectangleMutant setX(float x) {\n\t\tthis.x = x;\n\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the x-coordinate of the bottom left corner\n *\n * @param x The x-coordinate\n * @return this rectangle for chaining\n */\npublic RectangleMutant setX(float x) {\n    this.x = x;\n    return this;\n}",
+  "method_comment": "\n\t * Sets the x-coordinate of the bottom left corner\n\t * \n\t * @param x The x-coordinate\n\t * @return this rectangle for chaining\n\t ",
+  "method_annotation": ""
+}

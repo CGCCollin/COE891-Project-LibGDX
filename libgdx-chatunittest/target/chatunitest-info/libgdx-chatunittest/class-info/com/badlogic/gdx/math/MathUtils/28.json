@@ -1,0 +1,24 @@
+{
+  "className": "MathUtils",
+  "methodName": "randomTriangular",
+  "brief": "public static float randomTriangular (float max){}",
+  "methodSignature": "randomTriangular(float)",
+  "sourceCode": "public static float randomTriangular (float max) {\n\t\treturn (random.nextFloat() - random.nextFloat()) * max;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {
+    "java.util.Random": [
+      "nextFloat()"
+    ]
+  },
+  "full_method_info": "/**\n * Returns a triangularly distributed random number between {@code -max} (exclusive) and {@code max} (exclusive), where values\n * around zero are more likely.\n * <p>\n * This is an optimized version of {@link #randomTriangular(float, float, float) randomTriangular(-max, max, 0)}\n * @param max the upper limit\n */\npublic static float randomTriangular(float max) {\n    return (random.nextFloat() - random.nextFloat()) * max;\n}",
+  "method_comment": " Returns a triangularly distributed random number between {@code -max} (exclusive) and {@code max} (exclusive), where values\n\t * around zero are more likely.\n\t * <p>\n\t * This is an optimized version of {@link #randomTriangular(float, float, float) randomTriangular(-max, max, 0)}\n\t * @param max the upper limit ",
+  "method_annotation": ""
+}

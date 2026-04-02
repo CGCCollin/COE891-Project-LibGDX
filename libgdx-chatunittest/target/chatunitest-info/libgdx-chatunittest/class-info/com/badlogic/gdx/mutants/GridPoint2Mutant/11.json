@@ -1,0 +1,24 @@
+{
+  "className": "GridPoint2Mutant",
+  "methodName": "equals",
+  "brief": "@Override\r\n\tpublic boolean equals(Object o){}",
+  "methodSignature": "equals(Object)",
+  "sourceCode": "@Override\n\tpublic boolean equals(Object o) {\n\t\tif (this == o)\n\t\t\treturn true;\n\t\tif (o == null || o.getClass() != this.getClass())\n\t\t\treturn false;\n\t\tGridPoint2Mutant g = (GridPoint2Mutant) o;\n\t\treturn this.x == g.x && this.y == g.y;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Object"
+  ],
+  "dependentMethods": {
+    "java.lang.Object": [
+      "getClass()"
+    ]
+  },
+  "full_method_info": "@Override\npublic boolean equals(Object o) {\n    if (this == o)\n        return true;\n    if (o == null || o.getClass() != this.getClass())\n        return false;\n    GridPoint2Mutant g = (GridPoint2Mutant) o;\n    return this.x == g.x && this.y == g.y;\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

@@ -1,0 +1,20 @@
+{
+  "className": "CircleMutant",
+  "methodName": "setRadius",
+  "brief": "public void setRadius(float radius){}",
+  "methodSignature": "setRadius(float)",
+  "sourceCode": "public void setRadius(float radius) {\n\t\tthis.radius = radius;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the radius of circle\n *\n * @param radius The radius\n */\npublic void setRadius(float radius) {\n    this.radius = radius;\n}",
+  "method_comment": "\n\t * Sets the radius of circle\n\t * \n\t * @param radius The radius\n\t ",
+  "method_annotation": ""
+}

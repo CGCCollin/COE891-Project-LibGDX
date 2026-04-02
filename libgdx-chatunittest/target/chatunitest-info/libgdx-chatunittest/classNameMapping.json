@@ -1,0 +1,47 @@
+{
+  "Circle": [
+    "com.badlogic.gdx.math.Circle"
+  ],
+  "Plane": [
+    "com.badlogic.gdx.math.Plane"
+  ],
+  "Color": [
+    "com.badlogic.gdx.graphics.Color"
+  ],
+  "Rectangle": [
+    "com.badlogic.gdx.math.Rectangle"
+  ],
+  "Vector3": [
+    "com.badlogic.gdx.math.Vector3"
+  ],
+  "GridPoint2Mutant": [
+    "com.badlogic.gdx.mutants.GridPoint2Mutant"
+  ],
+  "PlaneMutant": [
+    "com.badlogic.gdx.mutants.PlaneMutant"
+  ],
+  "Polyline": [
+    "com.badlogic.gdx.math.Polyline"
+  ],
+  "RectangleMutant": [
+    "com.badlogic.gdx.mutants.RectangleMutant"
+  ],
+  "Sin": [
+    "com.badlogic.gdx.math.Sin"
+  ],
+  "PolygonMutant": [
+    "com.badlogic.gdx.mutants.PolygonMutant"
+  ],
+  "Polygon": [
+    "com.badlogic.gdx.math.Polygon"
+  ],
+  "CircleMutant": [
+    "com.badlogic.gdx.mutants.CircleMutant"
+  ],
+  "MathUtils": [
+    "com.badlogic.gdx.math.MathUtils"
+  ],
+  "NumberUtils": [
+    "com.badlogic.gdx.utils.NumberUtils"
+  ]
+}

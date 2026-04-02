@@ -1,0 +1,22 @@
+{
+  "className": "Color",
+  "methodName": "rgb888",
+  "brief": "public static int rgb888 (Color color){}",
+  "methodSignature": "rgb888(Color)",
+  "sourceCode": "public static int rgb888 (Color color) {\n\t\treturn ((int)(color.r * 255) << 16) | ((int)(color.g * 255) << 8) | (int)(color.b * 255);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Color"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.graphics.Color": []
+  },
+  "full_method_info": "public static int rgb888(Color color) {\n    return ((int) (color.r * 255) << 16) | ((int) (color.g * 255) << 8) | (int) (color.b * 255);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

@@ -1,0 +1,21 @@
+{
+  "className": "GridPoint2Mutant",
+  "methodName": "dst2",
+  "brief": "public float dst2(int x, int y){}",
+  "methodSignature": "dst2(int, int)",
+  "sourceCode": "public float dst2(int x, int y) {\n\t\tint xd = x - this.x;\n\t\tint yd = y - this.y;\n\n\t\treturn xd * xd + yd * yd;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "int",
+    "int"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * @param x The x-coordinate of the other point\n * @param y The y-coordinate of the other point\n * @return the squared distance between this point and the other point.\n */\npublic float dst2(int x, int y) {\n    int xd = x - this.x;\n    int yd = y - this.y;\n    return xd * xd + yd * yd;\n}",
+  "method_comment": "\n\t * @param x The x-coordinate of the other point\n\t * @param y The y-coordinate of the other point\n\t * @return the squared distance between this point and the other point.\n\t ",
+  "method_annotation": ""
+}

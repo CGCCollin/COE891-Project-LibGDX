@@ -1,0 +1,71 @@
+package com.badlogic.gdx.mutants;
+
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import com.badlogic.gdx.math.*;
+import java.io.Serializable;
+import com.badlogic.gdx.utils.NumberUtils;
+
+class CircleMutant_contains_10_0_Test {
+
+    private CircleMutant circleMutant;
+
+    @BeforeEach
+    void setUp() {
+        circleMutant = new CircleMutant(new Vector2(0, 0), 5);
+    }
+
+    @AfterEach
+    void tearDown() {
+        circleMutant = null;
+    }
+
+    @Test
+    void testContainsInsideCircle() {
+        Vector2 pointInsideCircle = new Vector2(3, 4);
+        assertTrue(circleMutant.contains(pointInsideCircle));
+    }
+
+    @Test
+    void testContainsOutsideCircle() {
+        Vector2 pointOutsideCircle = new Vector2(6, 7);
+        assertFalse(circleMutant.contains(pointOutsideCircle));
+    }
+
+    @Test
+    void testContainsOnBoundary() {
+        Vector2 pointOnBoundary = new Vector2(5, 0);
+        assertTrue(circleMutant.contains(pointOnBoundary));
+    }
+
+    @Test
+    void testNullArgument() {
+        assertThrows(NullPointerException.class, () -> circleMutant.contains(null));
+    }
+
+    @Test
+    void testEmptyCircle() {
+        circleMutant = new CircleMutant(new Vector2(0, 0), 0);
+        Vector2 pointInsideEmptyCircle = new Vector2(3, 4);
+        assertFalse(circleMutant.contains(pointInsideEmptyCircle));
+    }
+
+    @Test
+    void testNegativeRadius() {
+        assertThrows(IllegalArgumentException.class, () -> circleMutant.set(-1, 0, 5));
+    }
+
+    @Test
+    void testZeroRadius() {
+        circleMutant = new CircleMutant(new Vector2(0, 0), 0);
+        assertTrue(circleMutant.contains(new Vector2()));
+    }
+}
+
+--------------------------------------------
+Error in CircleMutant_contains_10_0_Test: line 47 : reference to contains is ambiguous
+  both method contains(com.badlogic.gdx.math.Vector2) in com.badlogic.gdx.mutants.CircleMutant and method contains(com.badlogic.gdx.mutants.CircleMutant) in com.badlogic.gdx.mutants.CircleMutant match

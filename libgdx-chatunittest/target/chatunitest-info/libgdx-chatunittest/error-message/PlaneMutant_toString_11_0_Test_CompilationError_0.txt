@@ -1,0 +1,30 @@
+package com.badlogic.gdx.mutants;
+
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import com.badlogic.gdx.math.*;
+import java.io.Serializable;
+
+class PlaneMutant_toString_11_0_Test {
+
+    @Test
+    void testToString() throws Exception {
+        // Arrange
+        Vector3 normal = new Vector3(1, 0, 0);
+        PlaneMutant plane = new PlaneMutant(normal, 0f);
+        String expectedResult = "(" + normal.toString() + ", 0)";
+        // Act
+        String result = (String) invokeMethod(plane, "toString");
+        // Assert
+        assertEquals(expectedResult, result);
+    }
+}
+
+--------------------------------------------
+Error in PlaneMutant_toString_11_0_Test: line 21 : cannot find symbol
+  symbol:   method invokeMethod(com.badlogic.gdx.mutants.PlaneMutant,java.lang.String)
+  location: class com.badlogic.gdx.mutants.PlaneMutant_toString_11_0_Test

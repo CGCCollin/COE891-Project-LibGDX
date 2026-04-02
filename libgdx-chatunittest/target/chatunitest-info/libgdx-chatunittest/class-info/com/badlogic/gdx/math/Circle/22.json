@@ -1,0 +1,25 @@
+{
+  "className": "Circle",
+  "methodName": "Circle",
+  "brief": "public Circle (Vector2 center, Vector2 edge){}",
+  "methodSignature": "Circle(Vector2, Vector2)",
+  "sourceCode": "public Circle (Vector2 center, Vector2 edge) {\n\t\tthis.x = center.x;\n\t\tthis.y = center.y;\n\t\tthis.radius = Vector2.len(center.x - edge.x, center.y - edge.y);\n\t}",
+  "useField": true,
+  "isConstructor": true,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector2",
+    "Vector2"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector2": [
+      "len(float, float)"
+    ]
+  },
+  "full_method_info": "public Circle(Vector2 center, Vector2 edge) {\n    this.x = center.x;\n    this.y = center.y;\n    this.radius = Vector2.len(center.x - edge.x, center.y - edge.y);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

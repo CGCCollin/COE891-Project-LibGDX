@@ -1,0 +1,35 @@
+{
+  "className": "Vector3",
+  "methodName": "slerp",
+  "brief": "public Vector3 slerp (final Vector3 target, float alpha){}",
+  "methodSignature": "slerp(Vector3, float)",
+  "sourceCode": "public Vector3 slerp (final Vector3 target, float alpha) {\n\t\tfinal float dot = dot(target);\n\t\t// If the inputs are too close for comfort, simply linearly interpolate.\n\t\tif (dot > 0.9995 || dot < -0.9995) return lerp(target, alpha);\n\n\t\t// theta0 = angle between input vectors\n\t\tfinal float theta0 = (float)Math.acos(dot);\n\t\t// theta = angle between this vector and result\n\t\tfinal float theta = theta0 * alpha;\n\n\t\tfinal float st = (float)Math.sin(theta);\n\t\tfinal float tx = target.x - x * dot;\n\t\tfinal float ty = target.y - y * dot;\n\t\tfinal float tz = target.z - z * dot;\n\t\tfinal float l2 = tx * tx + ty * ty + tz * tz;\n\t\tfinal float dl = st * ((l2 < 0.0001f) ? 1f : 1f / (float)Math.sqrt(l2));\n\n\t\treturn scl((float)Math.cos(theta)).add(tx * dl, ty * dl, tz * dl).nor();\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector3",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "nor()",
+      "lerp(Vector3, float)",
+      "add(float, float, float)",
+      "scl(float)",
+      "dot(Vector3)"
+    ],
+    "java.lang.Math": [
+      "sin(double)",
+      "cos(double)",
+      "acos(double)",
+      "sqrt(double)"
+    ]
+  },
+  "full_method_info": "/**\n * Spherically interpolates between this vector and the target vector by alpha which is in the range [0,1]. The result is\n * stored in this vector.\n *\n * @param target The target vector\n * @param alpha The interpolation coefficient\n * @return This vector for chaining.\n */\npublic Vector3 slerp(final Vector3 target, float alpha) {\n    final float dot = dot(target);\n    // If the inputs are too close for comfort, simply linearly interpolate.\n    if (dot > 0.9995 || dot < -0.9995)\n        return lerp(target, alpha);\n    // theta0 = angle between input vectors\n    final float theta0 = (float) Math.acos(dot);\n    // theta = angle between this vector and result\n    final float theta = theta0 * alpha;\n    final float st = (float) Math.sin(theta);\n    final float tx = target.x - x * dot;\n    final float ty = target.y - y * dot;\n    final float tz = target.z - z * dot;\n    final float l2 = tx * tx + ty * ty + tz * tz;\n    final float dl = st * ((l2 < 0.0001f) ? 1f : 1f / (float) Math.sqrt(l2));\n    return scl((float) Math.cos(theta)).add(tx * dl, ty * dl, tz * dl).nor();\n}",
+  "method_comment": " Spherically interpolates between this vector and the target vector by alpha which is in the range [0,1]. The result is\n\t * stored in this vector.\n\t *\n\t * @param target The target vector\n\t * @param alpha The interpolation coefficient\n\t * @return This vector for chaining. ",
+  "method_annotation": ""
+}

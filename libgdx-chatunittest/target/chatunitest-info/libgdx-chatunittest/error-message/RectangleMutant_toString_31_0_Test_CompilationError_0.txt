@@ -1,0 +1,82 @@
+package com.badlogic.gdx.mutants;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import com.badlogic.gdx.math.*;
+import java.io.Serializable;
+import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.NumberUtils;
+import com.badlogic.gdx.utils.Scaling;
+
+public class RectangleMutant_toString_31_0_Test {
+
+    @Test
+    public void testToString() {
+        RectangleMutant rectangle = new RectangleMutant(1, 2, 3, 4);
+        assertEquals("[1.0,2.0,3.0,4.0]", rectangle.toString());
+    }
+
+    @Test
+    public void testToStringNegativeCoordinates() {
+        RectangleMutant rectangle = new RectangleMutant(-1, -2, 3, 4);
+        assertEquals("[-1.0,-2.0,3.0,4.0]", rectangle.toString());
+    }
+
+    @Test
+    public void testToStringZeroWidthAndHeight() {
+        RectangleMutant rectangle = new RectangleMutant(1, 2, 0, 0);
+        assertEquals("[1.0,2.0,0.0,0.0]", rectangle.toString());
+    }
+
+    @Test
+    public void testToStringNegativeWidthAndHeight() {
+        RectangleMutant rectangle = new RectangleMutant(1, 2, -3, -4);
+        assertEquals("[1.0,2.0,-3.0,-4.0]", rectangle.toString());
+    }
+
+    @Test
+    public void testToStringWithDecimalCoordinates() {
+        RectangleMutant rectangle = new RectangleMutant(1.5f, 2.75f, 3.25f, 4.5f);
+        assertEquals("[1.5,2.75,3.25,4.5]", rectangle.toString());
+    }
+
+    @Test
+    public void testToStringWithDecimalWidthAndHeight() {
+        RectangleMutant rectangle = new RectangleMutant(1, 2, 3.25f, 4.75f);
+        assertEquals("[1.0,2.0,3.25,4.75]", rectangle.toString());
+    }
+
+    @Test
+    public void testToStringWithNegativeDecimalCoordinates() {
+        RectangleMutant rectangle = new RectangleMutant(-1.5f, -2.75f, 3.25f, 4.5f);
+        assertEquals("[-1.5,-2.75,3.25,4.5]", rectangle.toString());
+    }
+
+    @Test
+    public void testToStringWithNegativeDecimalWidthAndHeight() {
+        RectangleMutant rectangle = new RectangleMutant(1, 2, -3.25f, -4.75f);
+        assertEquals("[1.0,2.0,-3.25,-4.75]", rectangle.toString());
+    }
+
+    @Test
+    public void testToStringWithZeroDecimalWidthAndHeight() {
+        RectangleMutant rectangle = new RectangleMutant(1, 2, 0.25f, 0.75f);
+        assertEquals("[1.0,2.0,0.25,0.75]", rectangle.toString());
+    }
+
+    @Test
+    public void testToStringWithNegativeZeroDecimalWidthAndHeight() {
+        RectangleMutant rectangle = new RectangleMutant(1, 2, -0.25f, -0.75f);
+        assertEquals("[1.0,2.0,-0.25,-0.75]", rectangle.toString());
+    }
+}
+
+--------------------------------------------
+Error in RectangleMutant_toString_31_0_Test: line 3 : package org.junit does not exist
+Error in RectangleMutant_toString_31_0_Test: line 4 : package org.junit does not exist

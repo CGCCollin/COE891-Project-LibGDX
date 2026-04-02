@@ -1,0 +1,20 @@
+{
+  "className": "MathUtils",
+  "methodName": "ceil",
+  "brief": "static public int ceil (float value){}",
+  "methodSignature": "ceil(float)",
+  "sourceCode": "static public int ceil (float value) {\n\t\treturn BIG_ENOUGH_INT - (int)(BIG_ENOUGH_FLOOR - value);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the smallest integer greater than or equal to the specified float. This method will only properly ceil floats from\n * -(2^14) to (Float.MAX_VALUE - 2^14).\n */\nstatic public int ceil(float value) {\n    return BIG_ENOUGH_INT - (int) (BIG_ENOUGH_FLOOR - value);\n}",
+  "method_comment": " Returns the smallest integer greater than or equal to the specified float. This method will only properly ceil floats from\n\t * -(2^14) to (Float.MAX_VALUE - 2^14). ",
+  "method_annotation": ""
+}

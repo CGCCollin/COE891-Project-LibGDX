@@ -1,0 +1,25 @@
+{
+  "className": "MathUtils",
+  "methodName": "isZero",
+  "brief": "static public boolean isZero (float value, float tolerance){}",
+  "methodSignature": "isZero(float, float)",
+  "sourceCode": "static public boolean isZero (float value, float tolerance) {\n\t\treturn Math.abs(value) <= tolerance;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "java.lang.Math": [
+      "abs(float)"
+    ]
+  },
+  "full_method_info": "/**\n * Returns true if the value is zero.\n * @param tolerance represent an upper bound below which the value is considered zero.\n */\nstatic public boolean isZero(float value, float tolerance) {\n    return Math.abs(value) <= tolerance;\n}",
+  "method_comment": " Returns true if the value is zero.\n\t * @param tolerance represent an upper bound below which the value is considered zero. ",
+  "method_annotation": ""
+}

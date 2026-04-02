@@ -1,0 +1,121 @@
+{
+  "fullClassName": "com.badlogic.gdx.math.Circle",
+  "className": "Circle",
+  "index": 1,
+  "modifier": "[public ]",
+  "extend": "[]",
+  "implement": "[Serializable, Shape2D]",
+  "packageName": "com.badlogic.gdx.math",
+  "packageDeclaration": "package com.badlogic.gdx.math;",
+  "classSignature": "public class Circle",
+  "hasConstructor": true,
+  "isPublic": true,
+  "isInterface": false,
+  "isAbstract": false,
+  "imports": [
+    "import java.io.Serializable;",
+    "import com.badlogic.gdx.utils.NumberUtils;"
+  ],
+  "fields": [
+    "public float x, y;",
+    "public float radius;"
+  ],
+  "superClasses": [],
+  "implementedTypes": [
+    "Serializable",
+    "Shape2D"
+  ],
+  "methodSigs": {
+    "set(float, float, float)": "0",
+    "set(Vector2, float)": "1",
+    "set(Circle)": "2",
+    "set(Vector2, Vector2)": "3",
+    "setPosition(Vector2)": "4",
+    "setPosition(float, float)": "5",
+    "setX(float)": "6",
+    "setY(float)": "7",
+    "setRadius(float)": "8",
+    "contains(float, float)": "9",
+    "contains(Vector2)": "10",
+    "contains(Circle)": "11",
+    "overlaps(Circle)": "12",
+    "toString()": "13",
+    "circumference()": "14",
+    "area()": "15",
+    "equals(Object)": "16",
+    "hashCode()": "17",
+    "Circle()": "18",
+    "Circle(float, float, float)": "19",
+    "Circle(Vector2, float)": "20",
+    "Circle(Circle)": "21",
+    "Circle(Vector2, Vector2)": "22"
+  },
+  "methodsBrief": [
+    "public void set (float x, float y, float radius){}",
+    "public void set (Vector2 position, float radius){}",
+    "public void set (Circle circle){}",
+    "public void set (Vector2 center, Vector2 edge){}",
+    "public void setPosition (Vector2 position){}",
+    "public void setPosition (float x, float y){}",
+    "public void setX (float x){}",
+    "public void setY (float y){}",
+    "public void setRadius (float radius){}",
+    "public boolean contains (float x, float y){}",
+    "public boolean contains (Vector2 point){}",
+    "public boolean contains (Circle c){}",
+    "public boolean overlaps (Circle c){}",
+    "@Override\r\n\tpublic String toString (){}",
+    "public float circumference (){}",
+    "public float area (){}",
+    "@Override\r\n\tpublic boolean equals (Object o){}",
+    "@Override\r\n\tpublic int hashCode (){}",
+    "public Circle (){}",
+    "public Circle (float x, float y, float radius){}",
+    "public Circle (Vector2 position, float radius){}",
+    "public Circle (Circle circle){}",
+    "public Circle (Vector2 center, Vector2 edge){}"
+  ],
+  "constructorSigs": [
+    "Circle()",
+    "Circle(float, float, float)",
+    "Circle(Vector2, float)",
+    "Circle(Circle)",
+    "Circle(Vector2, Vector2)"
+  ],
+  "constructorBrief": [
+    "public Circle (){}",
+    "public Circle (float x, float y, float radius){}",
+    "public Circle (Vector2 position, float radius){}",
+    "public Circle (Circle circle){}",
+    "public Circle (Vector2 center, Vector2 edge){}"
+  ],
+  "getterSetterSigs": [
+    "set(float, float, float)",
+    "set(Vector2, float)",
+    "set(Circle)",
+    "set(Vector2, Vector2)",
+    "setPosition(Vector2)",
+    "setPosition(float, float)",
+    "setX(float)",
+    "setY(float)",
+    "setRadius(float)"
+  ],
+  "getterSetterBrief": [
+    "public void set (float x, float y, float radius){}",
+    "public void set (Vector2 position, float radius){}",
+    "public void set (Circle circle){}",
+    "public void set (Vector2 center, Vector2 edge){}",
+    "public void setPosition (Vector2 position){}",
+    "public void setPosition (float x, float y){}",
+    "public void setX (float x){}",
+    "public void setY (float y){}",
+    "public void setRadius (float radius){}"
+  ],
+  "constructorDeps": {
+    "com.badlogic.gdx.math.Vector2": [],
+    "com.badlogic.gdx.math.Circle": []
+  },
+  "compilationUnitCode": "/**\n * ****************************************************************************\n *  Copyright 2011 See AUTHORS file.\n *\n *  Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the\n *  License. You may obtain a copy of the License at\n *\n *  http://www.apache.org/licenses/LICENSE-2.0\n *\n *  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\"\n *  BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language\n *  governing permissions and limitations under the License.\n * ****************************************************************************\n */\npackage com.badlogic.gdx.math;\n\nimport java.io.Serializable;\nimport com.badlogic.gdx.utils.NumberUtils;\n\n/**\n * A convenient 2D circle class.\n * @author mzechner\n */\npublic class Circle implements Serializable, Shape2D {\n\n    public float x, y;\n\n    public float radius;\n\n    public Circle() {\n    }\n\n    public Circle(float x, float y, float radius) {\n        this.x = x;\n        this.y = y;\n        this.radius = radius;\n    }\n\n    public Circle(Vector2 position, float radius) {\n        this.x = position.x;\n        this.y = position.y;\n        this.radius = radius;\n    }\n\n    public Circle(Circle circle) {\n        this.x = circle.x;\n        this.y = circle.y;\n        this.radius = circle.radius;\n    }\n\n    public Circle(Vector2 center, Vector2 edge) {\n        this.x = center.x;\n        this.y = center.y;\n        this.radius = Vector2.len(center.x - edge.x, center.y - edge.y);\n    }\n\n    /**\n     * Sets a new location and radius for this circle.\n     *\n     * @param x X coordinate of the center of the circle\n     * @param y Y coordinate of the center of the circle\n     * @param radius Circle radius\n     */\n    public void set(float x, float y, float radius) {\n        this.x = x;\n        this.y = y;\n        this.radius = radius;\n    }\n\n    /**\n     * Sets a new location and radius for this circle.\n     *\n     * @param position Position {@link Vector2} for this circle.\n     * @param radius Circle radius\n     */\n    public void set(Vector2 position, float radius) {\n        this.x = position.x;\n        this.y = position.y;\n        this.radius = radius;\n    }\n\n    /**\n     * Sets a new location and radius for this circle, based upon another circle.\n     *\n     * @param circle The circle to copy the position and radius of.\n     */\n    public void set(Circle circle) {\n        this.x = circle.x;\n        this.y = circle.y;\n        this.radius = circle.radius;\n    }\n\n    /**\n     * Sets this {@link Circle}'s values in terms of its center and a point on its edge.\n     *\n     * @param center The new center of the circle\n     * @param edge Any point on the edge of the given circle\n     */\n    public void set(Vector2 center, Vector2 edge) {\n        this.x = center.x;\n        this.y = center.y;\n        this.radius = Vector2.len(center.x - edge.x, center.y - edge.y);\n    }\n\n    /**\n     * Sets the x and y-coordinates of circle center from vector\n     * @param position The position vector\n     */\n    public void setPosition(Vector2 position) {\n        this.x = position.x;\n        this.y = position.y;\n    }\n\n    /**\n     * Sets the x and y-coordinates of circle center\n     * @param x The x-coordinate\n     * @param y The y-coordinate\n     */\n    public void setPosition(float x, float y) {\n        this.x = x;\n        this.y = y;\n    }\n\n    /**\n     * Sets the x-coordinate of circle center\n     * @param x The x-coordinate\n     */\n    public void setX(float x) {\n        this.x = x;\n    }\n\n    /**\n     * Sets the y-coordinate of circle center\n     * @param y The y-coordinate\n     */\n    public void setY(float y) {\n        this.y = y;\n    }\n\n    /**\n     * Sets the radius of circle\n     * @param radius The radius\n     */\n    public void setRadius(float radius) {\n        this.radius = radius;\n    }\n\n    /**\n     * Checks whether or not this circle contains a given point.\n     *\n     * @param x X coordinate\n     * @param y Y coordinate\n     *\n     * @return true if this circle contains the given point.\n     */\n    public boolean contains(float x, float y) {\n        x = this.x - x;\n        y = this.y - y;\n        return x * x + y * y <= radius * radius;\n    }\n\n    /**\n     * Checks whether or not this circle contains a given point.\n     *\n     * @param point The {@link Vector2} that contains the point coordinates.\n     *\n     * @return true if this circle contains this point; false otherwise.\n     */\n    public boolean contains(Vector2 point) {\n        float dx = x - point.x;\n        float dy = y - point.y;\n        return dx * dx + dy * dy <= radius * radius;\n    }\n\n    /**\n     * @param c the other {@link Circle}\n     * @return whether this circle contains the other circle.\n     */\n    public boolean contains(Circle c) {\n        final float radiusDiff = radius - c.radius;\n        // Can't contain bigger circle\n        if (radiusDiff < 0f)\n            return false;\n        final float dx = x - c.x;\n        final float dy = y - c.y;\n        final float dst = dx * dx + dy * dy;\n        final float radiusSum = radius + c.radius;\n        return (!(radiusDiff * radiusDiff < dst) && (dst < radiusSum * radiusSum));\n    }\n\n    /**\n     * @param c the other {@link Circle}\n     * @return whether this circle overlaps the other circle.\n     */\n    public boolean overlaps(Circle c) {\n        float dx = x - c.x;\n        float dy = y - c.y;\n        float distance = dx * dx + dy * dy;\n        float radiusSum = radius + c.radius;\n        return distance < radiusSum * radiusSum;\n    }\n\n    /**\n     * Returns a {@link String} representation of this {@link Circle} of the form {@code x,y,radius}.\n     */\n    @Override\n    public String toString() {\n        return x + \",\" + y + \",\" + radius;\n    }\n\n    /**\n     * @return The circumference of this circle (as 2 * {@link MathUtils#PI2}) * {@code radius}\n     */\n    public float circumference() {\n        return this.radius * MathUtils.PI2;\n    }\n\n    /**\n     * @return The area of this circle (as {@link MathUtils#PI} * radius * radius).\n     */\n    public float area() {\n        return this.radius * this.radius * MathUtils.PI;\n    }\n\n    @Override\n    public boolean equals(Object o) {\n        if (o == this)\n            return true;\n        if (o == null || o.getClass() != this.getClass())\n            return false;\n        Circle c = (Circle) o;\n        return this.x == c.x && this.y == c.y && this.radius == c.radius;\n    }\n\n    @Override\n    public int hashCode() {\n        final int prime = 41;\n        int result = 1;\n        result = prime * result + NumberUtils.floatToRawIntBits(radius);\n        result = prime * result + NumberUtils.floatToRawIntBits(x);\n        result = prime * result + NumberUtils.floatToRawIntBits(y);\n        return result;\n    }\n}\n",
+  "classDeclarationCode": "/**\n * A convenient 2D circle class.\n * @author mzechner\n */\npublic class Circle implements Serializable, Shape2D {\n\n    public float x, y;\n\n    public float radius;\n\n    public Circle() {\n    }\n\n    public Circle(float x, float y, float radius) {\n        this.x = x;\n        this.y = y;\n        this.radius = radius;\n    }\n\n    public Circle(Vector2 position, float radius) {\n        this.x = position.x;\n        this.y = position.y;\n        this.radius = radius;\n    }\n\n    public Circle(Circle circle) {\n        this.x = circle.x;\n        this.y = circle.y;\n        this.radius = circle.radius;\n    }\n\n    public Circle(Vector2 center, Vector2 edge) {\n        this.x = center.x;\n        this.y = center.y;\n        this.radius = Vector2.len(center.x - edge.x, center.y - edge.y);\n    }\n\n    /**\n     * Sets a new location and radius for this circle.\n     *\n     * @param x X coordinate of the center of the circle\n     * @param y Y coordinate of the center of the circle\n     * @param radius Circle radius\n     */\n    public void set(float x, float y, float radius) {\n        this.x = x;\n        this.y = y;\n        this.radius = radius;\n    }\n\n    /**\n     * Sets a new location and radius for this circle.\n     *\n     * @param position Position {@link Vector2} for this circle.\n     * @param radius Circle radius\n     */\n    public void set(Vector2 position, float radius) {\n        this.x = position.x;\n        this.y = position.y;\n        this.radius = radius;\n    }\n\n    /**\n     * Sets a new location and radius for this circle, based upon another circle.\n     *\n     * @param circle The circle to copy the position and radius of.\n     */\n    public void set(Circle circle) {\n        this.x = circle.x;\n        this.y = circle.y;\n        this.radius = circle.radius;\n    }\n\n    /**\n     * Sets this {@link Circle}'s values in terms of its center and a point on its edge.\n     *\n     * @param center The new center of the circle\n     * @param edge Any point on the edge of the given circle\n     */\n    public void set(Vector2 center, Vector2 edge) {\n        this.x = center.x;\n        this.y = center.y;\n        this.radius = Vector2.len(center.x - edge.x, center.y - edge.y);\n    }\n\n    /**\n     * Sets the x and y-coordinates of circle center from vector\n     * @param position The position vector\n     */\n    public void setPosition(Vector2 position) {\n        this.x = position.x;\n        this.y = position.y;\n    }\n\n    /**\n     * Sets the x and y-coordinates of circle center\n     * @param x The x-coordinate\n     * @param y The y-coordinate\n     */\n    public void setPosition(float x, float y) {\n        this.x = x;\n        this.y = y;\n    }\n\n    /**\n     * Sets the x-coordinate of circle center\n     * @param x The x-coordinate\n     */\n    public void setX(float x) {\n        this.x = x;\n    }\n\n    /**\n     * Sets the y-coordinate of circle center\n     * @param y The y-coordinate\n     */\n    public void setY(float y) {\n        this.y = y;\n    }\n\n    /**\n     * Sets the radius of circle\n     * @param radius The radius\n     */\n    public void setRadius(float radius) {\n        this.radius = radius;\n    }\n\n    /**\n     * Checks whether or not this circle contains a given point.\n     *\n     * @param x X coordinate\n     * @param y Y coordinate\n     *\n     * @return true if this circle contains the given point.\n     */\n    public boolean contains(float x, float y) {\n        x = this.x - x;\n        y = this.y - y;\n        return x * x + y * y <= radius * radius;\n    }\n\n    /**\n     * Checks whether or not this circle contains a given point.\n     *\n     * @param point The {@link Vector2} that contains the point coordinates.\n     *\n     * @return true if this circle contains this point; false otherwise.\n     */\n    public boolean contains(Vector2 point) {\n        float dx = x - point.x;\n        float dy = y - point.y;\n        return dx * dx + dy * dy <= radius * radius;\n    }\n\n    /**\n     * @param c the other {@link Circle}\n     * @return whether this circle contains the other circle.\n     */\n    public boolean contains(Circle c) {\n        final float radiusDiff = radius - c.radius;\n        // Can't contain bigger circle\n        if (radiusDiff < 0f)\n            return false;\n        final float dx = x - c.x;\n        final float dy = y - c.y;\n        final float dst = dx * dx + dy * dy;\n        final float radiusSum = radius + c.radius;\n        return (!(radiusDiff * radiusDiff < dst) && (dst < radiusSum * radiusSum));\n    }\n\n    /**\n     * @param c the other {@link Circle}\n     * @return whether this circle overlaps the other circle.\n     */\n    public boolean overlaps(Circle c) {\n        float dx = x - c.x;\n        float dy = y - c.y;\n        float distance = dx * dx + dy * dy;\n        float radiusSum = radius + c.radius;\n        return distance < radiusSum * radiusSum;\n    }\n\n    /**\n     * Returns a {@link String} representation of this {@link Circle} of the form {@code x,y,radius}.\n     */\n    @Override\n    public String toString() {\n        return x + \",\" + y + \",\" + radius;\n    }\n\n    /**\n     * @return The circumference of this circle (as 2 * {@link MathUtils#PI2}) * {@code radius}\n     */\n    public float circumference() {\n        return this.radius * MathUtils.PI2;\n    }\n\n    /**\n     * @return The area of this circle (as {@link MathUtils#PI} * radius * radius).\n     */\n    public float area() {\n        return this.radius * this.radius * MathUtils.PI;\n    }\n\n    @Override\n    public boolean equals(Object o) {\n        if (o == this)\n            return true;\n        if (o == null || o.getClass() != this.getClass())\n            return false;\n        Circle c = (Circle) o;\n        return this.x == c.x && this.y == c.y && this.radius == c.radius;\n    }\n\n    @Override\n    public int hashCode() {\n        final int prime = 41;\n        int result = 1;\n        result = prime * result + NumberUtils.floatToRawIntBits(radius);\n        result = prime * result + NumberUtils.floatToRawIntBits(x);\n        result = prime * result + NumberUtils.floatToRawIntBits(y);\n        return result;\n    }\n}",
+  "subClasses": []
+}

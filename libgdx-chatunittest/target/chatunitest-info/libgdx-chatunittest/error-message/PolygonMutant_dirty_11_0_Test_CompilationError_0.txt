@@ -1,0 +1,29 @@
+package com.badlogic.gdx.mutants;
+
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import com.badlogic.gdx.math.*;
+
+public class PolygonMutant_dirty_11_0_Test {
+
+    @Test
+    public void testDirty() throws Exception {
+        // Arrange
+        PolygonMutant polygon = new PolygonMutant();
+        // Initially, the dirty flag should be true
+        assertTrue(polygon.dirty);
+        // Act
+        polygon.dirty();
+        // Assert
+        // After calling dirty(), the dirty flag should be false
+        assertFalse(polygon.dirty);
+    }
+}
+
+--------------------------------------------
+Error in PolygonMutant_dirty_11_0_Test: line 18 : dirty has private access in com.badlogic.gdx.mutants.PolygonMutant
+Error in PolygonMutant_dirty_11_0_Test: line 23 : dirty has private access in com.badlogic.gdx.mutants.PolygonMutant

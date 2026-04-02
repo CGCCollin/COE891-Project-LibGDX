@@ -1,0 +1,32 @@
+{
+  "className": "Color",
+  "methodName": "valueOf",
+  "brief": "public static Color valueOf (String hex, Color color){}",
+  "methodSignature": "valueOf(String, Color)",
+  "sourceCode": "public static Color valueOf (String hex, Color color) {\n\t\thex = hex.charAt(0) == '#' ? hex.substring(1) : hex;\n\t\tcolor.r = Integer.parseInt(hex.substring(0, 2), 16) / 255f;\n\t\tcolor.g = Integer.parseInt(hex.substring(2, 4), 16) / 255f;\n\t\tcolor.b = Integer.parseInt(hex.substring(4, 6), 16) / 255f;\n\t\tcolor.a = hex.length() != 8 ? 1 : Integer.parseInt(hex.substring(6, 8), 16) / 255f;\n\t\treturn color;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "String",
+    "Color"
+  ],
+  "dependentMethods": {
+    "java.lang.String": [
+      "substring(int)",
+      "substring(int, int)",
+      "length()",
+      "charAt(int)"
+    ],
+    "com.badlogic.gdx.graphics.Color": [],
+    "java.lang.Integer": [
+      "parseInt(String, int)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets the specified color from a hex string with the format RRGGBBAA.\n * @see #toString()\n */\npublic static Color valueOf(String hex, Color color) {\n    hex = hex.charAt(0) == '#' ? hex.substring(1) : hex;\n    color.r = Integer.parseInt(hex.substring(0, 2), 16) / 255f;\n    color.g = Integer.parseInt(hex.substring(2, 4), 16) / 255f;\n    color.b = Integer.parseInt(hex.substring(4, 6), 16) / 255f;\n    color.a = hex.length() != 8 ? 1 : Integer.parseInt(hex.substring(6, 8), 16) / 255f;\n    return color;\n}",
+  "method_comment": " Sets the specified color from a hex string with the format RRGGBBAA.\n\t * @see #toString() ",
+  "method_annotation": ""
+}

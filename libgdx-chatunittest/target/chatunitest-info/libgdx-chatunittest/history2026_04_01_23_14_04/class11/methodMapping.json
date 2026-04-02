@@ -1,0 +1,98 @@
+{
+  "method0": {
+    "methodName": "set",
+    "signature": "set(Vector3, Vector3, Vector3)",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method1": {
+    "methodName": "set",
+    "signature": "set(float, float, float, float)",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method10": {
+    "methodName": "set",
+    "signature": "set(PlaneMutant)",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method11": {
+    "methodName": "toString",
+    "signature": "toString()",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method12": {
+    "methodName": "PlaneMutant",
+    "signature": "PlaneMutant()",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method13": {
+    "methodName": "PlaneMutant",
+    "signature": "PlaneMutant(Vector3, float)",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method14": {
+    "methodName": "PlaneMutant",
+    "signature": "PlaneMutant(Vector3, Vector3)",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method15": {
+    "methodName": "PlaneMutant",
+    "signature": "PlaneMutant(Vector3, Vector3, Vector3)",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method2": {
+    "methodName": "distance",
+    "signature": "distance(Vector3)",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method3": {
+    "methodName": "testPoint",
+    "signature": "testPoint(Vector3)",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method4": {
+    "methodName": "testPoint",
+    "signature": "testPoint(float, float, float)",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method5": {
+    "methodName": "isFrontFacing",
+    "signature": "isFrontFacing(Vector3)",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method6": {
+    "methodName": "getNormal",
+    "signature": "getNormal()",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method7": {
+    "methodName": "getD",
+    "signature": "getD()",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method8": {
+    "methodName": "set",
+    "signature": "set(Vector3, Vector3)",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method9": {
+    "methodName": "set",
+    "signature": "set(float, float, float, float, float, float)",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  }
+}

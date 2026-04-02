@@ -1,0 +1,22 @@
+{
+  "className": "Plane",
+  "methodName": "toString",
+  "brief": "public String toString (){}",
+  "methodSignature": "toString()",
+  "sourceCode": "public String toString () {\n\t\treturn normal.toString() + \", \" + d;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "toString()"
+    ]
+  },
+  "full_method_info": "public String toString() {\n    return normal.toString() + \", \" + d;\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

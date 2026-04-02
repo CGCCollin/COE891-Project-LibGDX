@@ -1,0 +1,22 @@
+{
+  "className": "Rectangle",
+  "methodName": "setPosition",
+  "brief": "public Rectangle setPosition (Vector2 position){}",
+  "methodSignature": "setPosition(Vector2)",
+  "sourceCode": "public Rectangle setPosition (Vector2 position) {\n\t\tthis.x = position.x;\n\t\tthis.y = position.y;\n\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector2"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector2": []
+  },
+  "full_method_info": "/**\n * Sets the x and y-coordinates of the bottom left corner from vector\n * @param position The position vector\n * @return this rectangle for chaining\n */\npublic Rectangle setPosition(Vector2 position) {\n    this.x = position.x;\n    this.y = position.y;\n    return this;\n}",
+  "method_comment": " Sets the x and y-coordinates of the bottom left corner from vector\n\t * @param position The position vector\n\t * @return this rectangle for chaining ",
+  "method_annotation": ""
+}

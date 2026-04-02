@@ -1,0 +1,22 @@
+{
+  "className": "PolygonMutant",
+  "methodName": "setVertices",
+  "brief": "public void setVertices(float[] vertices){}",
+  "methodSignature": "setVertices(float[])",
+  "sourceCode": "public void setVertices(float[] vertices) {\n\t\tif (vertices.length < 6)\n\t\t\tthrow new IllegalArgumentException(\"polygons must contain at least 3 points.\");\n\t\tlocalVertices = vertices;\n\t\tdirty = true;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float[]"
+  ],
+  "dependentMethods": {
+    "float": []
+  },
+  "full_method_info": "/**\n * Sets the polygon's local vertices relative to the origin point, without any\n * scaling, rotating or translations being\n * applied.\n *\n * @param vertices float array where every even element represents the\n *                 x-coordinate of a vertex, and the proceeding element\n *                 representing the y-coordinate.\n * @throws IllegalArgumentException if less than 6 elements, representing 3\n *                                  points, are provided\n */\npublic void setVertices(float[] vertices) {\n    if (vertices.length < 6)\n        throw new IllegalArgumentException(\"polygons must contain at least 3 points.\");\n    localVertices = vertices;\n    dirty = true;\n}",
+  "method_comment": "\n\t * Sets the polygon's local vertices relative to the origin point, without any\n\t * scaling, rotating or translations being\n\t * applied.\n\t * \n\t * @param vertices float array where every even element represents the\n\t *                 x-coordinate of a vertex, and the proceeding element\n\t *                 representing the y-coordinate.\n\t * @throws IllegalArgumentException if less than 6 elements, representing 3\n\t *                                  points, are provided\n\t ",
+  "method_annotation": ""
+}

@@ -1,0 +1,24 @@
+{
+  "className": "Circle",
+  "methodName": "equals",
+  "brief": "@Override\r\n\tpublic boolean equals (Object o){}",
+  "methodSignature": "equals(Object)",
+  "sourceCode": "@Override\n\tpublic boolean equals (Object o) {\n\t\tif (o == this) return true;\n\t\tif (o == null || o.getClass() != this.getClass()) return false;\n\t\tCircle c = (Circle)o;\n\t\treturn this.x == c.x && this.y == c.y && this.radius == c.radius;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Object"
+  ],
+  "dependentMethods": {
+    "java.lang.Object": [
+      "getClass()"
+    ]
+  },
+  "full_method_info": "@Override\npublic boolean equals(Object o) {\n    if (o == this)\n        return true;\n    if (o == null || o.getClass() != this.getClass())\n        return false;\n    Circle c = (Circle) o;\n    return this.x == c.x && this.y == c.y && this.radius == c.radius;\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

@@ -1,0 +1,90 @@
+{
+  "fullClassName": "com.badlogic.gdx.mutants.GridPoint2Mutant",
+  "className": "GridPoint2Mutant",
+  "index": 10,
+  "modifier": "[public ]",
+  "extend": "[]",
+  "implement": "[Serializable]",
+  "packageName": "com.badlogic.gdx.mutants",
+  "packageDeclaration": "package com.badlogic.gdx.mutants;",
+  "classSignature": "public class GridPoint2Mutant",
+  "hasConstructor": true,
+  "isPublic": true,
+  "isInterface": false,
+  "isAbstract": false,
+  "imports": [
+    "import com.badlogic.gdx.math.*;",
+    "import java.io.Serializable;"
+  ],
+  "fields": [
+    "private static final long serialVersionUID = -4019969926331717380L;",
+    "public int x;",
+    "public int y;"
+  ],
+  "superClasses": [],
+  "implementedTypes": [
+    "Serializable"
+  ],
+  "methodSigs": {
+    "set(GridPoint2Mutant)": "0",
+    "set(int, int)": "1",
+    "dst2(GridPoint2Mutant)": "2",
+    "dst2(int, int)": "3",
+    "dst(GridPoint2Mutant)": "4",
+    "dst(int, int)": "5",
+    "add(GridPoint2Mutant)": "6",
+    "add(int, int)": "7",
+    "sub(GridPoint2Mutant)": "8",
+    "sub(int, int)": "9",
+    "cpy()": "10",
+    "equals(Object)": "11",
+    "hashCode()": "12",
+    "toString()": "13",
+    "GridPoint2Mutant()": "14",
+    "GridPoint2Mutant(int, int)": "15",
+    "GridPoint2Mutant(GridPoint2Mutant)": "16"
+  },
+  "methodsBrief": [
+    "public GridPoint2Mutant set(GridPoint2Mutant point){}",
+    "public GridPoint2Mutant set(int x, int y){}",
+    "public float dst2(GridPoint2Mutant other){}",
+    "public float dst2(int x, int y){}",
+    "public float dst(GridPoint2Mutant other){}",
+    "public float dst(int x, int y){}",
+    "public GridPoint2Mutant add(GridPoint2Mutant other){}",
+    "public GridPoint2Mutant add(int x, int y){}",
+    "public GridPoint2Mutant sub(GridPoint2Mutant other){}",
+    "public GridPoint2Mutant sub(int x, int y){}",
+    "public GridPoint2Mutant cpy(){}",
+    "@Override\r\n\tpublic boolean equals(Object o){}",
+    "@Override\r\n\tpublic int hashCode(){}",
+    "@Override\r\n\tpublic String toString(){}",
+    "public GridPoint2Mutant(){}",
+    "public GridPoint2Mutant(int x, int y){}",
+    "public GridPoint2Mutant(GridPoint2Mutant point){}"
+  ],
+  "constructorSigs": [
+    "GridPoint2Mutant()",
+    "GridPoint2Mutant(int, int)",
+    "GridPoint2Mutant(GridPoint2Mutant)"
+  ],
+  "constructorBrief": [
+    "public GridPoint2Mutant(){}",
+    "public GridPoint2Mutant(int x, int y){}",
+    "public GridPoint2Mutant(GridPoint2Mutant point){}"
+  ],
+  "getterSetterSigs": [
+    "set(GridPoint2Mutant)",
+    "set(int, int)"
+  ],
+  "getterSetterBrief": [
+    "public GridPoint2Mutant set(GridPoint2Mutant point){}",
+    "public GridPoint2Mutant set(int x, int y){}"
+  ],
+  "constructorDeps": {
+    "com.badlogic.gdx.mutants.GridPoint2Mutant": []
+  },
+  "compilationUnitCode": "/**\n * ****************************************************************************\n *  Copyright 2011 See AUTHORS file.\n *\n *  Licensed under the Apache License, Version 2.0 (the \"License\");\n *  you may not use this file except in compliance with the License.\n *  You may obtain a copy of the License at\n *\n *    http://www.apache.org/licenses/LICENSE-2.0\n *\n *  Unless required by applicable law or agreed to in writing, software\n *  distributed under the License is distributed on an \"AS IS\" BASIS,\n *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n *  See the License for the specific language governing permissions and\n *  limitations under the License.\n * ****************************************************************************\n */\npackage com.badlogic.gdx.mutants;\n\nimport com.badlogic.gdx.math.*;\nimport java.io.Serializable;\n\n/**\n * A point in a 2D grid, with integer x and y coordinates\n *\n * @author badlogic\n */\npublic class GridPoint2Mutant implements Serializable {\n\n    private static final long serialVersionUID = -4019969926331717380L;\n\n    public int x;\n\n    public int y;\n\n    public GridPoint2Mutant() {\n    }\n\n    public GridPoint2Mutant(int x, int y) {\n        this.x = x;\n        this.y = y;\n    }\n\n    public GridPoint2Mutant(GridPoint2Mutant point) {\n        this.x = point.x;\n        this.y = point.y;\n    }\n\n    /**\n     * Sets the coordinates of this 2D grid point to that of another.\n     *\n     * @param point The 2D grid point to copy the coordinates of.\n     *\n     * @return this 2D grid point for chaining.\n     */\n    public GridPoint2Mutant set(GridPoint2Mutant point) {\n        this.x = point.x;\n        this.y = point.y;\n        return this;\n    }\n\n    /**\n     * Sets the coordinates of this 2D grid point.\n     *\n     * @param x X coordinate\n     * @param y Y coordinate\n     *\n     * @return this 2D grid point for chaining.\n     */\n    public GridPoint2Mutant set(int x, int y) {\n        this.x = x;\n        this.y = y;\n        return this;\n    }\n\n    /**\n     * @param other The other point\n     * @return the squared distance between this point and the other point.\n     */\n    public float dst2(GridPoint2Mutant other) {\n        int xd = other.x - x;\n        int yd = other.y - y;\n        return xd * xd + yd * yd;\n    }\n\n    /**\n     * @param x The x-coordinate of the other point\n     * @param y The y-coordinate of the other point\n     * @return the squared distance between this point and the other point.\n     */\n    public float dst2(int x, int y) {\n        int xd = x - this.x;\n        int yd = y - this.y;\n        return xd * xd + yd * yd;\n    }\n\n    /**\n     * @param other The other point\n     * @return the distance between this point and the other vector.\n     */\n    public float dst(GridPoint2Mutant other) {\n        int xd = other.x - x;\n        int yd = other.y - y;\n        return (float) Math.sqrt(xd * xd + yd * yd);\n    }\n\n    /**\n     * @param x The x-coordinate of the other point\n     * @param y The y-coordinate of the other point\n     * @return the distance between this point and the other point.\n     */\n    public float dst(int x, int y) {\n        int xd = x - this.x;\n        int yd = y - this.y;\n        return (float) Math.sqrt(xd * xd + yd * yd);\n    }\n\n    /**\n     * Adds another 2D grid point to this point.\n     *\n     * @param other The other point\n     * @return this 2d grid point for chaining.\n     */\n    public GridPoint2Mutant add(GridPoint2Mutant other) {\n        x += other.x;\n        y += other.y;\n        return this;\n    }\n\n    /**\n     * Adds another 2D grid point to this point.\n     *\n     * @param x The x-coordinate of the other point\n     * @param y The y-coordinate of the other point\n     * @return this 2d grid point for chaining.\n     */\n    public GridPoint2Mutant add(int x, int y) {\n        this.x += x;\n        this.y += y;\n        return this;\n    }\n\n    /**\n     * Subtracts another 2D grid point from this point.\n     *\n     * @param other The other point\n     * @return this 2d grid point for chaining.\n     */\n    public GridPoint2Mutant sub(GridPoint2Mutant other) {\n        x -= other.x;\n        y -= other.y;\n        return this;\n    }\n\n    /**\n     * Subtracts another 2D grid point from this point.\n     *\n     * @param x The x-coordinate of the other point\n     * @param y The y-coordinate of the other point\n     * @return this 2d grid point for chaining.\n     */\n    public GridPoint2Mutant sub(int x, int y) {\n        this.x -= x;\n        this.y -= y;\n        return this;\n    }\n\n    /**\n     * @return a copy of this grid point\n     */\n    public GridPoint2Mutant cpy() {\n        return new GridPoint2Mutant(this);\n    }\n\n    @Override\n    public boolean equals(Object o) {\n        if (this == o)\n            return true;\n        if (o == null || o.getClass() != this.getClass())\n            return false;\n        GridPoint2Mutant g = (GridPoint2Mutant) o;\n        return this.x == g.x && this.y == g.y;\n    }\n\n    @Override\n    public int hashCode() {\n        final int prime = 53;\n        int result = 1;\n        result = prime * result + this.x;\n        result = prime * result + this.y;\n        return result;\n    }\n\n    @Override\n    public String toString() {\n        return \"(\" + x + \", \" + y + \")\";\n    }\n}\n",
+  "classDeclarationCode": "/**\n * A point in a 2D grid, with integer x and y coordinates\n *\n * @author badlogic\n */\npublic class GridPoint2Mutant implements Serializable {\n\n    private static final long serialVersionUID = -4019969926331717380L;\n\n    public int x;\n\n    public int y;\n\n    public GridPoint2Mutant() {\n    }\n\n    public GridPoint2Mutant(int x, int y) {\n        this.x = x;\n        this.y = y;\n    }\n\n    public GridPoint2Mutant(GridPoint2Mutant point) {\n        this.x = point.x;\n        this.y = point.y;\n    }\n\n    /**\n     * Sets the coordinates of this 2D grid point to that of another.\n     *\n     * @param point The 2D grid point to copy the coordinates of.\n     *\n     * @return this 2D grid point for chaining.\n     */\n    public GridPoint2Mutant set(GridPoint2Mutant point) {\n        this.x = point.x;\n        this.y = point.y;\n        return this;\n    }\n\n    /**\n     * Sets the coordinates of this 2D grid point.\n     *\n     * @param x X coordinate\n     * @param y Y coordinate\n     *\n     * @return this 2D grid point for chaining.\n     */\n    public GridPoint2Mutant set(int x, int y) {\n        this.x = x;\n        this.y = y;\n        return this;\n    }\n\n    /**\n     * @param other The other point\n     * @return the squared distance between this point and the other point.\n     */\n    public float dst2(GridPoint2Mutant other) {\n        int xd = other.x - x;\n        int yd = other.y - y;\n        return xd * xd + yd * yd;\n    }\n\n    /**\n     * @param x The x-coordinate of the other point\n     * @param y The y-coordinate of the other point\n     * @return the squared distance between this point and the other point.\n     */\n    public float dst2(int x, int y) {\n        int xd = x - this.x;\n        int yd = y - this.y;\n        return xd * xd + yd * yd;\n    }\n\n    /**\n     * @param other The other point\n     * @return the distance between this point and the other vector.\n     */\n    public float dst(GridPoint2Mutant other) {\n        int xd = other.x - x;\n        int yd = other.y - y;\n        return (float) Math.sqrt(xd * xd + yd * yd);\n    }\n\n    /**\n     * @param x The x-coordinate of the other point\n     * @param y The y-coordinate of the other point\n     * @return the distance between this point and the other point.\n     */\n    public float dst(int x, int y) {\n        int xd = x - this.x;\n        int yd = y - this.y;\n        return (float) Math.sqrt(xd * xd + yd * yd);\n    }\n\n    /**\n     * Adds another 2D grid point to this point.\n     *\n     * @param other The other point\n     * @return this 2d grid point for chaining.\n     */\n    public GridPoint2Mutant add(GridPoint2Mutant other) {\n        x += other.x;\n        y += other.y;\n        return this;\n    }\n\n    /**\n     * Adds another 2D grid point to this point.\n     *\n     * @param x The x-coordinate of the other point\n     * @param y The y-coordinate of the other point\n     * @return this 2d grid point for chaining.\n     */\n    public GridPoint2Mutant add(int x, int y) {\n        this.x += x;\n        this.y += y;\n        return this;\n    }\n\n    /**\n     * Subtracts another 2D grid point from this point.\n     *\n     * @param other The other point\n     * @return this 2d grid point for chaining.\n     */\n    public GridPoint2Mutant sub(GridPoint2Mutant other) {\n        x -= other.x;\n        y -= other.y;\n        return this;\n    }\n\n    /**\n     * Subtracts another 2D grid point from this point.\n     *\n     * @param x The x-coordinate of the other point\n     * @param y The y-coordinate of the other point\n     * @return this 2d grid point for chaining.\n     */\n    public GridPoint2Mutant sub(int x, int y) {\n        this.x -= x;\n        this.y -= y;\n        return this;\n    }\n\n    /**\n     * @return a copy of this grid point\n     */\n    public GridPoint2Mutant cpy() {\n        return new GridPoint2Mutant(this);\n    }\n\n    @Override\n    public boolean equals(Object o) {\n        if (this == o)\n            return true;\n        if (o == null || o.getClass() != this.getClass())\n            return false;\n        GridPoint2Mutant g = (GridPoint2Mutant) o;\n        return this.x == g.x && this.y == g.y;\n    }\n\n    @Override\n    public int hashCode() {\n        final int prime = 53;\n        int result = 1;\n        result = prime * result + this.x;\n        result = prime * result + this.y;\n        return result;\n    }\n\n    @Override\n    public String toString() {\n        return \"(\" + x + \", \" + y + \")\";\n    }\n}",
+  "subClasses": []
+}

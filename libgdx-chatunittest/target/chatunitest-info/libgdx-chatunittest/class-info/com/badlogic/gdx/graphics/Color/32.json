@@ -1,0 +1,22 @@
+{
+  "className": "Color",
+  "methodName": "rgb565",
+  "brief": "public static int rgb565 (Color color){}",
+  "methodSignature": "rgb565(Color)",
+  "sourceCode": "public static int rgb565 (Color color) {\n\t\treturn ((int)(color.r * 31) << 11) | ((int)(color.g * 63) << 5) | (int)(color.b * 31);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Color"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.graphics.Color": []
+  },
+  "full_method_info": "public static int rgb565(Color color) {\n    return ((int) (color.r * 31) << 11) | ((int) (color.g * 63) << 5) | (int) (color.b * 31);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

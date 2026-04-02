@@ -1,0 +1,20 @@
+{
+  "className": "CircleMutant",
+  "methodName": "setX",
+  "brief": "public void setX(float x){}",
+  "methodSignature": "setX(float)",
+  "sourceCode": "public void setX(float x) {\n\t\tthis.x = x;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the x-coordinate of circle center\n *\n * @param x The x-coordinate\n */\npublic void setX(float x) {\n    this.x = x;\n}",
+  "method_comment": "\n\t * Sets the x-coordinate of circle center\n\t * \n\t * @param x The x-coordinate\n\t ",
+  "method_annotation": ""
+}

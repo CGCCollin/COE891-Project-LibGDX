@@ -1,0 +1,30 @@
+{
+  "className": "PlaneMutant",
+  "methodName": "set",
+  "brief": "public void set(Vector3 point1, Vector3 point2, Vector3 point3){}",
+  "methodSignature": "set(Vector3, Vector3, Vector3)",
+  "sourceCode": "public void set(Vector3 point1, Vector3 point2, Vector3 point3) {\n\t\tnormal.set(point1).sub(point2).crs(point2.x - point3.x, point2.y - point3.y, point2.z - point3.z).nor();\n\t\td = -point1.dot(normal);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector3",
+    "Vector3",
+    "Vector3"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "nor()",
+      "crs(float, float, float)",
+      "sub(Vector3)",
+      "set(Vector3)",
+      "dot(Vector3)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets the plane normal and distance to the origin based on the three given\n * points which are considered to be on the plane.\n * The normal is calculated via a cross product between\n * (point1-point2)x(point2-point3)\n *\n * @param point1\n * @param point2\n * @param point3\n */\npublic void set(Vector3 point1, Vector3 point2, Vector3 point3) {\n    normal.set(point1).sub(point2).crs(point2.x - point3.x, point2.y - point3.y, point2.z - point3.z).nor();\n    d = -point1.dot(normal);\n}",
+  "method_comment": "\n\t * Sets the plane normal and distance to the origin based on the three given\n\t * points which are considered to be on the plane.\n\t * The normal is calculated via a cross product between\n\t * (point1-point2)x(point2-point3)\n\t * \n\t * @param point1\n\t * @param point2\n\t * @param point3\n\t ",
+  "method_annotation": ""
+}

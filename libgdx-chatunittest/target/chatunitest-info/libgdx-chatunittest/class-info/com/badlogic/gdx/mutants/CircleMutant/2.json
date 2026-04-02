@@ -1,0 +1,22 @@
+{
+  "className": "CircleMutant",
+  "methodName": "set",
+  "brief": "public void set(Circle circle){}",
+  "methodSignature": "set(Circle)",
+  "sourceCode": "public void set(Circle circle) {\n\t\tthis.x = circle.x;\n\t\tthis.y = circle.y;\n\t\tthis.radius = circle.radius;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Circle"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Circle": []
+  },
+  "full_method_info": "/**\n * Sets a new location and radius for this circle, based upon another circle.\n *\n * @param circle The circle to copy the position and radius of.\n */\npublic void set(Circle circle) {\n    this.x = circle.x;\n    this.y = circle.y;\n    this.radius = circle.radius;\n}",
+  "method_comment": "\n\t * Sets a new location and radius for this circle, based upon another circle.\n\t * \n\t * @param circle The circle to copy the position and radius of.\n\t ",
+  "method_annotation": ""
+}

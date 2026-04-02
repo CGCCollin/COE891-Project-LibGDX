@@ -1,0 +1,18 @@
+{
+  "className": "Color",
+  "methodName": "premultiplyAlpha",
+  "brief": "public Color premultiplyAlpha (){}",
+  "methodSignature": "premultiplyAlpha()",
+  "sourceCode": "public Color premultiplyAlpha () {\n\t\tr *= a;\n\t\tg *= a;\n\t\tb *= a;\n\t\treturn this;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Multiplies the RGB values by the alpha.\n */\npublic Color premultiplyAlpha() {\n    r *= a;\n    g *= a;\n    b *= a;\n    return this;\n}",
+  "method_comment": " Multiplies the RGB values by the alpha. ",
+  "method_annotation": ""
+}

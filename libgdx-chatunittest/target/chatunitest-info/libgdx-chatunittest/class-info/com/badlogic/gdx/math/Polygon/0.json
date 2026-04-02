@@ -1,0 +1,18 @@
+{
+  "className": "Polygon",
+  "methodName": "getVertices",
+  "brief": "public float[] getVertices (){}",
+  "methodSignature": "getVertices()",
+  "sourceCode": "public float[] getVertices () {\n\t\treturn localVertices;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the polygon's local vertices without scaling or rotation and without being offset by the polygon position.\n */\npublic float[] getVertices() {\n    return localVertices;\n}",
+  "method_comment": " Returns the polygon's local vertices without scaling or rotation and without being offset by the polygon position. ",
+  "method_annotation": ""
+}

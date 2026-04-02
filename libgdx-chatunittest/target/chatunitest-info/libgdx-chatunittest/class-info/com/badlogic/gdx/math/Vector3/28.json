@@ -1,0 +1,22 @@
+{
+  "className": "Vector3",
+  "methodName": "dst2",
+  "brief": "public float dst2 (float x, float y, float z){}",
+  "methodSignature": "dst2(float, float, float)",
+  "sourceCode": "public float dst2 (float x, float y, float z) {\n\t\tfinal float a = x - this.x;\n\t\tfinal float b = y - this.y;\n\t\tfinal float c = z - this.z;\n\t\treturn a * a + b * b + c * c;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the squared distance between this point and the given point\n * @param x The x-component of the other point\n * @param y The y-component of the other point\n * @param z The z-component of the other point\n * @return The squared distance\n */\npublic float dst2(float x, float y, float z) {\n    final float a = x - this.x;\n    final float b = y - this.y;\n    final float c = z - this.z;\n    return a * a + b * b + c * c;\n}",
+  "method_comment": " Returns the squared distance between this point and the given point\n\t * @param x The x-component of the other point\n\t * @param y The y-component of the other point\n\t * @param z The z-component of the other point\n\t * @return The squared distance ",
+  "method_annotation": ""
+}

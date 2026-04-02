@@ -1,0 +1,20 @@
+{
+  "className": "Polygon",
+  "methodName": "rotate",
+  "brief": "public void rotate (float degrees){}",
+  "methodSignature": "rotate(float)",
+  "sourceCode": "public void rotate (float degrees) {\n\t\trotation += degrees;\n\t\tdirty = true;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Applies additional rotation to the polygon by the supplied degrees.\n */\npublic void rotate(float degrees) {\n    rotation += degrees;\n    dirty = true;\n}",
+  "method_comment": " Applies additional rotation to the polygon by the supplied degrees. ",
+  "method_annotation": ""
+}

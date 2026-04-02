@@ -1,0 +1,25 @@
+{
+  "className": "MathUtils",
+  "methodName": "log",
+  "brief": "static public float log (float a, float value){}",
+  "methodSignature": "log(float, float)",
+  "sourceCode": "static public float log (float a, float value) {\n\t\treturn (float)(Math.log(value) / Math.log(a));\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "java.lang.Math": [
+      "log(double)"
+    ]
+  },
+  "full_method_info": "/**\n * @return the logarithm of value with base a\n */\nstatic public float log(float a, float value) {\n    return (float) (Math.log(value) / Math.log(a));\n}",
+  "method_comment": " @return the logarithm of value with base a ",
+  "method_annotation": ""
+}

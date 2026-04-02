@@ -1,0 +1,18 @@
+{
+  "className": "Polygon",
+  "methodName": "getRotation",
+  "brief": "public float getRotation (){}",
+  "methodSignature": "getRotation()",
+  "sourceCode": "public float getRotation () {\n\t\treturn rotation;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the total rotation applied to the polygon.\n */\npublic float getRotation() {\n    return rotation;\n}",
+  "method_comment": " Returns the total rotation applied to the polygon. ",
+  "method_annotation": ""
+}

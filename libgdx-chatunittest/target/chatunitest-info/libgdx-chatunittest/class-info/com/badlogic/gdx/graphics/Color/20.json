@@ -1,0 +1,25 @@
+{
+  "className": "Color",
+  "methodName": "valueOf",
+  "brief": "public static Color valueOf (String hex){}",
+  "methodSignature": "valueOf(String)",
+  "sourceCode": "public static Color valueOf (String hex) {\n\t\treturn valueOf(hex, new Color());\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "String"
+  ],
+  "dependentMethods": {
+    "java.lang.String": [],
+    "com.badlogic.gdx.graphics.Color": [
+      "valueOf(String, Color)"
+    ]
+  },
+  "full_method_info": "/**\n * Returns a new color from a hex string with the format RRGGBBAA.\n * @see #toString()\n */\npublic static Color valueOf(String hex) {\n    return valueOf(hex, new Color());\n}",
+  "method_comment": " Returns a new color from a hex string with the format RRGGBBAA.\n\t * @see #toString() ",
+  "method_annotation": ""
+}

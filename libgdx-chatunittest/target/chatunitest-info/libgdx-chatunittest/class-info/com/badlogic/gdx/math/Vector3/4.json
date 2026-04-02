@@ -1,0 +1,29 @@
+{
+  "className": "Vector3",
+  "methodName": "setFromSpherical",
+  "brief": "public Vector3 setFromSpherical (float azimuthalAngle, float polarAngle){}",
+  "methodSignature": "setFromSpherical(float, float)",
+  "sourceCode": "public Vector3 setFromSpherical (float azimuthalAngle, float polarAngle) {\n\t\tfloat cosPolar = MathUtils.cos(polarAngle);\n\t\tfloat sinPolar = MathUtils.sin(polarAngle);\n\n\t\tfloat cosAzim = MathUtils.cos(azimuthalAngle);\n\t\tfloat sinAzim = MathUtils.sin(azimuthalAngle);\n\n\t\treturn this.set(cosAzim * sinPolar, sinAzim * sinPolar, cosPolar);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.MathUtils": [
+      "sin(float)",
+      "cos(float)"
+    ],
+    "com.badlogic.gdx.math.Vector3": [
+      "set(float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets the components from the given spherical coordinate\n * @param azimuthalAngle The angle between x-axis in radians [0, 2pi]\n * @param polarAngle The angle between z-axis in radians [0, pi]\n * @return This vector for chaining\n */\npublic Vector3 setFromSpherical(float azimuthalAngle, float polarAngle) {\n    float cosPolar = MathUtils.cos(polarAngle);\n    float sinPolar = MathUtils.sin(polarAngle);\n    float cosAzim = MathUtils.cos(azimuthalAngle);\n    float sinAzim = MathUtils.sin(azimuthalAngle);\n    return this.set(cosAzim * sinPolar, sinAzim * sinPolar, cosPolar);\n}",
+  "method_comment": " Sets the components from the given spherical coordinate\n\t * @param azimuthalAngle The angle between x-axis in radians [0, 2pi]\n\t * @param polarAngle The angle between z-axis in radians [0, pi]\n\t * @return This vector for chaining ",
+  "method_annotation": ""
+}

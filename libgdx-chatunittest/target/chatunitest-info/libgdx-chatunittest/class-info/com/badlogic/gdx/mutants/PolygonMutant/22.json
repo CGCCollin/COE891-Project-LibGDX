@@ -1,0 +1,18 @@
+{
+  "className": "PolygonMutant",
+  "methodName": "getOriginY",
+  "brief": "public float getOriginY(){}",
+  "methodSignature": "getOriginY()",
+  "sourceCode": "public float getOriginY() {\n\t\treturn originY;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the y-coordinate of the polygon's origin point.\n */\npublic float getOriginY() {\n    return originY;\n}",
+  "method_comment": " Returns the y-coordinate of the polygon's origin point. ",
+  "method_annotation": ""
+}

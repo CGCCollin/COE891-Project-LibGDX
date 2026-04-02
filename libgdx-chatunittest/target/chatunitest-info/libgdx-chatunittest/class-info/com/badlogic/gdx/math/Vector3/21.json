@@ -1,0 +1,18 @@
+{
+  "className": "Vector3",
+  "methodName": "len2",
+  "brief": "@Override\r\n\tpublic float len2 (){}",
+  "methodSignature": "len2()",
+  "sourceCode": "@Override\n\tpublic float len2 () {\n\t\treturn x * x + y * y + z * z;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "@Override\npublic float len2() {\n    return x * x + y * y + z * z;\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

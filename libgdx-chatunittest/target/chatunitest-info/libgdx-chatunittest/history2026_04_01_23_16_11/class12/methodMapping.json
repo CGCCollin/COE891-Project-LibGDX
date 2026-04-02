@@ -1,0 +1,176 @@
+{
+  "method0": {
+    "methodName": "getVertices",
+    "signature": "getVertices()",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method1": {
+    "methodName": "getTransformedVertices",
+    "signature": "getTransformedVertices()",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method10": {
+    "methodName": "scale",
+    "signature": "scale(float)",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method11": {
+    "methodName": "dirty",
+    "signature": "dirty()",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method12": {
+    "methodName": "area",
+    "signature": "area()",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method13": {
+    "methodName": "getVertexCount",
+    "signature": "getVertexCount()",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method14": {
+    "methodName": "getVertex",
+    "signature": "getVertex(int, Vector2)",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method15": {
+    "methodName": "getCentroid",
+    "signature": "getCentroid(Vector2)",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method16": {
+    "methodName": "getBoundingRectangle",
+    "signature": "getBoundingRectangle()",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method17": {
+    "methodName": "contains",
+    "signature": "contains(float, float)",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method18": {
+    "methodName": "contains",
+    "signature": "contains(Vector2)",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method19": {
+    "methodName": "getX",
+    "signature": "getX()",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method2": {
+    "methodName": "setOrigin",
+    "signature": "setOrigin(float, float)",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method20": {
+    "methodName": "getY",
+    "signature": "getY()",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method21": {
+    "methodName": "getOriginX",
+    "signature": "getOriginX()",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method22": {
+    "methodName": "getOriginY",
+    "signature": "getOriginY()",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method23": {
+    "methodName": "getRotation",
+    "signature": "getRotation()",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method24": {
+    "methodName": "getScaleX",
+    "signature": "getScaleX()",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method25": {
+    "methodName": "getScaleY",
+    "signature": "getScaleY()",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method26": {
+    "methodName": "resetTransformations",
+    "signature": "resetTransformations()",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method27": {
+    "methodName": "PolygonMutant",
+    "signature": "PolygonMutant()",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method28": {
+    "methodName": "PolygonMutant",
+    "signature": "PolygonMutant(float[])",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method3": {
+    "methodName": "setPosition",
+    "signature": "setPosition(float, float)",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method4": {
+    "methodName": "setVertices",
+    "signature": "setVertices(float[])",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method5": {
+    "methodName": "setVertex",
+    "signature": "setVertex(int, float, float)",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method6": {
+    "methodName": "translate",
+    "signature": "translate(float, float)",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method7": {
+    "methodName": "setRotation",
+    "signature": "setRotation(float)",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method8": {
+    "methodName": "rotate",
+    "signature": "rotate(float)",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method9": {
+    "methodName": "setScale",
+    "signature": "setScale(float, float)",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  }
+}

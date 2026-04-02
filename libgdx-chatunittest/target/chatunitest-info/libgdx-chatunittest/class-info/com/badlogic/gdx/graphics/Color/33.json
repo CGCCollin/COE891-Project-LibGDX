@@ -1,0 +1,22 @@
+{
+  "className": "Color",
+  "methodName": "rgba4444",
+  "brief": "public static int rgba4444 (Color color){}",
+  "methodSignature": "rgba4444(Color)",
+  "sourceCode": "public static int rgba4444 (Color color) {\n\t\treturn ((int)(color.r * 15) << 12) | ((int)(color.g * 15) << 8) | ((int)(color.b * 15) << 4) | (int)(color.a * 15);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Color"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.graphics.Color": []
+  },
+  "full_method_info": "public static int rgba4444(Color color) {\n    return ((int) (color.r * 15) << 12) | ((int) (color.g * 15) << 8) | ((int) (color.b * 15) << 4) | (int) (color.a * 15);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

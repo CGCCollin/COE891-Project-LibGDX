@@ -1,0 +1,20 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "setY",
+  "brief": "public RectangleMutant setY(float y){}",
+  "methodSignature": "setY(float)",
+  "sourceCode": "public RectangleMutant setY(float y) {\n\t\tthis.y = y;\n\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the y-coordinate of the bottom left corner\n *\n * @param y The y-coordinate\n * @return this rectangle for chaining\n */\npublic RectangleMutant setY(float y) {\n    this.y = y;\n    return this;\n}",
+  "method_comment": "\n\t * Sets the y-coordinate of the bottom left corner\n\t * \n\t * @param y The y-coordinate\n\t * @return this rectangle for chaining\n\t ",
+  "method_annotation": ""
+}

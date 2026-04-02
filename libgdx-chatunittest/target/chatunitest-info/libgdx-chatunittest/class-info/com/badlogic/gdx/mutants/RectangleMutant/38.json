@@ -1,0 +1,23 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "RectangleMutant",
+  "brief": "public RectangleMutant(float x, float y, float width, float height){}",
+  "methodSignature": "RectangleMutant(float, float, float, float)",
+  "sourceCode": "public RectangleMutant(float x, float y, float width, float height) {\n\t\tthis.x = x;\n\t\tthis.y = y;\n\t\tthis.width = width;\n\t\tthis.height = height;\n\t}",
+  "useField": true,
+  "isConstructor": true,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "public RectangleMutant(float x, float y, float width, float height) {\n    this.x = x;\n    this.y = y;\n    this.width = width;\n    this.height = height;\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

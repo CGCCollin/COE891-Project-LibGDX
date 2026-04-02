@@ -1,0 +1,18 @@
+{
+  "className": "Polygon",
+  "methodName": "getY",
+  "brief": "public float getY (){}",
+  "methodSignature": "getY()",
+  "sourceCode": "public float getY () {\n\t\treturn y;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the y-coordinate of the polygon's position within the world.\n */\npublic float getY() {\n    return y;\n}",
+  "method_comment": " Returns the y-coordinate of the polygon's position within the world. ",
+  "method_annotation": ""
+}

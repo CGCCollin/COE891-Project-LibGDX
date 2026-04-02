@@ -1,0 +1,24 @@
+{
+  "className": "Vector3",
+  "methodName": "add",
+  "brief": "public Vector3 add (float values){}",
+  "methodSignature": "add(float)",
+  "sourceCode": "public Vector3 add (float values) {\n\t\treturn this.set(this.x + values, this.y + values, this.z + values);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "set(float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Adds the given value to all three components of the vector.\n *\n * @param values The value\n * @return This vector for chaining\n */\npublic Vector3 add(float values) {\n    return this.set(this.x + values, this.y + values, this.z + values);\n}",
+  "method_comment": " Adds the given value to all three components of the vector.\n\t *\n\t * @param values The value\n\t * @return This vector for chaining ",
+  "method_annotation": ""
+}

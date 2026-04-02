@@ -1,0 +1,24 @@
+{
+  "className": "Vector3",
+  "methodName": "epsilonEquals",
+  "brief": "public boolean epsilonEquals (final Vector3 other){}",
+  "methodSignature": "epsilonEquals(Vector3)",
+  "sourceCode": "public boolean epsilonEquals (final Vector3 other) {\n\t\treturn epsilonEquals(other, MathUtils.FLOAT_ROUNDING_ERROR);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector3"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "epsilonEquals(Vector3, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Compares this vector with the other vector using MathUtils.FLOAT_ROUNDING_ERROR for fuzzy equality testing\n *\n * @param other other vector to compare\n * @return true if vector are equal, otherwise false\n */\npublic boolean epsilonEquals(final Vector3 other) {\n    return epsilonEquals(other, MathUtils.FLOAT_ROUNDING_ERROR);\n}",
+  "method_comment": " Compares this vector with the other vector using MathUtils.FLOAT_ROUNDING_ERROR for fuzzy equality testing\n\t *\n\t * @param other other vector to compare\n\t * @return true if vector are equal, otherwise false ",
+  "method_annotation": ""
+}

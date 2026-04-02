@@ -1,0 +1,20 @@
+{
+  "className": "Rectangle",
+  "methodName": "setY",
+  "brief": "public Rectangle setY (float y){}",
+  "methodSignature": "setY(float)",
+  "sourceCode": "public Rectangle setY (float y) {\n\t\tthis.y = y;\n\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the y-coordinate of the bottom left corner\n * @param y The y-coordinate\n * @return this rectangle for chaining\n */\npublic Rectangle setY(float y) {\n    this.y = y;\n    return this;\n}",
+  "method_comment": " Sets the y-coordinate of the bottom left corner\n\t * @param y The y-coordinate\n\t * @return this rectangle for chaining ",
+  "method_annotation": ""
+}

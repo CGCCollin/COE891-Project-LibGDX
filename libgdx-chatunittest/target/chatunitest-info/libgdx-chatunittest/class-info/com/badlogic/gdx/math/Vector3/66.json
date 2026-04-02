@@ -1,0 +1,18 @@
+{
+  "className": "Vector3",
+  "methodName": "toString",
+  "brief": "@Override\r\n\tpublic String toString (){}",
+  "methodSignature": "toString()",
+  "sourceCode": "@Override\n\tpublic String toString () {\n\t\treturn \"(\" + x + \",\" + y + \",\" + z + \")\";\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Converts this {@code Vector3} to a string in the format {@code (x,y,z)}.\n * @return a string representation of this object.\n */\n@Override\npublic String toString() {\n    return \"(\" + x + \",\" + y + \",\" + z + \")\";\n}",
+  "method_comment": " Converts this {@code Vector3} to a string in the format {@code (x,y,z)}.\n\t * @return a string representation of this object. ",
+  "method_annotation": "@Override\n"
+}

@@ -1,0 +1,20 @@
+{
+  "className": "PolygonMutant",
+  "methodName": "setRotation",
+  "brief": "public void setRotation(float degrees){}",
+  "methodSignature": "setRotation(float)",
+  "sourceCode": "public void setRotation(float degrees) {\n\t\tthis.rotation = degrees;\n\t\tdirty = true;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the polygon to be rotated by the supplied degrees.\n */\npublic void setRotation(float degrees) {\n    this.rotation = degrees;\n    dirty = true;\n}",
+  "method_comment": " Sets the polygon to be rotated by the supplied degrees. ",
+  "method_annotation": ""
+}

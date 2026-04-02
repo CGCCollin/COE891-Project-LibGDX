@@ -1,0 +1,26 @@
+{
+  "className": "Vector3",
+  "methodName": "set",
+  "brief": "public Vector3 set (final Vector2 vector, float z){}",
+  "methodSignature": "set(Vector2, float)",
+  "sourceCode": "public Vector3 set (final Vector2 vector, float z) {\n\t\treturn this.set(vector.x, vector.y, z);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector2",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector2": [],
+    "com.badlogic.gdx.math.Vector3": [
+      "set(float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets the components of the given vector and z-component\n *\n * @param vector The vector\n * @param z The z-component\n * @return This vector for chaining\n */\npublic Vector3 set(final Vector2 vector, float z) {\n    return this.set(vector.x, vector.y, z);\n}",
+  "method_comment": " Sets the components of the given vector and z-component\n\t *\n\t * @param vector The vector\n\t * @param z The z-component\n\t * @return This vector for chaining ",
+  "method_annotation": ""
+}

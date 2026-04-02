@@ -1,0 +1,22 @@
+{
+  "className": "MathUtils",
+  "methodName": "randomSign",
+  "brief": "static public int randomSign (){}",
+  "methodSignature": "randomSign()",
+  "sourceCode": "static public int randomSign () {\n\t\treturn 1 | (random.nextInt() >> 31);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {
+    "java.util.Random": [
+      "nextInt()"
+    ]
+  },
+  "full_method_info": "/**\n * Returns -1 or 1, randomly.\n */\nstatic public int randomSign() {\n    return 1 | (random.nextInt() >> 31);\n}",
+  "method_comment": " Returns -1 or 1, randomly. ",
+  "method_annotation": ""
+}

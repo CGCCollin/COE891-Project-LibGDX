@@ -1,0 +1,18 @@
+{
+  "className": "Plane",
+  "methodName": "getD",
+  "brief": "public float getD (){}",
+  "methodSignature": "getD()",
+  "sourceCode": "public float getD () {\n\t\treturn d;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * @return The distance to the origin\n */\npublic float getD() {\n    return d;\n}",
+  "method_comment": " @return The distance to the origin ",
+  "method_annotation": ""
+}

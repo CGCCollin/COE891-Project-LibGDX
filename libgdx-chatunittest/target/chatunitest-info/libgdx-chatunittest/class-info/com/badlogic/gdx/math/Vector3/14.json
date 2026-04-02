@@ -1,0 +1,24 @@
+{
+  "className": "Vector3",
+  "methodName": "scl",
+  "brief": "@Override\r\n\tpublic Vector3 scl (final Vector3 other){}",
+  "methodSignature": "scl(Vector3)",
+  "sourceCode": "@Override\n\tpublic Vector3 scl (final Vector3 other) {\n\t\treturn this.set(x * other.x, y * other.y, z * other.z);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector3"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "set(float, float, float)"
+    ]
+  },
+  "full_method_info": "@Override\npublic Vector3 scl(final Vector3 other) {\n    return this.set(x * other.x, y * other.y, z * other.z);\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

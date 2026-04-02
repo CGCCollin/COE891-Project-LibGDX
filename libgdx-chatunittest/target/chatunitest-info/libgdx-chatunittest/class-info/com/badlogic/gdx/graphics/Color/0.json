@@ -1,0 +1,22 @@
+{
+  "className": "Color",
+  "methodName": "set",
+  "brief": "public Color set (Color color){}",
+  "methodSignature": "set(Color)",
+  "sourceCode": "public Color set (Color color) {\n\t\tthis.r = color.r;\n\t\tthis.g = color.g;\n\t\tthis.b = color.b;\n\t\tthis.a = color.a;\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Color"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.graphics.Color": []
+  },
+  "full_method_info": "/**\n * Sets this color to the given color.\n *\n * @param color the Color\n * @return this color.\n */\npublic Color set(Color color) {\n    this.r = color.r;\n    this.g = color.g;\n    this.b = color.b;\n    this.a = color.a;\n    return this;\n}",
+  "method_comment": " Sets this color to the given color.\n\t * \n\t * @param color the Color\n\t * @return this color. ",
+  "method_annotation": ""
+}

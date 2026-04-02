@@ -1,0 +1,27 @@
+{
+  "className": "Color",
+  "methodName": "sub",
+  "brief": "public Color sub (float r, float g, float b, float a){}",
+  "methodSignature": "sub(float, float, float, float)",
+  "sourceCode": "public Color sub (float r, float g, float b, float a) {\n\t\tthis.r -= r;\n\t\tthis.g -= g;\n\t\tthis.b -= b;\n\t\tthis.a -= a;\n\t\treturn clamp();\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.graphics.Color": [
+      "clamp()"
+    ]
+  },
+  "full_method_info": "/**\n * Subtracts the given values from this Color's component values.\n *\n * @param r Red component\n * @param g Green component\n * @param b Blue component\n * @param a Alpha component\n *\n * @return this Color for chaining\n */\npublic Color sub(float r, float g, float b, float a) {\n    this.r -= r;\n    this.g -= g;\n    this.b -= b;\n    this.a -= a;\n    return clamp();\n}",
+  "method_comment": " Subtracts the given values from this Color's component values.\n\t * \n\t * @param r Red component\n\t * @param g Green component\n\t * @param b Blue component\n\t * @param a Alpha component\n\t * \n\t * @return this Color for chaining ",
+  "method_annotation": ""
+}

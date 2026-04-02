@@ -1,0 +1,47 @@
+{
+  "attempt0": {
+    "testClassName": "PolygonMutant_resetTransformations_26_0_Test",
+    "fullName": "com.badlogic.gdx.mutants.PolygonMutant_resetTransformations_26_0_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\PolygonMutant_resetTransformations_26_0_Test.java",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "resetTransformations",
+    "methodSig": "resetTransformations()"
+  },
+  "attempt1": {
+    "testClassName": "PolygonMutant_resetTransformations_26_1_Test",
+    "fullName": "com.badlogic.gdx.mutants.PolygonMutant_resetTransformations_26_1_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\PolygonMutant_resetTransformations_26_0_Test.java",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "resetTransformations",
+    "methodSig": "resetTransformations()"
+  },
+  "attempt2": {
+    "testClassName": "PolygonMutant_resetTransformations_26_2_Test",
+    "fullName": "com.badlogic.gdx.mutants.PolygonMutant_resetTransformations_26_2_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\PolygonMutant_resetTransformations_26_0_Test.java",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "resetTransformations",
+    "methodSig": "resetTransformations()"
+  },
+  "attempt3": {
+    "testClassName": "PolygonMutant_resetTransformations_26_3_Test",
+    "fullName": "com.badlogic.gdx.mutants.PolygonMutant_resetTransformations_26_3_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\PolygonMutant_resetTransformations_26_0_Test.java",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "resetTransformations",
+    "methodSig": "resetTransformations()"
+  },
+  "attempt4": {
+    "testClassName": "PolygonMutant_resetTransformations_26_4_Test",
+    "fullName": "com.badlogic.gdx.mutants.PolygonMutant_resetTransformations_26_4_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\PolygonMutant_resetTransformations_26_0_Test.java",
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "resetTransformations",
+    "methodSig": "resetTransformations()"
+  }
+}

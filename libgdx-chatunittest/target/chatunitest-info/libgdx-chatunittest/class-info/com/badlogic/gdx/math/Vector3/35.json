@@ -1,0 +1,25 @@
+{
+  "className": "Vector3",
+  "methodName": "mul4x3",
+  "brief": "public Vector3 mul4x3 (float[] matrix){}",
+  "methodSignature": "mul4x3(float[])",
+  "sourceCode": "public Vector3 mul4x3 (float[] matrix) {\n\t\treturn set(x * matrix[0] + y * matrix[3] + z * matrix[6] + matrix[9],\n\t\t\tx * matrix[1] + y * matrix[4] + z * matrix[7] + matrix[10], x * matrix[2] + y * matrix[5] + z * matrix[8] + matrix[11]);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float[]"
+  ],
+  "dependentMethods": {
+    "float": [],
+    "com.badlogic.gdx.math.Vector3": [
+      "set(float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Left-multiplies the vector by the given 4x3 column major matrix. The matrix should be composed by a 3x3 matrix representing\n * rotation and scale plus a 1x3 matrix representing the translation.\n * @param matrix The matrix\n * @return This vector for chaining\n */\npublic Vector3 mul4x3(float[] matrix) {\n    return set(x * matrix[0] + y * matrix[3] + z * matrix[6] + matrix[9], x * matrix[1] + y * matrix[4] + z * matrix[7] + matrix[10], x * matrix[2] + y * matrix[5] + z * matrix[8] + matrix[11]);\n}",
+  "method_comment": " Left-multiplies the vector by the given 4x3 column major matrix. The matrix should be composed by a 3x3 matrix representing\n\t * rotation and scale plus a 1x3 matrix representing the translation.\n\t * @param matrix The matrix\n\t * @return This vector for chaining ",
+  "method_annotation": ""
+}

@@ -1,0 +1,25 @@
+{
+  "className": "MathUtils",
+  "methodName": "random",
+  "brief": "static public float random (float start, float end){}",
+  "methodSignature": "random(float, float)",
+  "sourceCode": "static public float random (float start, float end) {\n\t\treturn start + random.nextFloat() * (end - start);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "java.util.Random": [
+      "nextFloat()"
+    ]
+  },
+  "full_method_info": "/**\n * Returns a random number between start (inclusive) and end (exclusive).\n */\nstatic public float random(float start, float end) {\n    return start + random.nextFloat() * (end - start);\n}",
+  "method_comment": " Returns a random number between start (inclusive) and end (exclusive). ",
+  "method_annotation": ""
+}

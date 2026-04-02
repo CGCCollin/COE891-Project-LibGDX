@@ -1,0 +1,22 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "RectangleMutant",
+  "brief": "public RectangleMutant(RectangleMutant rect){}",
+  "methodSignature": "RectangleMutant(RectangleMutant)",
+  "sourceCode": "public RectangleMutant(RectangleMutant rect) {\n\t\tx = rect.x;\n\t\ty = rect.y;\n\t\twidth = rect.width;\n\t\theight = rect.height;\n\t}",
+  "useField": true,
+  "isConstructor": true,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "RectangleMutant"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.mutants.RectangleMutant": []
+  },
+  "full_method_info": "public RectangleMutant(RectangleMutant rect) {\n    x = rect.x;\n    y = rect.y;\n    width = rect.width;\n    height = rect.height;\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

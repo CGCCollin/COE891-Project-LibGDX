@@ -1,0 +1,59 @@
+package com.badlogic.gdx.mutants;
+
+import java.lang.reflect.Method;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import com.badlogic.gdx.math.*;
+
+public class PolygonMutant_area_12_0_Test {
+
+    private static final float EPSILON = 0.0001f;
+
+    private PolygonMutant polygon;
+
+    @BeforeEach
+    public void setUp() throws Exception {
+        polygon = new PolygonMutant();
+        Method method = PolygonMutant.class.getDeclaredMethod("setVertices", float[].class);
+        method.setAccessible(true);
+        method.invoke(polygon, new float[] { 0, 0, 1, 0, 1, 1, 0, 1 });
+    }
+
+    @Test
+    public void testArea() throws Exception {
+        Method areaMethod = PolygonMutant.class.getDeclaredMethod("area");
+        areaMethod.setAccessible(true);
+        float area = (float) areaMethod.invoke(polygon);
+        Assertions.assertEquals(2f, area, EPSILON);
+    }
+
+    @Test
+    public void testAreaWithRotation() throws Exception {
+        Method setRotationMethod = PolygonMutant.class.getDeclaredMethod("setRotation", float.class);
+        setRotationMethod.setAccessible(true);
+        setRotationMethod.invoke(polygon, 45f);
+        float area = (float) areaMethod.invoke(polygon);
+        Assertions.assertEquals(2f, area, EPSILON);
+    }
+
+    @Test
+    public void testAreaWithScale() throws Exception {
+        Method setScaleMethod = PolygonMutant.class.getDeclaredMethod("setScale", float.class, float.class);
+        setScaleMethod.setAccessible(true);
+        setScaleMethod.invoke(polygon, 2f, 3f);
+        float area = (float) areaMethod.invoke(polygon);
+        Assertions.assertEquals(6f, area, EPSILON);
+    }
+}
+
+--------------------------------------------
+Error in PolygonMutant_area_12_0_Test: line 39 : cannot find symbol
+  symbol:   variable areaMethod
+  location: class com.badlogic.gdx.mutants.PolygonMutant_area_12_0_Test
+Error in PolygonMutant_area_12_0_Test: line 48 : cannot find symbol
+  symbol:   variable areaMethod
+  location: class com.badlogic.gdx.mutants.PolygonMutant_area_12_0_Test

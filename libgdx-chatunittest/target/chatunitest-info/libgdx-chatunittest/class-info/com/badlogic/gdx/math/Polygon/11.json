@@ -1,0 +1,18 @@
+{
+  "className": "Polygon",
+  "methodName": "dirty",
+  "brief": "public void dirty (){}",
+  "methodSignature": "dirty()",
+  "sourceCode": "public void dirty () {\n\t\tdirty = true;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the polygon's world vertices to be recalculated when calling {@link #getTransformedVertices()\n * getTransformedVertices}.\n */\npublic void dirty() {\n    dirty = true;\n}",
+  "method_comment": " Sets the polygon's world vertices to be recalculated when calling {@link #getTransformedVertices()\n\t * getTransformedVertices}. ",
+  "method_annotation": ""
+}

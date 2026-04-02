@@ -1,0 +1,25 @@
+{
+  "className": "MathUtils",
+  "methodName": "atan2Deg",
+  "brief": "public static float atan2Deg (final float y, float x){}",
+  "methodSignature": "atan2Deg(float, float)",
+  "sourceCode": "public static float atan2Deg (final float y, float x) {\n\t\tfloat n = y / x;\n\t\tif (n != n)\n\t\t\tn = (y == x ? 1f : -1.0f); // if both y and x are infinite, n would be NaN\n\t\telse if (n - n != n - n) x = 0f; // if n is infinite, y is infinitely larger than x.\n\t\tif (x > 0)\n\t\t\treturn (float)atanUncheckedDeg(n);\n\t\telse if (x < 0) {\n\t\t\tif (y >= 0) return (float)(atanUncheckedDeg(n) + 180.0);\n\t\t\treturn (float)(atanUncheckedDeg(n) - 180.0);\n\t\t} else if (y > 0)\n\t\t\treturn x + 90f;\n\t\telse if (y < 0) return x - 90f;\n\t\treturn x + y; // returns 0 for 0,0 or NaN if either y or x is NaN\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.MathUtils": [
+      "atanUncheckedDeg(double)"
+    ]
+  },
+  "full_method_info": "/**\n * Close approximation of the frequently-used trigonometric method atan2, using positive or negative degrees. Average absolute\n * error is 0.00006037 degrees; relative error is 0 degrees, maximum error is 0.00010396 degrees. Takes y and x (in that\n * unusual order) as floats, and returns the angle from the origin to that point in degrees. <br>\n * Credit for this goes to the 1955 research study \"Approximations for Digital Computers,\" by RAND Corporation. This is sheet\n * 11's algorithm, which is the fourth-fastest and fourth-least precise. The algorithms on sheets 8-10 are faster, but only by\n * a very small degree, and are considerably less precise. That study provides an {@link #atan(float)} method, and that cleanly\n * translates to atan2().\n * @param y y-component of the point to find the angle towards; note the parameter order is unusual by convention\n * @param x x-component of the point to find the angle towards; note the parameter order is unusual by convention\n * @return the angle to the given point, in degrees as a float; ranges from {@code -180} to {@code 180}\n */\npublic static float atan2Deg(final float y, float x) {\n    float n = y / x;\n    if (n != n)\n        // if both y and x are infinite, n would be NaN\n        n = (y == x ? 1f : -1.0f);\n    else // if n is infinite, y is infinitely larger than x.\n    if (n - n != n - n)\n        x = 0f;\n    if (x > 0)\n        return (float) atanUncheckedDeg(n);\n    else if (x < 0) {\n        if (y >= 0)\n            return (float) (atanUncheckedDeg(n) + 180.0);\n        return (float) (atanUncheckedDeg(n) - 180.0);\n    } else if (y > 0)\n        return x + 90f;\n    else if (y < 0)\n        return x - 90f;\n    // returns 0 for 0,0 or NaN if either y or x is NaN\n    return x + y;\n}",
+  "method_comment": " Close approximation of the frequently-used trigonometric method atan2, using positive or negative degrees. Average absolute\n\t * error is 0.00006037 degrees; relative error is 0 degrees, maximum error is 0.00010396 degrees. Takes y and x (in that\n\t * unusual order) as floats, and returns the angle from the origin to that point in degrees. <br>\n\t * Credit for this goes to the 1955 research study \"Approximations for Digital Computers,\" by RAND Corporation. This is sheet\n\t * 11's algorithm, which is the fourth-fastest and fourth-least precise. The algorithms on sheets 8-10 are faster, but only by\n\t * a very small degree, and are considerably less precise. That study provides an {@link #atan(float)} method, and that cleanly\n\t * translates to atan2().\n\t * @param y y-component of the point to find the angle towards; note the parameter order is unusual by convention\n\t * @param x x-component of the point to find the angle towards; note the parameter order is unusual by convention\n\t * @return the angle to the given point, in degrees as a float; ranges from {@code -180} to {@code 180} ",
+  "method_annotation": ""
+}

@@ -1,0 +1,21 @@
+{
+  "className": "Polygon",
+  "methodName": "setOrigin",
+  "brief": "public void setOrigin (float originX, float originY){}",
+  "methodSignature": "setOrigin(float, float)",
+  "sourceCode": "public void setOrigin (float originX, float originY) {\n\t\tthis.originX = originX;\n\t\tthis.originY = originY;\n\t\tdirty = true;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the origin point to which all of the polygon's local vertices are relative to.\n */\npublic void setOrigin(float originX, float originY) {\n    this.originX = originX;\n    this.originY = originY;\n    dirty = true;\n}",
+  "method_comment": " Sets the origin point to which all of the polygon's local vertices are relative to. ",
+  "method_annotation": ""
+}

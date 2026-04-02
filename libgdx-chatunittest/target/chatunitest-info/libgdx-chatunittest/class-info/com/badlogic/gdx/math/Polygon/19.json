@@ -1,0 +1,18 @@
+{
+  "className": "Polygon",
+  "methodName": "getX",
+  "brief": "public float getX (){}",
+  "methodSignature": "getX()",
+  "sourceCode": "public float getX () {\n\t\treturn x;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the x-coordinate of the polygon's position within the world.\n */\npublic float getX() {\n    return x;\n}",
+  "method_comment": " Returns the x-coordinate of the polygon's position within the world. ",
+  "method_annotation": ""
+}

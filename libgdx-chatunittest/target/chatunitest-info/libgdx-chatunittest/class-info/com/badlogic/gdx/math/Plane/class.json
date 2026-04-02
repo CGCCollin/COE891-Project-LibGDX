@@ -1,0 +1,105 @@
+{
+  "fullClassName": "com.badlogic.gdx.math.Plane",
+  "className": "Plane",
+  "index": 4,
+  "modifier": "[public ]",
+  "extend": "[]",
+  "implement": "[Serializable]",
+  "packageName": "com.badlogic.gdx.math",
+  "packageDeclaration": "package com.badlogic.gdx.math;",
+  "classSignature": "public class Plane",
+  "hasConstructor": true,
+  "isPublic": true,
+  "isInterface": false,
+  "isAbstract": false,
+  "imports": [
+    "import java.io.Serializable;"
+  ],
+  "fields": [
+    "private static final long serialVersionUID = -1240652082930747866L;",
+    "public final Vector3 normal = new Vector3();",
+    "public float d = 0;"
+  ],
+  "superClasses": [],
+  "implementedTypes": [
+    "Serializable"
+  ],
+  "methodSigs": {
+    "set(Vector3, Vector3, Vector3)": "0",
+    "set(float, float, float, float)": "1",
+    "distance(Vector3)": "2",
+    "testPoint(Vector3)": "3",
+    "testPoint(float, float, float)": "4",
+    "isFrontFacing(Vector3)": "5",
+    "getNormal()": "6",
+    "getD()": "7",
+    "set(Vector3, Vector3)": "8",
+    "set(float, float, float, float, float, float)": "9",
+    "set(Plane)": "10",
+    "toString()": "11",
+    "Plane()": "12",
+    "Plane(Vector3, float)": "13",
+    "Plane(Vector3, Vector3)": "14",
+    "Plane(Vector3, Vector3, Vector3)": "15"
+  },
+  "methodsBrief": [
+    "public void set (Vector3 point1, Vector3 point2, Vector3 point3){}",
+    "public void set (float nx, float ny, float nz, float d){}",
+    "public float distance (Vector3 point){}",
+    "public PlaneSide testPoint (Vector3 point){}",
+    "public PlaneSide testPoint (float x, float y, float z){}",
+    "public boolean isFrontFacing (Vector3 direction){}",
+    "public Vector3 getNormal (){}",
+    "public float getD (){}",
+    "public void set (Vector3 point, Vector3 normal){}",
+    "public void set (float pointX, float pointY, float pointZ, float norX, float norY, float norZ){}",
+    "public void set (Plane plane){}",
+    "public String toString (){}",
+    "public Plane (){}",
+    "public Plane (Vector3 normal, float d){}",
+    "public Plane (Vector3 normal, Vector3 point){}",
+    "public Plane (Vector3 point1, Vector3 point2, Vector3 point3){}"
+  ],
+  "constructorSigs": [
+    "Plane()",
+    "Plane(Vector3, float)",
+    "Plane(Vector3, Vector3)",
+    "Plane(Vector3, Vector3, Vector3)"
+  ],
+  "constructorBrief": [
+    "public Plane (){}",
+    "public Plane (Vector3 normal, float d){}",
+    "public Plane (Vector3 normal, Vector3 point){}",
+    "public Plane (Vector3 point1, Vector3 point2, Vector3 point3){}"
+  ],
+  "getterSetterSigs": [
+    "set(Vector3, Vector3, Vector3)",
+    "set(float, float, float, float)",
+    "getNormal()",
+    "getD()",
+    "set(Vector3, Vector3)",
+    "set(float, float, float, float, float, float)",
+    "set(Plane)"
+  ],
+  "getterSetterBrief": [
+    "public void set (Vector3 point1, Vector3 point2, Vector3 point3){}",
+    "public void set (float nx, float ny, float nz, float d){}",
+    "public Vector3 getNormal (){}",
+    "public float getD (){}",
+    "public void set (Vector3 point, Vector3 normal){}",
+    "public void set (float pointX, float pointY, float pointZ, float norX, float norY, float norZ){}",
+    "public void set (Plane plane){}"
+  ],
+  "constructorDeps": {
+    "com.badlogic.gdx.math.Vector3": [
+      "nor()",
+      "set(Vector3)"
+    ],
+    "com.badlogic.gdx.math.Plane": [
+      "set(Vector3, Vector3, Vector3)"
+    ]
+  },
+  "compilationUnitCode": "/**\n * ****************************************************************************\n *  Copyright 2011 See AUTHORS file.\n *\n *  Licensed under the Apache License, Version 2.0 (the \"License\");\n *  you may not use this file except in compliance with the License.\n *  You may obtain a copy of the License at\n *\n *    http://www.apache.org/licenses/LICENSE-2.0\n *\n *  Unless required by applicable law or agreed to in writing, software\n *  distributed under the License is distributed on an \"AS IS\" BASIS,\n *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n *  See the License for the specific language governing permissions and\n *  limitations under the License.\n * ****************************************************************************\n */\npackage com.badlogic.gdx.math;\n\nimport java.io.Serializable;\n\n/**\n * A plane defined via a unit length normal and the distance from the origin, as you learned in your math class.\n *\n * @author badlogicgames@gmail.com\n */\npublic class Plane implements Serializable {\n\n    private static final long serialVersionUID = -1240652082930747866L;\n\n    /**\n     * Enum specifying on which side a point lies respective to the plane and it's normal. {@link PlaneSide#Front} is the side to\n     * which the normal points.\n     *\n     * @author mzechner\n     */\n    public enum PlaneSide {\n\n        OnPlane, Back, Front\n    }\n\n    public final Vector3 normal = new Vector3();\n\n    public float d = 0;\n\n    public Plane() {\n    }\n\n    public Plane(Vector3 normal, float d) {\n        this.normal.set(normal).nor();\n        this.d = d;\n    }\n\n    public Plane(Vector3 normal, Vector3 point) {\n        this.normal.set(normal).nor();\n        this.d = -this.normal.dot(point);\n    }\n\n    public Plane(Vector3 point1, Vector3 point2, Vector3 point3) {\n        set(point1, point2, point3);\n    }\n\n    /**\n     * Sets the plane normal and distance to the origin based on the three given points which are considered to be on the plane.\n     * The normal is calculated via a cross product between (point1-point2)x(point2-point3)\n     *\n     * @param point1\n     * @param point2\n     * @param point3\n     */\n    public void set(Vector3 point1, Vector3 point2, Vector3 point3) {\n        normal.set(point1).sub(point2).crs(point2.x - point3.x, point2.y - point3.y, point2.z - point3.z).nor();\n        d = -point1.dot(normal);\n    }\n\n    /**\n     * Sets the plane normal and distance\n     *\n     * @param nx normal x-component\n     * @param ny normal y-component\n     * @param nz normal z-component\n     * @param d distance to origin\n     */\n    public void set(float nx, float ny, float nz, float d) {\n        normal.set(nx, ny, nz);\n        this.d = d;\n    }\n\n    /**\n     * Calculates the shortest signed distance between the plane and the given point.\n     *\n     * @param point The point\n     * @return the shortest signed distance between the plane and the point\n     */\n    public float distance(Vector3 point) {\n        return normal.dot(point) + d;\n    }\n\n    /**\n     * Returns on which side the given point lies relative to the plane and its normal. PlaneSide.Front refers to the side the\n     * plane normal points to.\n     *\n     * @param point The point\n     * @return The side the point lies relative to the plane\n     */\n    public PlaneSide testPoint(Vector3 point) {\n        float dist = normal.dot(point) + d;\n        if (dist == 0)\n            return PlaneSide.OnPlane;\n        else if (dist < 0)\n            return PlaneSide.Back;\n        else\n            return PlaneSide.Front;\n    }\n\n    /**\n     * Returns on which side the given point lies relative to the plane and its normal. PlaneSide.Front refers to the side the\n     * plane normal points to.\n     *\n     * @param x\n     * @param y\n     * @param z\n     * @return The side the point lies relative to the plane\n     */\n    public PlaneSide testPoint(float x, float y, float z) {\n        float dist = normal.dot(x, y, z) + d;\n        if (dist == 0)\n            return PlaneSide.OnPlane;\n        else if (dist < 0)\n            return PlaneSide.Back;\n        else\n            return PlaneSide.Front;\n    }\n\n    /**\n     * Returns whether the plane is facing the direction vector. Think of the direction vector as the direction a camera looks in.\n     * This method will return true if the front side of the plane determined by its normal faces the camera.\n     *\n     * @param direction the direction\n     * @return whether the plane is front facing\n     */\n    public boolean isFrontFacing(Vector3 direction) {\n        float dot = normal.dot(direction);\n        return dot <= 0;\n    }\n\n    /**\n     * @return The normal\n     */\n    public Vector3 getNormal() {\n        return normal;\n    }\n\n    /**\n     * @return The distance to the origin\n     */\n    public float getD() {\n        return d;\n    }\n\n    /**\n     * Sets the plane to the given point and normal.\n     *\n     * @param point the point on the plane\n     * @param normal the normal of the plane\n     */\n    public void set(Vector3 point, Vector3 normal) {\n        this.normal.set(normal);\n        d = -point.dot(normal);\n    }\n\n    public void set(float pointX, float pointY, float pointZ, float norX, float norY, float norZ) {\n        this.normal.set(norX, norY, norZ);\n        d = -(pointX * norX + pointY * norY + pointZ * norZ);\n    }\n\n    /**\n     * Sets this plane from the given plane\n     *\n     * @param plane the plane\n     */\n    public void set(Plane plane) {\n        this.normal.set(plane.normal);\n        this.d = plane.d;\n    }\n\n    public String toString() {\n        return normal.toString() + \", \" + d;\n    }\n}\n",
+  "classDeclarationCode": "/**\n * A plane defined via a unit length normal and the distance from the origin, as you learned in your math class.\n *\n * @author badlogicgames@gmail.com\n */\npublic class Plane implements Serializable {\n\n    private static final long serialVersionUID = -1240652082930747866L;\n\n    /**\n     * Enum specifying on which side a point lies respective to the plane and it's normal. {@link PlaneSide#Front} is the side to\n     * which the normal points.\n     *\n     * @author mzechner\n     */\n    public enum PlaneSide {\n\n        OnPlane, Back, Front\n    }\n\n    public final Vector3 normal = new Vector3();\n\n    public float d = 0;\n\n    public Plane() {\n    }\n\n    public Plane(Vector3 normal, float d) {\n        this.normal.set(normal).nor();\n        this.d = d;\n    }\n\n    public Plane(Vector3 normal, Vector3 point) {\n        this.normal.set(normal).nor();\n        this.d = -this.normal.dot(point);\n    }\n\n    public Plane(Vector3 point1, Vector3 point2, Vector3 point3) {\n        set(point1, point2, point3);\n    }\n\n    /**\n     * Sets the plane normal and distance to the origin based on the three given points which are considered to be on the plane.\n     * The normal is calculated via a cross product between (point1-point2)x(point2-point3)\n     *\n     * @param point1\n     * @param point2\n     * @param point3\n     */\n    public void set(Vector3 point1, Vector3 point2, Vector3 point3) {\n        normal.set(point1).sub(point2).crs(point2.x - point3.x, point2.y - point3.y, point2.z - point3.z).nor();\n        d = -point1.dot(normal);\n    }\n\n    /**\n     * Sets the plane normal and distance\n     *\n     * @param nx normal x-component\n     * @param ny normal y-component\n     * @param nz normal z-component\n     * @param d distance to origin\n     */\n    public void set(float nx, float ny, float nz, float d) {\n        normal.set(nx, ny, nz);\n        this.d = d;\n    }\n\n    /**\n     * Calculates the shortest signed distance between the plane and the given point.\n     *\n     * @param point The point\n     * @return the shortest signed distance between the plane and the point\n     */\n    public float distance(Vector3 point) {\n        return normal.dot(point) + d;\n    }\n\n    /**\n     * Returns on which side the given point lies relative to the plane and its normal. PlaneSide.Front refers to the side the\n     * plane normal points to.\n     *\n     * @param point The point\n     * @return The side the point lies relative to the plane\n     */\n    public PlaneSide testPoint(Vector3 point) {\n        float dist = normal.dot(point) + d;\n        if (dist == 0)\n            return PlaneSide.OnPlane;\n        else if (dist < 0)\n            return PlaneSide.Back;\n        else\n            return PlaneSide.Front;\n    }\n\n    /**\n     * Returns on which side the given point lies relative to the plane and its normal. PlaneSide.Front refers to the side the\n     * plane normal points to.\n     *\n     * @param x\n     * @param y\n     * @param z\n     * @return The side the point lies relative to the plane\n     */\n    public PlaneSide testPoint(float x, float y, float z) {\n        float dist = normal.dot(x, y, z) + d;\n        if (dist == 0)\n            return PlaneSide.OnPlane;\n        else if (dist < 0)\n            return PlaneSide.Back;\n        else\n            return PlaneSide.Front;\n    }\n\n    /**\n     * Returns whether the plane is facing the direction vector. Think of the direction vector as the direction a camera looks in.\n     * This method will return true if the front side of the plane determined by its normal faces the camera.\n     *\n     * @param direction the direction\n     * @return whether the plane is front facing\n     */\n    public boolean isFrontFacing(Vector3 direction) {\n        float dot = normal.dot(direction);\n        return dot <= 0;\n    }\n\n    /**\n     * @return The normal\n     */\n    public Vector3 getNormal() {\n        return normal;\n    }\n\n    /**\n     * @return The distance to the origin\n     */\n    public float getD() {\n        return d;\n    }\n\n    /**\n     * Sets the plane to the given point and normal.\n     *\n     * @param point the point on the plane\n     * @param normal the normal of the plane\n     */\n    public void set(Vector3 point, Vector3 normal) {\n        this.normal.set(normal);\n        d = -point.dot(normal);\n    }\n\n    public void set(float pointX, float pointY, float pointZ, float norX, float norY, float norZ) {\n        this.normal.set(norX, norY, norZ);\n        d = -(pointX * norX + pointY * norY + pointZ * norZ);\n    }\n\n    /**\n     * Sets this plane from the given plane\n     *\n     * @param plane the plane\n     */\n    public void set(Plane plane) {\n        this.normal.set(plane.normal);\n        this.d = plane.d;\n    }\n\n    public String toString() {\n        return normal.toString() + \", \" + d;\n    }\n}",
+  "subClasses": []
+}

@@ -1,0 +1,30 @@
+{
+  "className": "Vector3",
+  "methodName": "rotateRad",
+  "brief": "public Vector3 rotateRad (float radians, float axisX, float axisY, float axisZ){}",
+  "methodSignature": "rotateRad(float, float, float, float)",
+  "sourceCode": "public Vector3 rotateRad (float radians, float axisX, float axisY, float axisZ) {\n\t\treturn this.mul(tmpMat.setToRotationRad(axisX, axisY, axisZ, radians));\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "mul(Matrix4)"
+    ],
+    "com.badlogic.gdx.math.Matrix4": [
+      "setToRotationRad(float, float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Rotates this vector by the given angle in radians around the given axis.\n *\n * @param radians the angle in radians\n * @param axisX the x-component of the axis\n * @param axisY the y-component of the axis\n * @param axisZ the z-component of the axis\n * @return This vector for chaining\n */\npublic Vector3 rotateRad(float radians, float axisX, float axisY, float axisZ) {\n    return this.mul(tmpMat.setToRotationRad(axisX, axisY, axisZ, radians));\n}",
+  "method_comment": " Rotates this vector by the given angle in radians around the given axis.\n\t *\n\t * @param radians the angle in radians\n\t * @param axisX the x-component of the axis\n\t * @param axisY the y-component of the axis\n\t * @param axisZ the z-component of the axis\n\t * @return This vector for chaining ",
+  "method_annotation": ""
+}

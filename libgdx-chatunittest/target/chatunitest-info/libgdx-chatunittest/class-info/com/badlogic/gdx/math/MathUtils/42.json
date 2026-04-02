@@ -1,0 +1,22 @@
+{
+  "className": "MathUtils",
+  "methodName": "lerpAngleDeg",
+  "brief": "public static float lerpAngleDeg (float fromDegrees, float toDegrees, float progress){}",
+  "methodSignature": "lerpAngleDeg(float, float, float)",
+  "sourceCode": "public static float lerpAngleDeg (float fromDegrees, float toDegrees, float progress) {\n\t\tfloat delta = (((toDegrees - fromDegrees) % 360f + 360f + 180f) % 360f) - 180f;\n\t\treturn ((fromDegrees + delta * progress) % 360f + 360f) % 360f;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Linearly interpolates between two angles in degrees. Takes into account that angles wrap at 360 degrees and always takes\n * the direction with the smallest delta angle.\n *\n * @param fromDegrees start angle in degrees\n * @param toDegrees target angle in degrees\n * @param progress interpolation value in the range [0, 1]\n * @return the interpolated angle in the range [0, 360[\n */\npublic static float lerpAngleDeg(float fromDegrees, float toDegrees, float progress) {\n    float delta = (((toDegrees - fromDegrees) % 360f + 360f + 180f) % 360f) - 180f;\n    return ((fromDegrees + delta * progress) % 360f + 360f) % 360f;\n}",
+  "method_comment": " Linearly interpolates between two angles in degrees. Takes into account that angles wrap at 360 degrees and always takes\n\t * the direction with the smallest delta angle.\n\t * \n\t * @param fromDegrees start angle in degrees\n\t * @param toDegrees target angle in degrees\n\t * @param progress interpolation value in the range [0, 1]\n\t * @return the interpolated angle in the range [0, 360[ ",
+  "method_annotation": ""
+}

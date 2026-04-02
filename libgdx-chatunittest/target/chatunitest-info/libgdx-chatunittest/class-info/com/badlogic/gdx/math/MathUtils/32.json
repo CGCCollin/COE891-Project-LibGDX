@@ -1,0 +1,20 @@
+{
+  "className": "MathUtils",
+  "methodName": "isPowerOfTwo",
+  "brief": "static public boolean isPowerOfTwo (int value){}",
+  "methodSignature": "isPowerOfTwo(int)",
+  "sourceCode": "static public boolean isPowerOfTwo (int value) {\n\t\treturn value != 0 && (value & value - 1) == 0;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "int"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "static public boolean isPowerOfTwo(int value) {\n    return value != 0 && (value & value - 1) == 0;\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

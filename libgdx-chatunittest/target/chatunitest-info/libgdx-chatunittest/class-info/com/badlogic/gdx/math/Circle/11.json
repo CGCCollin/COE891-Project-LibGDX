@@ -1,0 +1,22 @@
+{
+  "className": "Circle",
+  "methodName": "contains",
+  "brief": "public boolean contains (Circle c){}",
+  "methodSignature": "contains(Circle)",
+  "sourceCode": "public boolean contains (Circle c) {\n\t\tfinal float radiusDiff = radius - c.radius;\n\t\tif (radiusDiff < 0f) return false; // Can't contain bigger circle\n\t\tfinal float dx = x - c.x;\n\t\tfinal float dy = y - c.y;\n\t\tfinal float dst = dx * dx + dy * dy;\n\t\tfinal float radiusSum = radius + c.radius;\n\t\treturn (!(radiusDiff * radiusDiff < dst) && (dst < radiusSum * radiusSum));\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Circle"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Circle": []
+  },
+  "full_method_info": "/**\n * @param c the other {@link Circle}\n * @return whether this circle contains the other circle.\n */\npublic boolean contains(Circle c) {\n    final float radiusDiff = radius - c.radius;\n    // Can't contain bigger circle\n    if (radiusDiff < 0f)\n        return false;\n    final float dx = x - c.x;\n    final float dy = y - c.y;\n    final float dst = dx * dx + dy * dy;\n    final float radiusSum = radius + c.radius;\n    return (!(radiusDiff * radiusDiff < dst) && (dst < radiusSum * radiusSum));\n}",
+  "method_comment": " @param c the other {@link Circle}\n\t * @return whether this circle contains the other circle. ",
+  "method_annotation": ""
+}

@@ -1,0 +1,129 @@
+package com.badlogic.gdx.mutants;
+
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import com.badlogic.gdx.math.*;
+import java.io.Serializable;
+
+public class GridPoint2Mutant_sub_9_0_Test {
+
+    @Test
+    public void testSub() throws Exception {
+        GridPoint2Mutant point = new GridPoint2Mutant(3, 4);
+        point.sub(1, 2);
+        assertEquals(2, point.x);
+        assertEquals(2, point.y);
+    }
+
+    @Test
+    public void testSubNegative() throws Exception {
+        GridPoint2Mutant point = new GridPoint2Mutant(3, 4);
+        point.sub(-1, -2);
+        assertEquals(4, point.x);
+        assertEquals(6, point.y);
+    }
+
+    @Test
+    public void testSubZero() throws Exception {
+        GridPoint2Mutant point = new GridPoint2Mutant(3, 4);
+        point.sub(0, 0);
+        assertEquals(3, point.x);
+        assertEquals(4, point.y);
+    }
+
+    @Test
+    public void testSubLargeValues() throws Exception {
+        GridPoint2Mutant point = new GridPoint2Mutant(3, 4);
+        point.sub(Integer.MAX_VALUE, Integer.MAX_VALUE);
+        assertEquals(-2147483646, point.x);
+        assertEquals(-2147483646, point.y);
+    }
+
+    @Test
+    public void testSubSmallValues() throws Exception {
+        GridPoint2Mutant point = new GridPoint2Mutant(3, 4);
+        point.sub(Integer.MIN_VALUE, Integer.MIN_VALUE);
+        assertEquals(2147483647, point.x);
+        assertEquals(2147483647, point.y);
+    }
+
+    @Test
+    public void testSubNull() throws Exception {
+        GridPoint2Mutant point = new GridPoint2Mutant(3, 4);
+        point.sub((GridPoint2Mutant) null);
+        assertEquals(3, point.x);
+        assertEquals(4, point.y);
+    }
+
+    @Test
+    public void testSubObject() throws Exception {
+        GridPoint2Mutant point = new GridPoint2Mutant(3, 4);
+        point.sub((Object) null);
+        assertEquals(3, point.x);
+        assertEquals(4, point.y);
+    }
+
+    @Test
+    public void testSubNonInteger() throws Exception {
+        GridPoint2Mutant point = new GridPoint2Mutant(3, 4);
+        point.sub("test");
+        assertEquals(3, point.x);
+        assertEquals(4, point.y);
+    }
+
+    @Test
+    public void testSubNonNumeric() throws Exception {
+        GridPoint2Mutant point = new GridPoint2Mutant(3, 4);
+        point.sub(new Object());
+        assertEquals(3, point.x);
+        assertEquals(4, point.y);
+    }
+
+    @Test
+    public void testSubNonIntegerArray() throws Exception {
+        GridPoint2Mutant point = new GridPoint2Mutant(3, 4);
+        point.sub(new int[] { 1, 2 });
+        assertEquals(3, point.x);
+        assertEquals(4, point.y);
+    }
+
+    @Test
+    public void testSubNonIntegerList() throws Exception {
+        GridPoint2Mutant point = new GridPoint2Mutant(3, 4);
+        point.sub(Arrays.asList(1, 2));
+        assertEquals(3, point.x);
+        assertEquals(4, point.y);
+    }
+
+    @Test
+    public void testSubNonIntegerMap() throws Exception {
+        GridPoint2Mutant point = new GridPoint2Mutant(3, 4);
+        point.sub(new HashMap<Integer, Integer>() {
+
+            {
+                put(1, 2);
+            }
+        });
+        assertEquals(3, point.x);
+        assertEquals(4, point.y);
+    }
+}
+
+--------------------------------------------
+Error in GridPoint2Mutant_sub_9_0_Test: line 65 : incompatible types: java.lang.Object cannot be converted to com.badlogic.gdx.mutants.GridPoint2Mutant
+Error in GridPoint2Mutant_sub_9_0_Test: line 73 : incompatible types: java.lang.String cannot be converted to com.badlogic.gdx.mutants.GridPoint2Mutant
+Error in GridPoint2Mutant_sub_9_0_Test: line 81 : incompatible types: java.lang.Object cannot be converted to com.badlogic.gdx.mutants.GridPoint2Mutant
+Error in GridPoint2Mutant_sub_9_0_Test: line 89 : incompatible types: int[] cannot be converted to com.badlogic.gdx.mutants.GridPoint2Mutant
+Error in GridPoint2Mutant_sub_9_0_Test: line 97 : cannot find symbol
+  symbol:   variable Arrays
+  location: class com.badlogic.gdx.mutants.GridPoint2Mutant_sub_9_0_Test
+Error in GridPoint2Mutant_sub_9_0_Test: line 105 : cannot find symbol
+  symbol:   class HashMap
+  location: class com.badlogic.gdx.mutants.GridPoint2Mutant_sub_9_0_Test
+Error in GridPoint2Mutant_sub_9_0_Test: line 108 : cannot find symbol
+  symbol: method put(int,int)
+Error in GridPoint2Mutant_sub_9_0_Test: line -1 : Some messages have been simplified; recompile with -Xdiags:verbose to get full output

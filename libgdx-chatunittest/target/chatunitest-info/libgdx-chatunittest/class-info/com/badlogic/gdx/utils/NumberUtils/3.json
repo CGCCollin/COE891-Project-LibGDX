@@ -1,0 +1,24 @@
+{
+  "className": "NumberUtils",
+  "methodName": "intToFloatColor",
+  "brief": "public static float intToFloatColor (int value){}",
+  "methodSignature": "intToFloatColor(int)",
+  "sourceCode": "public static float intToFloatColor (int value) {\n\t\treturn Float.intBitsToFloat(value & 0xfeffffff);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "int"
+  ],
+  "dependentMethods": {
+    "java.lang.Float": [
+      "intBitsToFloat(int)"
+    ]
+  },
+  "full_method_info": "/**\n * Encodes the ABGR int color as a float. The alpha is compressed to use only even numbers between 0-254 to avoid using bits\n * in the NaN range (see {@link Float#intBitsToFloat(int)} javadocs). Rendering which uses colors encoded as floats should\n * expand the 0-254 back to 0-255, else colors cannot be fully opaque.\n */\npublic static float intToFloatColor(int value) {\n    return Float.intBitsToFloat(value & 0xfeffffff);\n}",
+  "method_comment": " Encodes the ABGR int color as a float. The alpha is compressed to use only even numbers between 0-254 to avoid using bits\n\t * in the NaN range (see {@link Float#intBitsToFloat(int)} javadocs). Rendering which uses colors encoded as floats should\n\t * expand the 0-254 back to 0-255, else colors cannot be fully opaque. ",
+  "method_annotation": ""
+}

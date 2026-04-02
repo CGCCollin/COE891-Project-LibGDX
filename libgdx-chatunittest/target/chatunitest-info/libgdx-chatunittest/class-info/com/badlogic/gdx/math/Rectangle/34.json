@@ -1,0 +1,18 @@
+{
+  "className": "Rectangle",
+  "methodName": "perimeter",
+  "brief": "public float perimeter (){}",
+  "methodSignature": "perimeter()",
+  "sourceCode": "public float perimeter () {\n\t\treturn 2 * (this.width + this.height);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "public float perimeter() {\n    return 2 * (this.width + this.height);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

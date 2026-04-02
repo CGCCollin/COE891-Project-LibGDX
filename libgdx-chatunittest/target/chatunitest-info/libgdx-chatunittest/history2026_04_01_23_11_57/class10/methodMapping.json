@@ -1,0 +1,104 @@
+{
+  "method0": {
+    "methodName": "set",
+    "signature": "set(GridPoint2Mutant)",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method1": {
+    "methodName": "set",
+    "signature": "set(int, int)",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method10": {
+    "methodName": "cpy",
+    "signature": "cpy()",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method11": {
+    "methodName": "equals",
+    "signature": "equals(Object)",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method12": {
+    "methodName": "hashCode",
+    "signature": "hashCode()",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method13": {
+    "methodName": "toString",
+    "signature": "toString()",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method14": {
+    "methodName": "GridPoint2Mutant",
+    "signature": "GridPoint2Mutant()",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method15": {
+    "methodName": "GridPoint2Mutant",
+    "signature": "GridPoint2Mutant(int, int)",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method16": {
+    "methodName": "GridPoint2Mutant",
+    "signature": "GridPoint2Mutant(GridPoint2Mutant)",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method2": {
+    "methodName": "dst2",
+    "signature": "dst2(GridPoint2Mutant)",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method3": {
+    "methodName": "dst2",
+    "signature": "dst2(int, int)",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method4": {
+    "methodName": "dst",
+    "signature": "dst(GridPoint2Mutant)",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method5": {
+    "methodName": "dst",
+    "signature": "dst(int, int)",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method6": {
+    "methodName": "add",
+    "signature": "add(GridPoint2Mutant)",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method7": {
+    "methodName": "add",
+    "signature": "add(int, int)",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method8": {
+    "methodName": "sub",
+    "signature": "sub(GridPoint2Mutant)",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method9": {
+    "methodName": "sub",
+    "signature": "sub(int, int)",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  }
+}

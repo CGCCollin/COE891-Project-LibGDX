@@ -1,0 +1,22 @@
+{
+  "className": "Color",
+  "methodName": "rgb565",
+  "brief": "public static int rgb565 (float r, float g, float b){}",
+  "methodSignature": "rgb565(float, float, float)",
+  "sourceCode": "public static int rgb565 (float r, float g, float b) {\n\t\treturn ((int)(r * 31) << 11) | ((int)(g * 63) << 5) | (int)(b * 31);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "public static int rgb565(float r, float g, float b) {\n    return ((int) (r * 31) << 11) | ((int) (g * 63) << 5) | (int) (b * 31);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

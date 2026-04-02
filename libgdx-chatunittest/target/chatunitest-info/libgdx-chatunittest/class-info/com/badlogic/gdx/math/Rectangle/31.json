@@ -1,0 +1,18 @@
+{
+  "className": "Rectangle",
+  "methodName": "toString",
+  "brief": "public String toString (){}",
+  "methodSignature": "toString()",
+  "sourceCode": "public String toString () {\n\t\treturn \"[\" + x + \",\" + y + \",\" + width + \",\" + height + \"]\";\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Converts this {@code Rectangle} to a string in the format {@code [x,y,width,height]}.\n * @return a string representation of this object.\n */\npublic String toString() {\n    return \"[\" + x + \",\" + y + \",\" + width + \",\" + height + \"]\";\n}",
+  "method_comment": " Converts this {@code Rectangle} to a string in the format {@code [x,y,width,height]}.\n\t * @return a string representation of this object. ",
+  "method_annotation": ""
+}

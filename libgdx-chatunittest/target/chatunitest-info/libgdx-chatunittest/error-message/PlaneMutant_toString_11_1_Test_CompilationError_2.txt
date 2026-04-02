@@ -1,0 +1,93 @@
+package com.badlogic.gdx.mutants;
+
+import java.io.Serializable;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import com.badlogic.gdx.math.*;
+
+public class PlaneMutant_toString_11_1_Test {
+
+    private PlaneMutant plane;
+
+    @BeforeEach
+    public void setUp() throws Exception {
+        plane = new PlaneMutant(new Vector3(1, 0, 0), 0);
+    }
+
+    @Test
+    public void testToString() throws Exception {
+        assertEquals("(1.0,0.0,0.0), 0.0", plane.toString());
+    }
+
+    @Test
+    public void testSet() throws Exception {
+        plane = new PlaneMutant();
+        Vector3 point = new Vector3(2, 0, 0);
+        plane.set(point, new Vector3(1, 0, 0));
+        assertEquals("(2.0,0.0,0.0), 0.0", plane.toString());
+        plane = new PlaneMutant();
+        Vector3 point2 = new Vector3(0, 2, 0);
+        plane.set(point2, new Vector3(0, 1, 0));
+        assertEquals("(0.0,2.0,0.0), 0.0", plane.toString());
+        plane = new PlaneMutant();
+        Vector3 point3 = new Vector3(0, 0, 2);
+        plane.set(point3, new Vector3(0, 0, 1));
+        assertEquals("(0.0,0.0,2.0), 0.0", plane.toString());
+    }
+
+    @Test
+    public void testSetFromSpherical() throws Exception {
+        plane = new PlaneMutant();
+        plane.setFromSpherical(MathUtils.PI / 4, MathUtils.PI / 6);
+        assertEquals("(0.7071068,-0.7071068,0.0), -0.5", plane.toString());
+    }
+
+    @Test
+    public void testSetToRandomDirection() throws Exception {
+        plane = new PlaneMutant();
+        plane.setToRandomDirection();
+        assertNotEquals("(0.0,0.0,0.0), 0.0", plane.toString());
+    }
+
+    @Test
+    public void testSetLength() throws Exception {
+        plane = new PlaneMutant();
+        plane.setLength(5);
+        assertEquals("(1.0,0.0,0.0), 5.0", plane.toString());
+    }
+
+    @Test
+    public void testSetLength2() throws Exception {
+        plane = new PlaneMutant();
+        plane.setLength2(25);
+        assertEquals("(1.0,0.0,0.0), 5.0", plane.toString());
+    }
+
+    @Test
+    public void testSetZero() throws Exception {
+        plane = new PlaneMutant();
+        plane.setZero();
+        assertEquals("(0.0,0.0,0.0), 0.0", plane.toString());
+    }
+}
+
+--------------------------------------------
+Error in PlaneMutant_toString_11_1_Test: line 45 : cannot find symbol
+  symbol:   method setFromSpherical(float,float)
+  location: variable plane of type com.badlogic.gdx.mutants.PlaneMutant
+Error in PlaneMutant_toString_11_1_Test: line 52 : cannot find symbol
+  symbol:   method setToRandomDirection()
+  location: variable plane of type com.badlogic.gdx.mutants.PlaneMutant
+Error in PlaneMutant_toString_11_1_Test: line 59 : cannot find symbol
+  symbol:   method setLength(int)
+  location: variable plane of type com.badlogic.gdx.mutants.PlaneMutant
+Error in PlaneMutant_toString_11_1_Test: line 66 : cannot find symbol
+  symbol:   method setLength2(int)
+  location: variable plane of type com.badlogic.gdx.mutants.PlaneMutant
+Error in PlaneMutant_toString_11_1_Test: line 73 : cannot find symbol
+  symbol:   method setZero()
+  location: variable plane of type com.badlogic.gdx.mutants.PlaneMutant

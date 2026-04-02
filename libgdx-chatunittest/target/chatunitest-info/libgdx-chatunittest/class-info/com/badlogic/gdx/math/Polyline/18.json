@@ -1,0 +1,18 @@
+{
+  "className": "Polyline",
+  "methodName": "calculateLength",
+  "brief": "public void calculateLength (){}",
+  "methodSignature": "calculateLength()",
+  "sourceCode": "public void calculateLength () {\n\t\tcalculateLength = true;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "public void calculateLength() {\n    calculateLength = true;\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

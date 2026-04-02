@@ -1,0 +1,22 @@
+{
+  "className": "Color",
+  "methodName": "rgb888",
+  "brief": "public static int rgb888 (float r, float g, float b){}",
+  "methodSignature": "rgb888(float, float, float)",
+  "sourceCode": "public static int rgb888 (float r, float g, float b) {\n\t\treturn ((int)(r * 255) << 16) | ((int)(g * 255) << 8) | (int)(b * 255);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "public static int rgb888(float r, float g, float b) {\n    return ((int) (r * 255) << 16) | ((int) (g * 255) << 8) | (int) (b * 255);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

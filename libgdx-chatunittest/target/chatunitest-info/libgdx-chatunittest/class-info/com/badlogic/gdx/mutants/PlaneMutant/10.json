@@ -1,0 +1,25 @@
+{
+  "className": "PlaneMutant",
+  "methodName": "set",
+  "brief": "public void set(PlaneMutant plane){}",
+  "methodSignature": "set(PlaneMutant)",
+  "sourceCode": "public void set(PlaneMutant plane) {\n\t\tthis.normal.set(plane.normal);\n\t\tthis.d = plane.d;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "PlaneMutant"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.mutants.PlaneMutant": [],
+    "com.badlogic.gdx.math.Vector3": [
+      "set(Vector3)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets this plane from the given plane\n *\n * @param plane the plane\n */\npublic void set(PlaneMutant plane) {\n    this.normal.set(plane.normal);\n    this.d = plane.d;\n}",
+  "method_comment": "\n\t * Sets this plane from the given plane\n\t * \n\t * @param plane the plane\n\t ",
+  "method_annotation": ""
+}

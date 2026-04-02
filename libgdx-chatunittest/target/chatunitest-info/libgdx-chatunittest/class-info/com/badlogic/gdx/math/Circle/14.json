@@ -1,0 +1,18 @@
+{
+  "className": "Circle",
+  "methodName": "circumference",
+  "brief": "public float circumference (){}",
+  "methodSignature": "circumference()",
+  "sourceCode": "public float circumference () {\n\t\treturn this.radius * MathUtils.PI2;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * @return The circumference of this circle (as 2 * {@link MathUtils#PI2}) * {@code radius}\n */\npublic float circumference() {\n    return this.radius * MathUtils.PI2;\n}",
+  "method_comment": " @return The circumference of this circle (as 2 * {@link MathUtils#PI2}) * {@code radius} ",
+  "method_annotation": ""
+}

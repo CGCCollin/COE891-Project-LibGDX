@@ -1,0 +1,25 @@
+{
+  "className": "MathUtils",
+  "methodName": "randomTriangular",
+  "brief": "public static float randomTriangular (float min, float max){}",
+  "methodSignature": "randomTriangular(float, float)",
+  "sourceCode": "public static float randomTriangular (float min, float max) {\n\t\treturn randomTriangular(min, max, (min + max) * 0.5f);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.MathUtils": [
+      "randomTriangular(float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Returns a triangularly distributed random number between {@code min} (inclusive) and {@code max} (exclusive), where the\n * {@code mode} argument defaults to the midpoint between the bounds, giving a symmetric distribution.\n * <p>\n * This method is equivalent of {@link #randomTriangular(float, float, float) randomTriangular(min, max, (min + max) * 0.5f)}\n * @param min the lower limit\n * @param max the upper limit\n */\npublic static float randomTriangular(float min, float max) {\n    return randomTriangular(min, max, (min + max) * 0.5f);\n}",
+  "method_comment": " Returns a triangularly distributed random number between {@code min} (inclusive) and {@code max} (exclusive), where the\n\t * {@code mode} argument defaults to the midpoint between the bounds, giving a symmetric distribution.\n\t * <p>\n\t * This method is equivalent of {@link #randomTriangular(float, float, float) randomTriangular(min, max, (min + max) * 0.5f)}\n\t * @param min the lower limit\n\t * @param max the upper limit ",
+  "method_annotation": ""
+}

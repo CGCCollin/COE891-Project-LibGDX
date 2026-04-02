@@ -1,0 +1,24 @@
+{
+  "className": "Vector3",
+  "methodName": "crs",
+  "brief": "public Vector3 crs (final Vector3 vector){}",
+  "methodSignature": "crs(Vector3)",
+  "sourceCode": "public Vector3 crs (final Vector3 vector) {\n\t\treturn this.set(y * vector.z - z * vector.y, z * vector.x - x * vector.z, x * vector.y - y * vector.x);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector3"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "set(float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets this vector to the cross product between it and the other vector.\n * @param vector The other vector\n * @return This vector for chaining\n */\npublic Vector3 crs(final Vector3 vector) {\n    return this.set(y * vector.z - z * vector.y, z * vector.x - x * vector.z, x * vector.y - y * vector.x);\n}",
+  "method_comment": " Sets this vector to the cross product between it and the other vector.\n\t * @param vector The other vector\n\t * @return This vector for chaining ",
+  "method_annotation": ""
+}

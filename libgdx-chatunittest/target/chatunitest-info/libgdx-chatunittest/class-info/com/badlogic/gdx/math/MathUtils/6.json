@@ -1,0 +1,25 @@
+{
+  "className": "MathUtils",
+  "methodName": "atanUnchecked",
+  "brief": "public static float atanUnchecked (double i){}",
+  "methodSignature": "atanUnchecked(double)",
+  "sourceCode": "public static float atanUnchecked (double i) {\n\t\t// We use double precision internally, because some constants need double precision.\n\t\tdouble n = Math.abs(i);\n\t\t// c uses the \"equally-good\" formulation that permits n to be from 0 to almost infinity.\n\t\tdouble c = (n - 1.0) / (n + 1.0);\n\t\t// The approximation needs 6 odd powers of c.\n\t\tdouble c2 = c * c;\n\t\tdouble c3 = c * c2;\n\t\tdouble c5 = c3 * c2;\n\t\tdouble c7 = c5 * c2;\n\t\tdouble c9 = c7 * c2;\n\t\tdouble c11 = c9 * c2;\n\t\treturn (float)(Math.signum(i) * ((Math.PI * 0.25)\n\t\t\t+ (0.99997726 * c - 0.33262347 * c3 + 0.19354346 * c5 - 0.11643287 * c7 + 0.05265332 * c9 - 0.0117212 * c11)));\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "double"
+  ],
+  "dependentMethods": {
+    "java.lang.Math": [
+      "abs(double)",
+      "signum(double)"
+    ]
+  },
+  "full_method_info": "// ---\n/**\n * A variant on {@link #atan(float)} that does not tolerate infinite inputs for speed reasons. This can be given a double\n * parameter, but is otherwise the same as atan(float), and returns a float like that method. It uses the same approximation,\n * from sheet 11 of \"Approximations for Digital Computers.\" This is mostly meant to be used inside\n * {@link #atan2(float, float)}, but it may be a tiny bit faster than atan(float) in other code.\n * @param i any finite double or float, but more commonly a float\n * @return an output from the inverse tangent function, from {@code -HALF_PI} to {@code HALF_PI} inclusive\n */\npublic static float atanUnchecked(double i) {\n    // We use double precision internally, because some constants need double precision.\n    double n = Math.abs(i);\n    // c uses the \"equally-good\" formulation that permits n to be from 0 to almost infinity.\n    double c = (n - 1.0) / (n + 1.0);\n    // The approximation needs 6 odd powers of c.\n    double c2 = c * c;\n    double c3 = c * c2;\n    double c5 = c3 * c2;\n    double c7 = c5 * c2;\n    double c9 = c7 * c2;\n    double c11 = c9 * c2;\n    return (float) (Math.signum(i) * ((Math.PI * 0.25) + (0.99997726 * c - 0.33262347 * c3 + 0.19354346 * c5 - 0.11643287 * c7 + 0.05265332 * c9 - 0.0117212 * c11)));\n}",
+  "method_comment": " A variant on {@link #atan(float)} that does not tolerate infinite inputs for speed reasons. This can be given a double\n\t * parameter, but is otherwise the same as atan(float), and returns a float like that method. It uses the same approximation,\n\t * from sheet 11 of \"Approximations for Digital Computers.\" This is mostly meant to be used inside\n\t * {@link #atan2(float, float)}, but it may be a tiny bit faster than atan(float) in other code.\n\t * @param i any finite double or float, but more commonly a float\n\t * @return an output from the inverse tangent function, from {@code -HALF_PI} to {@code HALF_PI} inclusive ",
+  "method_annotation": ""
+}

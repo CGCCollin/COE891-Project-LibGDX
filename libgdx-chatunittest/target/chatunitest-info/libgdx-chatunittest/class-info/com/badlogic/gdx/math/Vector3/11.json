@@ -1,0 +1,26 @@
+{
+  "className": "Vector3",
+  "methodName": "sub",
+  "brief": "public Vector3 sub (float x, float y, float z){}",
+  "methodSignature": "sub(float, float, float)",
+  "sourceCode": "public Vector3 sub (float x, float y, float z) {\n\t\treturn this.set(this.x - x, this.y - y, this.z - z);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "set(float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Subtracts the other vector from this vector.\n *\n * @param x The x-component of the other vector\n * @param y The y-component of the other vector\n * @param z The z-component of the other vector\n * @return This vector for chaining\n */\npublic Vector3 sub(float x, float y, float z) {\n    return this.set(this.x - x, this.y - y, this.z - z);\n}",
+  "method_comment": " Subtracts the other vector from this vector.\n\t *\n\t * @param x The x-component of the other vector\n\t * @param y The y-component of the other vector\n\t * @param z The z-component of the other vector\n\t * @return This vector for chaining ",
+  "method_annotation": ""
+}

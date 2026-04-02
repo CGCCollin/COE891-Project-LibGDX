@@ -1,0 +1,107 @@
+{
+  "class9": {
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "modifier": "[public ]",
+    "extend": "[]",
+    "implement": "[Serializable, Shape2D]"
+  },
+  "class8": {
+    "className": "Vector3",
+    "packageName": "com.badlogic.gdx.math",
+    "modifier": "[public ]",
+    "extend": "[]",
+    "implement": "[Serializable, Vector<Vector3>]"
+  },
+  "class7": {
+    "className": "Rectangle",
+    "packageName": "com.badlogic.gdx.math",
+    "modifier": "[public ]",
+    "extend": "[]",
+    "implement": "[Serializable, Shape2D]"
+  },
+  "class6": {
+    "className": "Polyline",
+    "packageName": "com.badlogic.gdx.math",
+    "modifier": "[public ]",
+    "extend": "[]",
+    "implement": "[Shape2D]"
+  },
+  "class5": {
+    "className": "Polygon",
+    "packageName": "com.badlogic.gdx.math",
+    "modifier": "[public ]",
+    "extend": "[]",
+    "implement": "[Shape2D]"
+  },
+  "class4": {
+    "className": "Plane",
+    "packageName": "com.badlogic.gdx.math",
+    "modifier": "[public ]",
+    "extend": "[]",
+    "implement": "[Serializable]"
+  },
+  "class3": {
+    "className": "Sin",
+    "packageName": "com.badlogic.gdx.math",
+    "modifier": "[static , private ]",
+    "extend": "[]",
+    "implement": "[]"
+  },
+  "class2": {
+    "className": "MathUtils",
+    "packageName": "com.badlogic.gdx.math",
+    "modifier": "[public , final ]",
+    "extend": "[]",
+    "implement": "[]"
+  },
+  "class1": {
+    "className": "Circle",
+    "packageName": "com.badlogic.gdx.math",
+    "modifier": "[public ]",
+    "extend": "[]",
+    "implement": "[Serializable, Shape2D]"
+  },
+  "class10": {
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "modifier": "[public ]",
+    "extend": "[]",
+    "implement": "[Serializable]"
+  },
+  "class0": {
+    "className": "Color",
+    "packageName": "com.badlogic.gdx.graphics",
+    "modifier": "[public ]",
+    "extend": "[]",
+    "implement": "[]"
+  },
+  "class12": {
+    "className": "PolygonMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "modifier": "[public ]",
+    "extend": "[]",
+    "implement": "[Shape2D]"
+  },
+  "class11": {
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "modifier": "[public ]",
+    "extend": "[]",
+    "implement": "[Serializable]"
+  },
+  "class14": {
+    "className": "NumberUtils",
+    "packageName": "com.badlogic.gdx.utils",
+    "modifier": "[public , final ]",
+    "extend": "[]",
+    "implement": "[]"
+  },
+  "class13": {
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "modifier": "[public ]",
+    "extend": "[]",
+    "implement": "[Serializable, Shape2D]"
+  }
+}

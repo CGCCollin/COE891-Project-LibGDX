@@ -1,0 +1,22 @@
+{
+  "className": "CircleMutant",
+  "methodName": "contains",
+  "brief": "public boolean contains(CircleMutant c){}",
+  "methodSignature": "contains(CircleMutant)",
+  "sourceCode": "public boolean contains(CircleMutant c) {\n\t\tfinal float radiusDiff = radius - c.radius;\n\t\tif (radiusDiff < 0f)\n\t\t\treturn false; // Can't contain bigger circle\n\t\tfinal float dx = x - c.x;\n\t\tfinal float dy = y - c.y;\n\t\tfinal float dst = dx * dx + dy * dy;\n\t\tfinal float radiusSum = radius + c.radius;\n\t\treturn (!(radiusDiff * radiusDiff < dst) && (dst < radiusSum * radiusSum));\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "CircleMutant"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.mutants.CircleMutant": []
+  },
+  "full_method_info": "/**\n * @param c the other {@link Circle}\n * @return whether this circle contains the other circle.\n */\npublic boolean contains(CircleMutant c) {\n    final float radiusDiff = radius - c.radius;\n    if (radiusDiff < 0f)\n        // Can't contain bigger circle\n        return false;\n    final float dx = x - c.x;\n    final float dy = y - c.y;\n    final float dst = dx * dx + dy * dy;\n    final float radiusSum = radius + c.radius;\n    return (!(radiusDiff * radiusDiff < dst) && (dst < radiusSum * radiusSum));\n}",
+  "method_comment": "\n\t * @param c the other {@link Circle}\n\t * @return whether this circle contains the other circle.\n\t ",
+  "method_annotation": ""
+}

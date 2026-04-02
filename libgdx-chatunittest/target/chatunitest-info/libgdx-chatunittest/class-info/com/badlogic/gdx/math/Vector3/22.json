@@ -1,0 +1,22 @@
+{
+  "className": "Vector3",
+  "methodName": "idt",
+  "brief": "public boolean idt (final Vector3 vector){}",
+  "methodSignature": "idt(Vector3)",
+  "sourceCode": "public boolean idt (final Vector3 vector) {\n\t\treturn x == vector.x && y == vector.y && z == vector.z;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector3"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": []
+  },
+  "full_method_info": "/**\n * Returns true if this vector and the vector parameter have identical components.\n * @param vector The other vector\n * @return Whether this and the other vector are equal with exact precision\n */\npublic boolean idt(final Vector3 vector) {\n    return x == vector.x && y == vector.y && z == vector.z;\n}",
+  "method_comment": " Returns true if this vector and the vector parameter have identical components.\n\t * @param vector The other vector\n\t * @return Whether this and the other vector are equal with exact precision ",
+  "method_annotation": ""
+}

@@ -1,0 +1,28 @@
+{
+  "className": "Vector3",
+  "methodName": "setLength2",
+  "brief": "@Override\r\n\tpublic Vector3 setLength2 (float len2){}",
+  "methodSignature": "setLength2(float)",
+  "sourceCode": "@Override\n\tpublic Vector3 setLength2 (float len2) {\n\t\tfloat oldLen2 = len2();\n\t\treturn (oldLen2 == 0 || oldLen2 == len2) ? this : scl((float)Math.sqrt(len2 / oldLen2));\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "len2()",
+      "scl(float)"
+    ],
+    "java.lang.Math": [
+      "sqrt(double)"
+    ]
+  },
+  "full_method_info": "@Override\npublic Vector3 setLength2(float len2) {\n    float oldLen2 = len2();\n    return (oldLen2 == 0 || oldLen2 == len2) ? this : scl((float) Math.sqrt(len2 / oldLen2));\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

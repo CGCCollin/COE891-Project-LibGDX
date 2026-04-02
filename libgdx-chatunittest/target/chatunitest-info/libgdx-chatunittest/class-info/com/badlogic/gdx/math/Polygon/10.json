@@ -1,0 +1,20 @@
+{
+  "className": "Polygon",
+  "methodName": "scale",
+  "brief": "public void scale (float amount){}",
+  "methodSignature": "scale(float)",
+  "sourceCode": "public void scale (float amount) {\n\t\tthis.scaleX += amount;\n\t\tthis.scaleY += amount;\n\t\tdirty = true;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Applies additional scaling to the polygon by the supplied amount.\n */\npublic void scale(float amount) {\n    this.scaleX += amount;\n    this.scaleY += amount;\n    dirty = true;\n}",
+  "method_comment": " Applies additional scaling to the polygon by the supplied amount. ",
+  "method_annotation": ""
+}

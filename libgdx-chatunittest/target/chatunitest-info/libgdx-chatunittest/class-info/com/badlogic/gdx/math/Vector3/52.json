@@ -1,0 +1,24 @@
+{
+  "className": "Vector3",
+  "methodName": "isZero",
+  "brief": "@Override\r\n\tpublic boolean isZero (final float margin){}",
+  "methodSignature": "isZero(float)",
+  "sourceCode": "@Override\n\tpublic boolean isZero (final float margin) {\n\t\treturn len2() < margin;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "len2()"
+    ]
+  },
+  "full_method_info": "@Override\npublic boolean isZero(final float margin) {\n    return len2() < margin;\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

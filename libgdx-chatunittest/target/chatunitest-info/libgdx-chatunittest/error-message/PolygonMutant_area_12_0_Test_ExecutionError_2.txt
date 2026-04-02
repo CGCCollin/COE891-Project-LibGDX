@@ -1,0 +1,63 @@
+package com.badlogic.gdx.mutants;
+
+import java.lang.reflect.Method;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import com.badlogic.gdx.math.*;
+
+public class PolygonMutant_area_12_0_Test {
+
+    private static final float EPSILON = 0.0001f;
+
+    @Mock
+    private PolygonMutant polygon;
+
+    @BeforeEach
+    public void setUp() throws Exception {
+        when(polygon.getVertices()).thenAnswer(invocation -> new float[] { 0, 0, 1, 0, 1, 1, 0, 1 });
+    }
+
+    @Test
+    public void testArea() throws Exception {
+        Method area = PolygonMutant.class.getDeclaredMethod("area");
+        area.setAccessible(true);
+        float areaValue = (float) area.invoke(polygon);
+        verify(polygon).getVertices();
+        assertEquals(2f, areaValue, EPSILON);
+    }
+
+    @Test
+    public void testAreaWithRotation() throws Exception {
+        Method setRotation = PolygonMutant.class.getDeclaredMethod("setRotation", float.class);
+        setRotation.setAccessible(true);
+        setRotation.invoke(polygon, 45f);
+        when(polygon.getVertices()).thenAnswer(invocation -> new float[] { 0, 0, 1, 0, 1, 1, 0, 1 });
+        Method area = PolygonMutant.class.getDeclaredMethod("area");
+        area.setAccessible(true);
+        float areaValue = (float) area.invoke(polygon);
+        verify(polygon).getVertices();
+        assertEquals(2f, areaValue, EPSILON);
+    }
+
+    @Test
+    public void testAreaWithScale() throws Exception {
+        Method setScale = PolygonMutant.class.getDeclaredMethod("setScale", float.class, float.class);
+        setScale.setAccessible(true);
+        setScale.invoke(polygon, 2f, 3f);
+        when(polygon.getVertices()).thenAnswer(invocation -> new float[] { 0, 0, 1, 0, 1, 1, 0, 1 });
+        Method area = PolygonMutant.class.getDeclaredMethod("area");
+        area.setAccessible(true);
+        float areaValue = (float) area.invoke(polygon);
+        verify(polygon).getVertices();
+        assertEquals(6f, areaValue, EPSILON);
+    }
+}
+
+--------------------------------------------
+Error in testArea(): line 21 : java.lang.NullPointerException: Cannot invoke "com.badlogic.gdx.mutants.PolygonMutant.getVertices()" because "this.polygon" is null
+Error in testAreaWithScale(): line 21 : java.lang.NullPointerException: Cannot invoke "com.badlogic.gdx.mutants.PolygonMutant.getVertices()" because "this.polygon" is null
+Error in testAreaWithRotation(): line 21 : java.lang.NullPointerException: Cannot invoke "com.badlogic.gdx.mutants.PolygonMutant.getVertices()" because "this.polygon" is null

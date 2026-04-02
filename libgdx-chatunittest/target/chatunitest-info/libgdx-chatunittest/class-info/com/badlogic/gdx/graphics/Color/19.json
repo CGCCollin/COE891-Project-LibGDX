@@ -1,0 +1,25 @@
+{
+  "className": "Color",
+  "methodName": "toString",
+  "brief": "public String toString (){}",
+  "methodSignature": "toString()",
+  "sourceCode": "public String toString () {\n\t\tString value = Integer\n\t\t\t.toHexString(((int)(255 * r) << 24) | ((int)(255 * g) << 16) | ((int)(255 * b) << 8) | ((int)(255 * a)));\n\t\twhile (value.length() < 8)\n\t\t\tvalue = \"0\" + value;\n\t\treturn value;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {
+    "java.lang.Integer": [
+      "toHexString(int)"
+    ],
+    "java.lang.String": [
+      "length()"
+    ]
+  },
+  "full_method_info": "/**\n * Returns the color encoded as hex string with the format RRGGBBAA.\n */\npublic String toString() {\n    String value = Integer.toHexString(((int) (255 * r) << 24) | ((int) (255 * g) << 16) | ((int) (255 * b) << 8) | ((int) (255 * a)));\n    while (value.length() < 8) value = \"0\" + value;\n    return value;\n}",
+  "method_comment": " Returns the color encoded as hex string with the format RRGGBBAA. ",
+  "method_annotation": ""
+}

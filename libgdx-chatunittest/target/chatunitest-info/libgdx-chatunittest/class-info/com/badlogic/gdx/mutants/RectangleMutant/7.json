@@ -1,0 +1,18 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "getHeight",
+  "brief": "public float getHeight(){}",
+  "methodSignature": "getHeight()",
+  "sourceCode": "public float getHeight() {\n\t\treturn height;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * @return the height\n */\npublic float getHeight() {\n    return height;\n}",
+  "method_comment": " @return the height ",
+  "method_annotation": ""
+}

@@ -1,0 +1,47 @@
+{
+  "attempt0": {
+    "testClassName": "GridPoint2Mutant_cpy_10_0_Test",
+    "fullName": "com.badlogic.gdx.mutants.GridPoint2Mutant_cpy_10_0_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\GridPoint2Mutant_cpy_10_0_Test.java",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "cpy",
+    "methodSig": "cpy()"
+  },
+  "attempt1": {
+    "testClassName": "GridPoint2Mutant_cpy_10_1_Test",
+    "fullName": "com.badlogic.gdx.mutants.GridPoint2Mutant_cpy_10_1_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\GridPoint2Mutant_cpy_10_0_Test.java",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "cpy",
+    "methodSig": "cpy()"
+  },
+  "attempt2": {
+    "testClassName": "GridPoint2Mutant_cpy_10_2_Test",
+    "fullName": "com.badlogic.gdx.mutants.GridPoint2Mutant_cpy_10_2_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\GridPoint2Mutant_cpy_10_0_Test.java",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "cpy",
+    "methodSig": "cpy()"
+  },
+  "attempt3": {
+    "testClassName": "GridPoint2Mutant_cpy_10_3_Test",
+    "fullName": "com.badlogic.gdx.mutants.GridPoint2Mutant_cpy_10_3_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\GridPoint2Mutant_cpy_10_0_Test.java",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "cpy",
+    "methodSig": "cpy()"
+  },
+  "attempt4": {
+    "testClassName": "GridPoint2Mutant_cpy_10_4_Test",
+    "fullName": "com.badlogic.gdx.mutants.GridPoint2Mutant_cpy_10_4_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\GridPoint2Mutant_cpy_10_0_Test.java",
+    "className": "GridPoint2Mutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "cpy",
+    "methodSig": "cpy()"
+  }
+}

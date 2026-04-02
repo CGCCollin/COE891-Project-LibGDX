@@ -1,0 +1,28 @@
+{
+  "className": "Vector3",
+  "methodName": "rotate",
+  "brief": "public Vector3 rotate (final Vector3 axis, float degrees){}",
+  "methodSignature": "rotate(Vector3, float)",
+  "sourceCode": "public Vector3 rotate (final Vector3 axis, float degrees) {\n\t\ttmpMat.setToRotation(axis, degrees);\n\t\treturn this.mul(tmpMat);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector3",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "mul(Matrix4)"
+    ],
+    "com.badlogic.gdx.math.Matrix4": [
+      "setToRotation(Vector3, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Rotates this vector by the given angle in degrees around the given axis.\n *\n * @param axis the axis\n * @param degrees the angle in degrees\n * @return This vector for chaining\n */\npublic Vector3 rotate(final Vector3 axis, float degrees) {\n    tmpMat.setToRotation(axis, degrees);\n    return this.mul(tmpMat);\n}",
+  "method_comment": " Rotates this vector by the given angle in degrees around the given axis.\n\t *\n\t * @param axis the axis\n\t * @param degrees the angle in degrees\n\t * @return This vector for chaining ",
+  "method_annotation": ""
+}

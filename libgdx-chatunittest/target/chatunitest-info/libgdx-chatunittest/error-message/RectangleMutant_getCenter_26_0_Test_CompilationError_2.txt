@@ -1,0 +1,39 @@
+package com.badlogic.gdx.mutants;
+
+import java.lang.reflect.Method;
+// Fix: Add this import statement
+import static org.assertj.core.api.Assertions.*;
+import java.io.Serializable;
+import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.NumberUtils;
+import com.badlogic.gdx.utils.Scaling;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import com.badlogic.gdx.math.*;
+
+class RectangleMutant_getCenter_26_0_Test {
+
+    @Test
+    void getCenter() throws Exception {
+        // Arrange
+        RectangleMutant rectangle = new RectangleMutant(5, 10, 15, 20);
+        Vector2 expectedCenter = new Vector2(10, 30);
+        Method method = RectangleMutant.class.getDeclaredMethod("getCenter", Vector2.class);
+        method.setAccessible(true);
+        // Act
+        Vector2 actualCenter = (Vector2) method.invoke(rectangle, new Vector2());
+        // Assert
+        // Fix: Use assertThat from org.assertj.core.api
+        assertThat(actualCenter).isEqualTo(expectedCenter);
+    }
+}
+
+--------------------------------------------
+Error in RectangleMutant_getCenter_26_0_Test: line 5 : package org.assertj.core.api does not exist
+Error in RectangleMutant_getCenter_26_0_Test: line 31 : cannot find symbol
+  symbol:   method assertThat(com.badlogic.gdx.math.Vector2)
+  location: class com.badlogic.gdx.mutants.RectangleMutant_getCenter_26_0_Test

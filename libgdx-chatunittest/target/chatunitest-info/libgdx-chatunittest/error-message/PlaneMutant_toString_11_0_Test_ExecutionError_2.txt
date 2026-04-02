@@ -1,0 +1,34 @@
+package com.badlogic.gdx.mutants;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.Serializable;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import com.badlogic.gdx.math.*;
+
+class PlaneMutant_toString_11_0_Test {
+
+    @InjectMocks
+    private PlaneMutant plane;
+
+    @Test
+    void testToString() throws Exception {
+        // Arrange
+        Vector3 normal = new Vector3(1, 0, 0);
+        plane.normal.set(normal);
+        plane.d = 0f;
+        String expectedResult = "(" + normal.toString() + ", 0)";
+        // Act
+        java.lang.reflect.Method toStringMethod = PlaneMutant.class.getDeclaredMethod("toString");
+        toStringMethod.setAccessible(true);
+        String result = (String) toStringMethod.invoke(plane);
+        // Assert
+        assertEquals(expectedResult, result);
+    }
+}
+
+--------------------------------------------
+Error in testToString(): line 21 : java.lang.NullPointerException: Cannot read field "normal" because "this.plane" is null

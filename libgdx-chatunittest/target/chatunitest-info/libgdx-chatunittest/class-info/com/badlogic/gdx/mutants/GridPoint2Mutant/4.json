@@ -1,0 +1,25 @@
+{
+  "className": "GridPoint2Mutant",
+  "methodName": "dst",
+  "brief": "public float dst(GridPoint2Mutant other){}",
+  "methodSignature": "dst(GridPoint2Mutant)",
+  "sourceCode": "public float dst(GridPoint2Mutant other) {\n\t\tint xd = other.x - x;\n\t\tint yd = other.y - y;\n\n\t\treturn (float) Math.sqrt(xd * xd + yd * yd);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "GridPoint2Mutant"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.mutants.GridPoint2Mutant": [],
+    "java.lang.Math": [
+      "sqrt(double)"
+    ]
+  },
+  "full_method_info": "/**\n * @param other The other point\n * @return the distance between this point and the other vector.\n */\npublic float dst(GridPoint2Mutant other) {\n    int xd = other.x - x;\n    int yd = other.y - y;\n    return (float) Math.sqrt(xd * xd + yd * yd);\n}",
+  "method_comment": "\n\t * @param other The other point\n\t * @return the distance between this point and the other vector.\n\t ",
+  "method_annotation": ""
+}

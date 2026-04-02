@@ -1,0 +1,18 @@
+{
+  "className": "Plane",
+  "methodName": "getNormal",
+  "brief": "public Vector3 getNormal (){}",
+  "methodSignature": "getNormal()",
+  "sourceCode": "public Vector3 getNormal () {\n\t\treturn normal;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * @return The normal\n */\npublic Vector3 getNormal() {\n    return normal;\n}",
+  "method_comment": " @return The normal ",
+  "method_annotation": ""
+}

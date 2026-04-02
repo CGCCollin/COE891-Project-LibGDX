@@ -1,0 +1,26 @@
+{
+  "className": "Vector3",
+  "methodName": "dst",
+  "brief": "public float dst (float x, float y, float z){}",
+  "methodSignature": "dst(float, float, float)",
+  "sourceCode": "public float dst (float x, float y, float z) {\n\t\tfinal float a = x - this.x;\n\t\tfinal float b = y - this.y;\n\t\tfinal float c = z - this.z;\n\t\treturn (float)Math.sqrt(a * a + b * b + c * c);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "java.lang.Math": [
+      "sqrt(double)"
+    ]
+  },
+  "full_method_info": "/**\n * @return the distance between this point and the given point\n */\npublic float dst(float x, float y, float z) {\n    final float a = x - this.x;\n    final float b = y - this.y;\n    final float c = z - this.z;\n    return (float) Math.sqrt(a * a + b * b + c * c);\n}",
+  "method_comment": " @return the distance between this point and the given point ",
+  "method_annotation": ""
+}

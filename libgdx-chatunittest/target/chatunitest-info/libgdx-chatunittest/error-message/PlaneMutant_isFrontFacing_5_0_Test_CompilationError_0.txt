@@ -1,0 +1,33 @@
+package com.badlogic.gdx.mutants;
+
+import java.lang.reflect.Method;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import com.badlogic.gdx.math.*;
+import java.io.Serializable;
+
+public class PlaneMutant_isFrontFacing_5_0_Test {
+
+    @Test
+    void isFrontFacingTest() throws Exception {
+        PlaneMutant plane = new PlaneMutant();
+        Vector3 normal = new Vector3(0, 1, 0);
+        plane.set(normal, -10);
+        Method method = PlaneMutant.class.getDeclaredMethod("isFrontFacing", Vector3.class);
+        method.setAccessible(true);
+        Vector3 direction = new Vector3(0, 1, 0);
+        boolean result = (boolean) method.invoke(plane, direction);
+        assertFalse(result);
+        direction.set(0, -1, 0);
+        result = (boolean) method.invoke(plane, direction);
+        assertTrue(result);
+    }
+}
+
+--------------------------------------------
+Error in PlaneMutant_isFrontFacing_5_0_Test: line 19 : incompatible types: int cannot be converted to com.badlogic.gdx.math.Vector3
+Error in PlaneMutant_isFrontFacing_5_0_Test: line -1 : Some messages have been simplified; recompile with -Xdiags:verbose to get full output

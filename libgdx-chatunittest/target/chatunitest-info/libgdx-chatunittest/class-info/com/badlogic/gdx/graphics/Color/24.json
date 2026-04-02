@@ -1,0 +1,23 @@
+{
+  "className": "Color",
+  "methodName": "toIntBits",
+  "brief": "public static int toIntBits (int r, int g, int b, int a){}",
+  "methodSignature": "toIntBits(int, int, int, int)",
+  "sourceCode": "public static int toIntBits (int r, int g, int b, int a) {\n\t\treturn (a << 24) | (b << 16) | (g << 8) | r;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "int",
+    "int",
+    "int",
+    "int"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Packs the color components into a 32-bit integer with the format ABGR. Note that no range checking is performed for higher\n * performance.\n * @param r the red component, 0 - 255\n * @param g the green component, 0 - 255\n * @param b the blue component, 0 - 255\n * @param a the alpha component, 0 - 255\n * @return the packed color as a 32-bit int\n */\npublic static int toIntBits(int r, int g, int b, int a) {\n    return (a << 24) | (b << 16) | (g << 8) | r;\n}",
+  "method_comment": " Packs the color components into a 32-bit integer with the format ABGR. Note that no range checking is performed for higher\n\t * performance.\n\t * @param r the red component, 0 - 255\n\t * @param g the green component, 0 - 255\n\t * @param b the blue component, 0 - 255\n\t * @param a the alpha component, 0 - 255\n\t * @return the packed color as a 32-bit int ",
+  "method_annotation": ""
+}

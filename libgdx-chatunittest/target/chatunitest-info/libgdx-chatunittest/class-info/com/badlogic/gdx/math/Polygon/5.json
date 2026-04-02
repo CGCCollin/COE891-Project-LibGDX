@@ -1,0 +1,22 @@
+{
+  "className": "Polygon",
+  "methodName": "setVertex",
+  "brief": "public void setVertex (int vertexNum, float x, float y){}",
+  "methodSignature": "setVertex(int, float, float)",
+  "sourceCode": "public void setVertex (int vertexNum, float x, float y) {\n\t\tif (vertexNum < 0 || vertexNum > localVertices.length / 2 - 1)\n\t\t\tthrow new IllegalArgumentException(\"the vertex \" + vertexNum + \" doesn't exist\");\n\t\tlocalVertices[2 * vertexNum] = x;\n\t\tlocalVertices[2 * vertexNum + 1] = y;\n\t\tdirty = true;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "int",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Set vertex position\n * @param vertexNum min=0, max=vertices.length/2-1\n * @throws IllegalArgumentException if vertex doesnt exist\n */\npublic void setVertex(int vertexNum, float x, float y) {\n    if (vertexNum < 0 || vertexNum > localVertices.length / 2 - 1)\n        throw new IllegalArgumentException(\"the vertex \" + vertexNum + \" doesn't exist\");\n    localVertices[2 * vertexNum] = x;\n    localVertices[2 * vertexNum + 1] = y;\n    dirty = true;\n}",
+  "method_comment": " Set vertex position\n\t * @param vertexNum min=0, max=vertices.length/2-1\n\t * @throws IllegalArgumentException if vertex doesnt exist ",
+  "method_annotation": ""
+}

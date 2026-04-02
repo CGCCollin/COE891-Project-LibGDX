@@ -1,0 +1,26 @@
+{
+  "className": "Vector3",
+  "methodName": "len",
+  "brief": "public static float len (final float x, final float y, final float z){}",
+  "methodSignature": "len(float, float, float)",
+  "sourceCode": "public static float len (final float x, final float y, final float z) {\n\t\treturn (float)Math.sqrt(x * x + y * y + z * z);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "java.lang.Math": [
+      "sqrt(double)"
+    ]
+  },
+  "full_method_info": "/**\n * @return The Euclidean length\n */\npublic static float len(final float x, final float y, final float z) {\n    return (float) Math.sqrt(x * x + y * y + z * z);\n}",
+  "method_comment": " @return The Euclidean length ",
+  "method_annotation": ""
+}

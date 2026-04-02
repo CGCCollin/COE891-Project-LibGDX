@@ -1,0 +1,24 @@
+{
+  "className": "MathUtils",
+  "methodName": "log2",
+  "brief": "static public float log2 (float value){}",
+  "methodSignature": "log2(float)",
+  "sourceCode": "static public float log2 (float value) {\n\t\treturn log(2, value);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.MathUtils": [
+      "log(float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * @return the logarithm of value with base 2\n */\nstatic public float log2(float value) {\n    return log(2, value);\n}",
+  "method_comment": " @return the logarithm of value with base 2 ",
+  "method_annotation": ""
+}

@@ -1,0 +1,24 @@
+{
+  "className": "MathUtils",
+  "methodName": "acosDeg",
+  "brief": "public static float acosDeg (float a){}",
+  "methodSignature": "acosDeg(float)",
+  "sourceCode": "public static float acosDeg (float a) {\n\t\tfloat a2 = a * a; // a squared\n\t\tfloat a3 = a * a2; // a cubed\n\t\tif (a >= 0f) {\n\t\t\treturn (float)Math.sqrt(1f - a)\n\t\t\t\t* (89.99613099964837f - 12.153259533621753f * a + 4.254842010910525f * a2 - 1.0731098035209208f * a3);\n\t\t}\n\t\treturn 180f - (float)Math.sqrt(1f + a)\n\t\t\t* (89.99613099964837f + 12.153259533621753f * a + 4.254842010910525f * a2 + 1.0731098035209208f * a3);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {
+    "java.lang.Math": [
+      "sqrt(double)"
+    ]
+  },
+  "full_method_info": "/**\n * Returns arccosine in degrees. This implementation does not return NaN if given an out-of-range input (Math.acos does return\n * NaN), unless the input is NaN.\n * @param a acos is defined only when a is between -1f and 1f, inclusive\n * @return between {@code 0} and {@code 180} when a is in the defined range\n */\npublic static float acosDeg(float a) {\n    // a squared\n    float a2 = a * a;\n    // a cubed\n    float a3 = a * a2;\n    if (a >= 0f) {\n        return (float) Math.sqrt(1f - a) * (89.99613099964837f - 12.153259533621753f * a + 4.254842010910525f * a2 - 1.0731098035209208f * a3);\n    }\n    return 180f - (float) Math.sqrt(1f + a) * (89.99613099964837f + 12.153259533621753f * a + 4.254842010910525f * a2 + 1.0731098035209208f * a3);\n}",
+  "method_comment": " Returns arccosine in degrees. This implementation does not return NaN if given an out-of-range input (Math.acos does return\n\t * NaN), unless the input is NaN.\n\t * @param a acos is defined only when a is between -1f and 1f, inclusive\n\t * @return between {@code 0} and {@code 180} when a is in the defined range ",
+  "method_annotation": ""
+}

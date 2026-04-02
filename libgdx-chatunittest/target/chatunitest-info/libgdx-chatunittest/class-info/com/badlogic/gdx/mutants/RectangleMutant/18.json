@@ -1,0 +1,22 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "contains",
+  "brief": "public boolean contains(RectangleMutant rectangle){}",
+  "methodSignature": "contains(RectangleMutant)",
+  "sourceCode": "public boolean contains(RectangleMutant rectangle) {\n\t\tfloat xmin = rectangle.x;\n\t\tfloat xmax = xmin + rectangle.width;\n\n\t\tfloat ymin = rectangle.y;\n\t\tfloat ymax = ymin + rectangle.height;\n\n\t\treturn ((xmin > x && xmin < x + width) && (xmax > x && xmax < x + width))\n\t\t\t\t&& ((ymin > y && ymin < y + height) && (ymax > y && ymax < y + height));\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "RectangleMutant"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.mutants.RectangleMutant": []
+  },
+  "full_method_info": "/**\n * @param rectangle the other {@link Rectangle}.\n * @return whether the other rectangle is contained in this rectangle.\n */\npublic boolean contains(RectangleMutant rectangle) {\n    float xmin = rectangle.x;\n    float xmax = xmin + rectangle.width;\n    float ymin = rectangle.y;\n    float ymax = ymin + rectangle.height;\n    return ((xmin > x && xmin < x + width) && (xmax > x && xmax < x + width)) && ((ymin > y && ymin < y + height) && (ymax > y && ymax < y + height));\n}",
+  "method_comment": "\n\t * @param rectangle the other {@link Rectangle}.\n\t * @return whether the other rectangle is contained in this rectangle.\n\t ",
+  "method_annotation": ""
+}

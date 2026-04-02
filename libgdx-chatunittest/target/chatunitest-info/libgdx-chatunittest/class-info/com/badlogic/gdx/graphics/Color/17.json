@@ -1,0 +1,22 @@
+{
+  "className": "Color",
+  "methodName": "toFloatBits",
+  "brief": "public float toFloatBits (){}",
+  "methodSignature": "toFloatBits()",
+  "sourceCode": "public float toFloatBits () {\n\t\tint color = ((int)(255 * a) << 24) | ((int)(255 * b) << 16) | ((int)(255 * g) << 8) | ((int)(255 * r));\n\t\treturn NumberUtils.intToFloatColor(color);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {
+    "com.badlogic.gdx.utils.NumberUtils": [
+      "intToFloatColor(int)"
+    ]
+  },
+  "full_method_info": "/**\n * Packs the color components into a 32-bit integer with the format ABGR and then converts it to a float. Alpha is compressed\n * from 0-255 to use only even numbers between 0-254 to avoid using float bits in the NaN range (see\n * {@link NumberUtils#intToFloatColor(int)}). Converting a color to a float and back can be lossy for alpha.\n * @return the packed color as a 32-bit float\n */\npublic float toFloatBits() {\n    int color = ((int) (255 * a) << 24) | ((int) (255 * b) << 16) | ((int) (255 * g) << 8) | ((int) (255 * r));\n    return NumberUtils.intToFloatColor(color);\n}",
+  "method_comment": " Packs the color components into a 32-bit integer with the format ABGR and then converts it to a float. Alpha is compressed\n\t * from 0-255 to use only even numbers between 0-254 to avoid using float bits in the NaN range (see\n\t * {@link NumberUtils#intToFloatColor(int)}). Converting a color to a float and back can be lossy for alpha.\n\t * @return the packed color as a 32-bit float ",
+  "method_annotation": ""
+}

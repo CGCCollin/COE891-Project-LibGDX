@@ -1,0 +1,22 @@
+{
+  "className": "GridPoint2Mutant",
+  "methodName": "add",
+  "brief": "public GridPoint2Mutant add(GridPoint2Mutant other){}",
+  "methodSignature": "add(GridPoint2Mutant)",
+  "sourceCode": "public GridPoint2Mutant add(GridPoint2Mutant other) {\n\t\tx += other.x;\n\t\ty += other.y;\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "GridPoint2Mutant"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.mutants.GridPoint2Mutant": []
+  },
+  "full_method_info": "/**\n * Adds another 2D grid point to this point.\n *\n * @param other The other point\n * @return this 2d grid point for chaining.\n */\npublic GridPoint2Mutant add(GridPoint2Mutant other) {\n    x += other.x;\n    y += other.y;\n    return this;\n}",
+  "method_comment": "\n\t * Adds another 2D grid point to this point.\n\t *\n\t * @param other The other point\n\t * @return this 2d grid point for chaining.\n\t ",
+  "method_annotation": ""
+}

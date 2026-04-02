@@ -1,0 +1,18 @@
+{
+  "className": "PolygonMutant",
+  "methodName": "PolygonMutant",
+  "brief": "public PolygonMutant(){}",
+  "methodSignature": "PolygonMutant()",
+  "sourceCode": "public PolygonMutant() {\n\t\tthis.localVertices = new float[0];\n\t}",
+  "useField": true,
+  "isConstructor": true,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "public PolygonMutant() {\n    this.localVertices = new float[0];\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

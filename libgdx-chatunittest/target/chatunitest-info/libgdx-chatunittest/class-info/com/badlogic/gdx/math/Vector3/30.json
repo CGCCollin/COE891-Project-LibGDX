@@ -1,0 +1,25 @@
+{
+  "className": "Vector3",
+  "methodName": "dot",
+  "brief": "public static float dot (float x1, float y1, float z1, float x2, float y2, float z2){}",
+  "methodSignature": "dot(float, float, float, float, float, float)",
+  "sourceCode": "public static float dot (float x1, float y1, float z1, float x2, float y2, float z2) {\n\t\treturn x1 * x2 + y1 * y2 + z1 * z2;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * @return The dot product between the two vectors\n */\npublic static float dot(float x1, float y1, float z1, float x2, float y2, float z2) {\n    return x1 * x2 + y1 * y2 + z1 * z2;\n}",
+  "method_comment": " @return The dot product between the two vectors ",
+  "method_annotation": ""
+}

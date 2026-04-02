@@ -1,0 +1,25 @@
+{
+  "className": "Vector3",
+  "methodName": "unrotate",
+  "brief": "public Vector3 unrotate (final Matrix4 matrix){}",
+  "methodSignature": "unrotate(Matrix4)",
+  "sourceCode": "public Vector3 unrotate (final Matrix4 matrix) {\n\t\tfinal float[] l_mat = matrix.val;\n\t\treturn this.set(x * l_mat[Matrix4.M00] + y * l_mat[Matrix4.M10] + z * l_mat[Matrix4.M20],\n\t\t\tx * l_mat[Matrix4.M01] + y * l_mat[Matrix4.M11] + z * l_mat[Matrix4.M21],\n\t\t\tx * l_mat[Matrix4.M02] + y * l_mat[Matrix4.M12] + z * l_mat[Matrix4.M22]);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Matrix4"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Matrix4": [],
+    "com.badlogic.gdx.math.Vector3": [
+      "set(float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Multiplies this vector by the transpose of the first three columns of the matrix. Note: only works for translation and\n * rotation, does not work for scaling. For those, use {@link #rot(Matrix4)} with {@link Matrix4#inv()}.\n * @param matrix The transformation matrix\n * @return The vector for chaining\n */\npublic Vector3 unrotate(final Matrix4 matrix) {\n    final float[] l_mat = matrix.val;\n    return this.set(x * l_mat[Matrix4.M00] + y * l_mat[Matrix4.M10] + z * l_mat[Matrix4.M20], x * l_mat[Matrix4.M01] + y * l_mat[Matrix4.M11] + z * l_mat[Matrix4.M21], x * l_mat[Matrix4.M02] + y * l_mat[Matrix4.M12] + z * l_mat[Matrix4.M22]);\n}",
+  "method_comment": " Multiplies this vector by the transpose of the first three columns of the matrix. Note: only works for translation and\n\t * rotation, does not work for scaling. For those, use {@link #rot(Matrix4)} with {@link Matrix4#inv()}.\n\t * @param matrix The transformation matrix\n\t * @return The vector for chaining ",
+  "method_annotation": ""
+}

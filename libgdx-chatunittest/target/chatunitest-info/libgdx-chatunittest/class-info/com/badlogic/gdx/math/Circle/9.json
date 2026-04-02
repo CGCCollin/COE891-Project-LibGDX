@@ -1,0 +1,21 @@
+{
+  "className": "Circle",
+  "methodName": "contains",
+  "brief": "public boolean contains (float x, float y){}",
+  "methodSignature": "contains(float, float)",
+  "sourceCode": "public boolean contains (float x, float y) {\n\t\tx = this.x - x;\n\t\ty = this.y - y;\n\t\treturn x * x + y * y <= radius * radius;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Checks whether or not this circle contains a given point.\n *\n * @param x X coordinate\n * @param y Y coordinate\n *\n * @return true if this circle contains the given point.\n */\npublic boolean contains(float x, float y) {\n    x = this.x - x;\n    y = this.y - y;\n    return x * x + y * y <= radius * radius;\n}",
+  "method_comment": " Checks whether or not this circle contains a given point.\n\t * \n\t * @param x X coordinate\n\t * @param y Y coordinate\n\t * \n\t * @return true if this circle contains the given point. ",
+  "method_annotation": ""
+}

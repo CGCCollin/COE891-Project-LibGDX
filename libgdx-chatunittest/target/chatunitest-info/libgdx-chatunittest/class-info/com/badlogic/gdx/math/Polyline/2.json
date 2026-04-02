@@ -1,0 +1,22 @@
+{
+  "className": "Polyline",
+  "methodName": "getLength",
+  "brief": "public float getLength (){}",
+  "methodSignature": "getLength()",
+  "sourceCode": "public float getLength () {\n\t\tif (!calculateLength) return length;\n\t\tcalculateLength = false;\n\n\t\tlength = 0;\n\t\tfor (int i = 0, n = localVertices.length - 2; i < n; i += 2) {\n\t\t\tfloat x = localVertices[i + 2] - localVertices[i];\n\t\t\tfloat y = localVertices[i + 1] - localVertices[i + 3];\n\t\t\tlength += (float)Math.sqrt(x * x + y * y);\n\t\t}\n\n\t\treturn length;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {
+    "java.lang.Math": [
+      "sqrt(double)"
+    ]
+  },
+  "full_method_info": "/**\n * Returns the euclidean length of the polyline without scaling\n */\npublic float getLength() {\n    if (!calculateLength)\n        return length;\n    calculateLength = false;\n    length = 0;\n    for (int i = 0, n = localVertices.length - 2; i < n; i += 2) {\n        float x = localVertices[i + 2] - localVertices[i];\n        float y = localVertices[i + 1] - localVertices[i + 3];\n        length += (float) Math.sqrt(x * x + y * y);\n    }\n    return length;\n}",
+  "method_comment": " Returns the euclidean length of the polyline without scaling ",
+  "method_annotation": ""
+}

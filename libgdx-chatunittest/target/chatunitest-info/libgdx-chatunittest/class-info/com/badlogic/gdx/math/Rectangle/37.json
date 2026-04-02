@@ -1,0 +1,18 @@
+{
+  "className": "Rectangle",
+  "methodName": "Rectangle",
+  "brief": "public Rectangle (){}",
+  "methodSignature": "Rectangle()",
+  "sourceCode": "public Rectangle () {\n\n\t}",
+  "useField": false,
+  "isConstructor": true,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "public Rectangle() {\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

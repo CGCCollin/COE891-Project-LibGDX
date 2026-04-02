@@ -1,0 +1,22 @@
+{
+  "className": "CircleMutant",
+  "methodName": "contains",
+  "brief": "public boolean contains(Vector2 point){}",
+  "methodSignature": "contains(Vector2)",
+  "sourceCode": "public boolean contains(Vector2 point) {\n\t\tfloat dx = x - point.x;\n\t\tfloat dy = y - point.y;\n\t\treturn dx * dx + dy * dy <= radius * radius;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector2"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector2": []
+  },
+  "full_method_info": "/**\n * Checks whether or not this circle contains a given point.\n *\n * @param point The {@link Vector2} that contains the point coordinates.\n *\n * @return true if this circle contains this point; false otherwise.\n */\npublic boolean contains(Vector2 point) {\n    float dx = x - point.x;\n    float dy = y - point.y;\n    return dx * dx + dy * dy <= radius * radius;\n}",
+  "method_comment": "\n\t * Checks whether or not this circle contains a given point.\n\t * \n\t * @param point The {@link Vector2} that contains the point coordinates.\n\t * \n\t * @return true if this circle contains this point; false otherwise.\n\t ",
+  "method_annotation": ""
+}

@@ -1,0 +1,18 @@
+{
+  "className": "Polyline",
+  "methodName": "getScaleY",
+  "brief": "public float getScaleY (){}",
+  "methodSignature": "getScaleY()",
+  "sourceCode": "public float getScaleY () {\n\t\treturn scaleY;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "public float getScaleY() {\n    return scaleY;\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

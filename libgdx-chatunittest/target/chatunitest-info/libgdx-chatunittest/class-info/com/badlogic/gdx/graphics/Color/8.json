@@ -1,0 +1,24 @@
+{
+  "className": "Color",
+  "methodName": "set",
+  "brief": "public Color set (int rgba){}",
+  "methodSignature": "set(int)",
+  "sourceCode": "public Color set (int rgba) {\n\t\trgba8888ToColor(this, rgba);\n\t\treturn this;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "int"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.graphics.Color": [
+      "rgba8888ToColor(Color, int)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets this color's component values through an integer representation.\n *\n * @return this Color for chaining\n * @see #rgba8888ToColor(Color, int)\n */\npublic Color set(int rgba) {\n    rgba8888ToColor(this, rgba);\n    return this;\n}",
+  "method_comment": " Sets this color's component values through an integer representation.\n\t * \n\t * @return this Color for chaining\n\t * @see #rgba8888ToColor(Color, int) ",
+  "method_annotation": ""
+}

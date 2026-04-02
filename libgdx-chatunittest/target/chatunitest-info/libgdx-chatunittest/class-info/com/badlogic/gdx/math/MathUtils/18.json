@@ -1,0 +1,25 @@
+{
+  "className": "MathUtils",
+  "methodName": "random",
+  "brief": "static public int random (int start, int end){}",
+  "methodSignature": "random(int, int)",
+  "sourceCode": "static public int random (int start, int end) {\n\t\treturn start + random.nextInt(end - start + 1);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "int",
+    "int"
+  ],
+  "dependentMethods": {
+    "java.util.Random": [
+      "nextInt(int)"
+    ]
+  },
+  "full_method_info": "/**\n * Returns a random number between start (inclusive) and end (inclusive).\n */\nstatic public int random(int start, int end) {\n    return start + random.nextInt(end - start + 1);\n}",
+  "method_comment": " Returns a random number between start (inclusive) and end (inclusive). ",
+  "method_annotation": ""
+}

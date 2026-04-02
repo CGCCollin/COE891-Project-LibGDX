@@ -1,0 +1,18 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "area",
+  "brief": "public float area(){}",
+  "methodSignature": "area()",
+  "sourceCode": "public float area() {\n\t\treturn this.width * this.height;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "public float area() {\n    return this.width * this.height;\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

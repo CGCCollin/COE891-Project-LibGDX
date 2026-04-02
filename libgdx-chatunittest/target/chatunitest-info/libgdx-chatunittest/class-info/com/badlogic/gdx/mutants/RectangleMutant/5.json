@@ -1,0 +1,18 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "getWidth",
+  "brief": "public float getWidth(){}",
+  "methodSignature": "getWidth()",
+  "sourceCode": "public float getWidth() {\n\t\treturn width;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * @return the width\n */\npublic float getWidth() {\n    return width;\n}",
+  "method_comment": " @return the width ",
+  "method_annotation": ""
+}

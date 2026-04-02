@@ -1,0 +1,18 @@
+{
+  "className": "PolygonMutant",
+  "methodName": "resetTransformations",
+  "brief": "public void resetTransformations(){}",
+  "methodSignature": "resetTransformations()",
+  "sourceCode": "public void resetTransformations() {\n\t\tscaleX = 1;\n\t\tscaleY = 1;\n\t\toriginX = 0;\n\t\toriginY = 0;\n\t\tx = 0;\n\t\ty = 0;\n\t\trotation = 0;\n\t\tdirty = true;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "public void resetTransformations() {\n    scaleX = 1;\n    scaleY = 1;\n    originX = 0;\n    originY = 0;\n    x = 0;\n    y = 0;\n    rotation = 0;\n    dirty = true;\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

@@ -1,0 +1,24 @@
+{
+  "className": "NumberUtils",
+  "methodName": "doubleToLongBits",
+  "brief": "public static long doubleToLongBits (double value){}",
+  "methodSignature": "doubleToLongBits(double)",
+  "sourceCode": "public static long doubleToLongBits (double value) {\n\t\treturn Double.doubleToLongBits(value);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "double"
+  ],
+  "dependentMethods": {
+    "java.lang.Double": [
+      "doubleToLongBits(double)"
+    ]
+  },
+  "full_method_info": "public static long doubleToLongBits(double value) {\n    return Double.doubleToLongBits(value);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

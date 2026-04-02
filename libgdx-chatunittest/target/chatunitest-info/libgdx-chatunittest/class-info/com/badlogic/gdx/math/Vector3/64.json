@@ -1,0 +1,29 @@
+{
+  "className": "Vector3",
+  "methodName": "interpolate",
+  "brief": "@Override\r\n\tpublic Vector3 interpolate (Vector3 target, float alpha, Interpolation interpolator){}",
+  "methodSignature": "interpolate(Vector3, float, Interpolation)",
+  "sourceCode": "@Override\n\tpublic Vector3 interpolate (Vector3 target, float alpha, Interpolation interpolator) {\n\t\treturn lerp(target, interpolator.apply(0f, 1f, alpha));\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector3",
+    "float",
+    "Interpolation"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "lerp(Vector3, float)"
+    ],
+    "com.badlogic.gdx.math.Interpolation": [
+      "apply(float, float, float)"
+    ]
+  },
+  "full_method_info": "@Override\npublic Vector3 interpolate(Vector3 target, float alpha, Interpolation interpolator) {\n    return lerp(target, interpolator.apply(0f, 1f, alpha));\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

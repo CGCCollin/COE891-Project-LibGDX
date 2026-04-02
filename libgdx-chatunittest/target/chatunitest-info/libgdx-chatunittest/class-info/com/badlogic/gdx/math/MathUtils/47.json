@@ -1,0 +1,20 @@
+{
+  "className": "MathUtils",
+  "methodName": "round",
+  "brief": "static public int round (float value){}",
+  "methodSignature": "round(float)",
+  "sourceCode": "static public int round (float value) {\n\t\treturn (int)(value + BIG_ENOUGH_ROUND) - BIG_ENOUGH_INT;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the closest integer to the specified float. This method will only properly round floats from -(2^14) to\n * (Float.MAX_VALUE - 2^14).\n */\nstatic public int round(float value) {\n    return (int) (value + BIG_ENOUGH_ROUND) - BIG_ENOUGH_INT;\n}",
+  "method_comment": " Returns the closest integer to the specified float. This method will only properly round floats from -(2^14) to\n\t * (Float.MAX_VALUE - 2^14). ",
+  "method_annotation": ""
+}

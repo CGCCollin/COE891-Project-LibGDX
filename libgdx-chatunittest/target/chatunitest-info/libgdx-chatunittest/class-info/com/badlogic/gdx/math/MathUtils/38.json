@@ -1,0 +1,22 @@
+{
+  "className": "MathUtils",
+  "methodName": "lerp",
+  "brief": "static public float lerp (float fromValue, float toValue, float progress){}",
+  "methodSignature": "lerp(float, float, float)",
+  "sourceCode": "static public float lerp (float fromValue, float toValue, float progress) {\n\t\treturn fromValue + (toValue - fromValue) * progress;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "// ---\n/**\n * Linearly interpolates between fromValue to toValue on progress position.\n */\nstatic public float lerp(float fromValue, float toValue, float progress) {\n    return fromValue + (toValue - fromValue) * progress;\n}",
+  "method_comment": " Linearly interpolates between fromValue to toValue on progress position. ",
+  "method_annotation": ""
+}

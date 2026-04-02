@@ -1,0 +1,24 @@
+{
+  "className": "Color",
+  "methodName": "mul",
+  "brief": "public Color mul (float value){}",
+  "methodSignature": "mul(float)",
+  "sourceCode": "public Color mul (float value) {\n\t\tthis.r *= value;\n\t\tthis.g *= value;\n\t\tthis.b *= value;\n\t\tthis.a *= value;\n\t\treturn clamp();\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.graphics.Color": [
+      "clamp()"
+    ]
+  },
+  "full_method_info": "/**\n * Multiplies all components of this Color with the given value.\n *\n * @param value the value\n * @return this color\n */\npublic Color mul(float value) {\n    this.r *= value;\n    this.g *= value;\n    this.b *= value;\n    this.a *= value;\n    return clamp();\n}",
+  "method_comment": " Multiplies all components of this Color with the given value.\n\t * \n\t * @param value the value\n\t * @return this color ",
+  "method_annotation": ""
+}

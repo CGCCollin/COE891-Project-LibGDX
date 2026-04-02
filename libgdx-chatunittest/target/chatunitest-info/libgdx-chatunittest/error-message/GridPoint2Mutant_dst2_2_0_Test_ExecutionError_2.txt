@@ -1,0 +1,35 @@
+package com.badlogic.gdx.mutants;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.Serializable;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import com.badlogic.gdx.math.*;
+
+public class GridPoint2Mutant_dst2_2_0_Test {
+
+    private GridPoint2Mutant point1 = new GridPoint2Mutant(3, 4);
+
+    private GridPoint2Mutant point2 = new GridPoint2Mutant(6, 8);
+
+    @Test
+    void testDst2() throws Exception {
+        double expected = 20.0;
+        double actual = invokeMethod(point1, "dst2", new Object[] { point2 });
+        assertEquals(expected, actual);
+    }
+
+    private static <T> T invokeMethod(Object obj, String methodName, Object[] args) throws Exception {
+        Class<?> clazz = obj.getClass();
+        java.lang.reflect.Method method = clazz.getDeclaredMethod(methodName, new Class[args.length]);
+        method.setAccessible(true);
+        return (T) method.invoke(obj, args);
+    }
+}
+
+--------------------------------------------
+Error in testDst2(): line 27 : java.lang.NoSuchMethodException: com.badlogic.gdx.mutants.GridPoint2Mutant.dst2(null)
+Error in testDst2(): line 21 : java.lang.NoSuchMethodException: com.badlogic.gdx.mutants.GridPoint2Mutant.dst2(null)

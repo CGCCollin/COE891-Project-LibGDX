@@ -1,0 +1,20 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "setHeight",
+  "brief": "public RectangleMutant setHeight(float height){}",
+  "methodSignature": "setHeight(float)",
+  "sourceCode": "public RectangleMutant setHeight(float height) {\n\t\tthis.height = height;\n\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the height of this rectangle\n *\n * @param height The height\n * @return this rectangle for chaining\n */\npublic RectangleMutant setHeight(float height) {\n    this.height = height;\n    return this;\n}",
+  "method_comment": "\n\t * Sets the height of this rectangle\n\t * \n\t * @param height The height\n\t * @return this rectangle for chaining\n\t ",
+  "method_annotation": ""
+}

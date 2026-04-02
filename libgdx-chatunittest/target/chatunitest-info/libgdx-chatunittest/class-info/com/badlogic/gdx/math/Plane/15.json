@@ -1,0 +1,27 @@
+{
+  "className": "Plane",
+  "methodName": "Plane",
+  "brief": "public Plane (Vector3 point1, Vector3 point2, Vector3 point3){}",
+  "methodSignature": "Plane(Vector3, Vector3, Vector3)",
+  "sourceCode": "public Plane (Vector3 point1, Vector3 point2, Vector3 point3) {\n\t\tset(point1, point2, point3);\n\t}",
+  "useField": false,
+  "isConstructor": true,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector3",
+    "Vector3",
+    "Vector3"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [],
+    "com.badlogic.gdx.math.Plane": [
+      "set(Vector3, Vector3, Vector3)"
+    ]
+  },
+  "full_method_info": "public Plane(Vector3 point1, Vector3 point2, Vector3 point3) {\n    set(point1, point2, point3);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

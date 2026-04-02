@@ -1,0 +1,17 @@
+com\badlogic\gdx\utils\NumberUtils.class
+com\badlogic\gdx\math\Polyline.class
+com\badlogic\gdx\mutants\PlaneMutant$PlaneSide.class
+com\badlogic\gdx\mutants\CircleMutant.class
+com\badlogic\gdx\graphics\Color.class
+com\badlogic\gdx\mutants\PlaneMutant.class
+com\badlogic\gdx\math\MathUtils.class
+com\badlogic\gdx\math\Vector3.class
+com\badlogic\gdx\math\Plane$PlaneSide.class
+com\badlogic\gdx\math\Rectangle.class
+com\badlogic\gdx\mutants\GridPoint2Mutant.class
+com\badlogic\gdx\mutants\RectangleMutant.class
+com\badlogic\gdx\mutants\PolygonMutant.class
+com\badlogic\gdx\math\Circle.class
+com\badlogic\gdx\math\MathUtils$Sin.class
+com\badlogic\gdx\math\Polygon.class
+com\badlogic\gdx\math\Plane.class

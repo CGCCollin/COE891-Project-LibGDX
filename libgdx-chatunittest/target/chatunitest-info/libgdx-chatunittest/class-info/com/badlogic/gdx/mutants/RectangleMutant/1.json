@@ -1,0 +1,18 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "getX",
+  "brief": "public float getX(){}",
+  "methodSignature": "getX()",
+  "sourceCode": "public float getX() {\n\t\treturn x;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * @return the x-coordinate of the bottom left corner\n */\npublic float getX() {\n    return x;\n}",
+  "method_comment": " @return the x-coordinate of the bottom left corner ",
+  "method_annotation": ""
+}

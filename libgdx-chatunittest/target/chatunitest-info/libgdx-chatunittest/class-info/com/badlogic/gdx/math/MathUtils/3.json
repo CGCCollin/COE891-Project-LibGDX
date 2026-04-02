@@ -1,0 +1,20 @@
+{
+  "className": "MathUtils",
+  "methodName": "cosDeg",
+  "brief": "static public float cosDeg (float degrees){}",
+  "methodSignature": "cosDeg(float)",
+  "sourceCode": "static public float cosDeg (float degrees) {\n\t\treturn Sin.table[(int)((degrees + 90) * degToIndex) & SIN_MASK];\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the cosine in degrees from a lookup table. For optimal precision, use degrees between -360 and 360 (both\n * inclusive).\n */\nstatic public float cosDeg(float degrees) {\n    return Sin.table[(int) ((degrees + 90) * degToIndex) & SIN_MASK];\n}",
+  "method_comment": " Returns the cosine in degrees from a lookup table. For optimal precision, use degrees between -360 and 360 (both\n\t * inclusive). ",
+  "method_annotation": ""
+}

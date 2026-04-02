@@ -1,0 +1,47 @@
+{
+  "attempt0": {
+    "testClassName": "RectangleMutant_fitOutside_29_0_Test",
+    "fullName": "com.badlogic.gdx.mutants.RectangleMutant_fitOutside_29_0_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\RectangleMutant_fitOutside_29_0_Test.java",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "fitOutside",
+    "methodSig": "fitOutside(RectangleMutant)"
+  },
+  "attempt1": {
+    "testClassName": "RectangleMutant_fitOutside_29_1_Test",
+    "fullName": "com.badlogic.gdx.mutants.RectangleMutant_fitOutside_29_1_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\RectangleMutant_fitOutside_29_0_Test.java",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "fitOutside",
+    "methodSig": "fitOutside(RectangleMutant)"
+  },
+  "attempt2": {
+    "testClassName": "RectangleMutant_fitOutside_29_2_Test",
+    "fullName": "com.badlogic.gdx.mutants.RectangleMutant_fitOutside_29_2_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\RectangleMutant_fitOutside_29_0_Test.java",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "fitOutside",
+    "methodSig": "fitOutside(RectangleMutant)"
+  },
+  "attempt3": {
+    "testClassName": "RectangleMutant_fitOutside_29_3_Test",
+    "fullName": "com.badlogic.gdx.mutants.RectangleMutant_fitOutside_29_3_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\RectangleMutant_fitOutside_29_0_Test.java",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "fitOutside",
+    "methodSig": "fitOutside(RectangleMutant)"
+  },
+  "attempt4": {
+    "testClassName": "RectangleMutant_fitOutside_29_4_Test",
+    "fullName": "com.badlogic.gdx.mutants.RectangleMutant_fitOutside_29_4_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\RectangleMutant_fitOutside_29_0_Test.java",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "fitOutside",
+    "methodSig": "fitOutside(RectangleMutant)"
+  }
+}

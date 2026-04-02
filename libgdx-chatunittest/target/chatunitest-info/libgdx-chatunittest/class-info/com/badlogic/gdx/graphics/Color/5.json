@@ -1,0 +1,24 @@
+{
+  "className": "Color",
+  "methodName": "sub",
+  "brief": "public Color sub (Color color){}",
+  "methodSignature": "sub(Color)",
+  "sourceCode": "public Color sub (Color color) {\n\t\tthis.r -= color.r;\n\t\tthis.g -= color.g;\n\t\tthis.b -= color.b;\n\t\tthis.a -= color.a;\n\t\treturn clamp();\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Color"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.graphics.Color": [
+      "clamp()"
+    ]
+  },
+  "full_method_info": "/**\n * Subtracts the given color from this color\n *\n * @param color the color\n * @return this color\n */\npublic Color sub(Color color) {\n    this.r -= color.r;\n    this.g -= color.g;\n    this.b -= color.b;\n    this.a -= color.a;\n    return clamp();\n}",
+  "method_comment": " Subtracts the given color from this color\n\t * \n\t * @param color the color\n\t * @return this color ",
+  "method_annotation": ""
+}

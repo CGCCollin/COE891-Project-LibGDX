@@ -1,0 +1,26 @@
+{
+  "className": "Color",
+  "methodName": "set",
+  "brief": "public Color set (Color rgb, float alpha){}",
+  "methodSignature": "set(Color, float)",
+  "sourceCode": "public Color set (Color rgb, float alpha) {\n\t\tthis.r = rgb.r;\n\t\tthis.g = rgb.g;\n\t\tthis.b = rgb.b;\n\t\tthis.a = MathUtils.clamp(alpha, 0f, 1f);\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Color",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.graphics.Color": [],
+    "com.badlogic.gdx.math.MathUtils": [
+      "clamp(float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets this color to the red, green and blue components of the provided Color and a deviating alpha value.\n *\n * @param rgb the desired red, green and blue values (alpha of that Color is ignored)\n * @param alpha the desired alpha value (will be clamped to the range [0, 1])\n * @return this color.\n */\npublic Color set(Color rgb, float alpha) {\n    this.r = rgb.r;\n    this.g = rgb.g;\n    this.b = rgb.b;\n    this.a = MathUtils.clamp(alpha, 0f, 1f);\n    return this;\n}",
+  "method_comment": " Sets this color to the red, green and blue components of the provided Color and a deviating alpha value.\n\t *\n\t * @param rgb the desired red, green and blue values (alpha of that Color is ignored)\n\t * @param alpha the desired alpha value (will be clamped to the range [0, 1])\n\t * @return this color. ",
+  "method_annotation": ""
+}

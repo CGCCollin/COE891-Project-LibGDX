@@ -1,0 +1,24 @@
+{
+  "className": "MathUtils",
+  "methodName": "map",
+  "brief": "static public float map (float inRangeStart, float inRangeEnd, float outRangeStart, float outRangeEnd, float value){}",
+  "methodSignature": "map(float, float, float, float, float)",
+  "sourceCode": "static public float map (float inRangeStart, float inRangeEnd, float outRangeStart, float outRangeEnd, float value) {\n\t\treturn outRangeStart + (value - inRangeStart) * (outRangeEnd - outRangeStart) / (inRangeEnd - inRangeStart);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Linearly map a value from one range to another. Input range must not be empty. This is the same as chaining\n * {@link #norm(float, float, float)} from input range and {@link #lerp(float, float, float)} to output range.\n * @param inRangeStart Input range start\n * @param inRangeEnd Input range end\n * @param outRangeStart Output range start\n * @param outRangeEnd Output range end\n * @param value Value to map\n * @return Mapped value. Values outside of the input range are not clamped to output range\n */\nstatic public float map(float inRangeStart, float inRangeEnd, float outRangeStart, float outRangeEnd, float value) {\n    return outRangeStart + (value - inRangeStart) * (outRangeEnd - outRangeStart) / (inRangeEnd - inRangeStart);\n}",
+  "method_comment": " Linearly map a value from one range to another. Input range must not be empty. This is the same as chaining\n\t * {@link #norm(float, float, float)} from input range and {@link #lerp(float, float, float)} to output range.\n\t * @param inRangeStart Input range start\n\t * @param inRangeEnd Input range end\n\t * @param outRangeStart Output range start\n\t * @param outRangeEnd Output range end\n\t * @param value Value to map\n\t * @return Mapped value. Values outside of the input range are not clamped to output range ",
+  "method_annotation": ""
+}

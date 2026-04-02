@@ -1,0 +1,21 @@
+{
+  "className": "GridPoint2Mutant",
+  "methodName": "sub",
+  "brief": "public GridPoint2Mutant sub(int x, int y){}",
+  "methodSignature": "sub(int, int)",
+  "sourceCode": "public GridPoint2Mutant sub(int x, int y) {\n\t\tthis.x -= x;\n\t\tthis.y -= y;\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "int",
+    "int"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Subtracts another 2D grid point from this point.\n *\n * @param x The x-coordinate of the other point\n * @param y The y-coordinate of the other point\n * @return this 2d grid point for chaining.\n */\npublic GridPoint2Mutant sub(int x, int y) {\n    this.x -= x;\n    this.y -= y;\n    return this;\n}",
+  "method_comment": "\n\t * Subtracts another 2D grid point from this point.\n\t *\n\t * @param x The x-coordinate of the other point\n\t * @param y The y-coordinate of the other point\n\t * @return this 2d grid point for chaining.\n\t ",
+  "method_annotation": ""
+}

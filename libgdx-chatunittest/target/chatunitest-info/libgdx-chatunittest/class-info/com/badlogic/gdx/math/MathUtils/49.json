@@ -1,0 +1,24 @@
+{
+  "className": "MathUtils",
+  "methodName": "isZero",
+  "brief": "static public boolean isZero (float value){}",
+  "methodSignature": "isZero(float)",
+  "sourceCode": "static public boolean isZero (float value) {\n\t\treturn Math.abs(value) <= FLOAT_ROUNDING_ERROR;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {
+    "java.lang.Math": [
+      "abs(float)"
+    ]
+  },
+  "full_method_info": "/**\n * Returns true if the value is zero (using the default tolerance as upper bound)\n */\nstatic public boolean isZero(float value) {\n    return Math.abs(value) <= FLOAT_ROUNDING_ERROR;\n}",
+  "method_comment": " Returns true if the value is zero (using the default tolerance as upper bound) ",
+  "method_annotation": ""
+}

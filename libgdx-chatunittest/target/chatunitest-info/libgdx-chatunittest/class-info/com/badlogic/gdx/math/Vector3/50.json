@@ -1,0 +1,27 @@
+{
+  "className": "Vector3",
+  "methodName": "isUnit",
+  "brief": "@Override\r\n\tpublic boolean isUnit (final float margin){}",
+  "methodSignature": "isUnit(float)",
+  "sourceCode": "@Override\n\tpublic boolean isUnit (final float margin) {\n\t\treturn Math.abs(len2() - 1f) < margin;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {
+    "java.lang.Math": [
+      "abs(float)"
+    ],
+    "com.badlogic.gdx.math.Vector3": [
+      "len2()"
+    ]
+  },
+  "full_method_info": "@Override\npublic boolean isUnit(final float margin) {\n    return Math.abs(len2() - 1f) < margin;\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

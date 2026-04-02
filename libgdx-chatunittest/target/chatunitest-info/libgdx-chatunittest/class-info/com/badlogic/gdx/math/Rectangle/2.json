@@ -1,0 +1,20 @@
+{
+  "className": "Rectangle",
+  "methodName": "setX",
+  "brief": "public Rectangle setX (float x){}",
+  "methodSignature": "setX(float)",
+  "sourceCode": "public Rectangle setX (float x) {\n\t\tthis.x = x;\n\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the x-coordinate of the bottom left corner\n * @param x The x-coordinate\n * @return this rectangle for chaining\n */\npublic Rectangle setX(float x) {\n    this.x = x;\n    return this;\n}",
+  "method_comment": " Sets the x-coordinate of the bottom left corner\n\t * @param x The x-coordinate\n\t * @return this rectangle for chaining ",
+  "method_annotation": ""
+}

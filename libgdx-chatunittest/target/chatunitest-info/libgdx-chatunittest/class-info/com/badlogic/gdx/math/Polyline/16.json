@@ -1,0 +1,21 @@
+{
+  "className": "Polyline",
+  "methodName": "setScale",
+  "brief": "public void setScale (float scaleX, float scaleY){}",
+  "methodSignature": "setScale(float, float)",
+  "sourceCode": "public void setScale (float scaleX, float scaleY) {\n\t\tthis.scaleX = scaleX;\n\t\tthis.scaleY = scaleY;\n\t\tdirty = true;\n\t\tcalculateScaledLength = true;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "public void setScale(float scaleX, float scaleY) {\n    this.scaleX = scaleX;\n    this.scaleY = scaleY;\n    dirty = true;\n    calculateScaledLength = true;\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

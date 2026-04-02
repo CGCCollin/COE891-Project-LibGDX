@@ -1,0 +1,18 @@
+{
+  "className": "Color",
+  "methodName": "clamp",
+  "brief": "public Color clamp (){}",
+  "methodSignature": "clamp()",
+  "sourceCode": "public Color clamp () {\n\t\tif (r < 0)\n\t\t\tr = 0;\n\t\telse if (r > 1) r = 1;\n\n\t\tif (g < 0)\n\t\t\tg = 0;\n\t\telse if (g > 1) g = 1;\n\n\t\tif (b < 0)\n\t\t\tb = 0;\n\t\telse if (b > 1) b = 1;\n\n\t\tif (a < 0)\n\t\t\ta = 0;\n\t\telse if (a > 1) a = 1;\n\t\treturn this;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Clamps this Color's components to a valid range [0 - 1]\n * @return this Color for chaining\n */\npublic Color clamp() {\n    if (r < 0)\n        r = 0;\n    else if (r > 1)\n        r = 1;\n    if (g < 0)\n        g = 0;\n    else if (g > 1)\n        g = 1;\n    if (b < 0)\n        b = 0;\n    else if (b > 1)\n        b = 1;\n    if (a < 0)\n        a = 0;\n    else if (a > 1)\n        a = 1;\n    return this;\n}",
+  "method_comment": " Clamps this Color's components to a valid range [0 - 1]\n\t * @return this Color for chaining ",
+  "method_annotation": ""
+}

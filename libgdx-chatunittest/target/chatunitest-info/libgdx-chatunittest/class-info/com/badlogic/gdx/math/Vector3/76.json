@@ -1,0 +1,27 @@
+{
+  "className": "Vector3",
+  "methodName": "epsilonEquals",
+  "brief": "public boolean epsilonEquals (float x, float y, float z, float epsilon){}",
+  "methodSignature": "epsilonEquals(float, float, float, float)",
+  "sourceCode": "public boolean epsilonEquals (float x, float y, float z, float epsilon) {\n\t\tif (Math.abs(x - this.x) > epsilon) return false;\n\t\tif (Math.abs(y - this.y) > epsilon) return false;\n\t\tif (Math.abs(z - this.z) > epsilon) return false;\n\t\treturn true;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "java.lang.Math": [
+      "abs(float)"
+    ]
+  },
+  "full_method_info": "/**\n * Compares this vector with the other vector, using the supplied epsilon for fuzzy equality testing.\n * @return whether the vectors are the same.\n */\npublic boolean epsilonEquals(float x, float y, float z, float epsilon) {\n    if (Math.abs(x - this.x) > epsilon)\n        return false;\n    if (Math.abs(y - this.y) > epsilon)\n        return false;\n    if (Math.abs(z - this.z) > epsilon)\n        return false;\n    return true;\n}",
+  "method_comment": " Compares this vector with the other vector, using the supplied epsilon for fuzzy equality testing.\n\t * @return whether the vectors are the same. ",
+  "method_annotation": ""
+}

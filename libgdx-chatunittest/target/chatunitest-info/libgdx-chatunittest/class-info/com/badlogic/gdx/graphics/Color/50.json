@@ -1,0 +1,27 @@
+{
+  "className": "Color",
+  "methodName": "Color",
+  "brief": "public Color (float r, float g, float b, float a){}",
+  "methodSignature": "Color(float, float, float, float)",
+  "sourceCode": "public Color (float r, float g, float b, float a) {\n\t\tthis.r = r;\n\t\tthis.g = g;\n\t\tthis.b = b;\n\t\tthis.a = a;\n\t\tclamp();\n\t}",
+  "useField": true,
+  "isConstructor": true,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.graphics.Color": [
+      "clamp()"
+    ]
+  },
+  "full_method_info": "public Color(float r, float g, float b, float a) {\n    this.r = r;\n    this.g = g;\n    this.b = b;\n    this.a = a;\n    clamp();\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

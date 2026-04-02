@@ -1,0 +1,96 @@
+package com.badlogic.gdx.mutants;
+
+import static com.badlogic.gdx.mutants.RectangleMutant.tmp;
+import static com.badlogic.gdx.mutants.RectangleMutant.tmp2;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import com.badlogic.gdx.math.*;
+import java.io.Serializable;
+import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.NumberUtils;
+import com.badlogic.gdx.utils.Scaling;
+
+public class RectangleMutant_merge_24_0_Test {
+
+    @BeforeEach
+    public void setUp() {
+        // Initialize the temporary objects for testing
+        tmp = new RectangleMutant(0, 0, 0, 0);
+        tmp2 = new RectangleMutant(5, 5, 10, 10);
+    }
+
+    @Test
+    public void testMerge() {
+        Vector2[] vecs = new Vector2[3];
+        vecs[0] = new Vector2(1f, 2f);
+        vecs[1] = new Vector2(6f, 7f);
+        vecs[2] = new Vector2(8f, 9f);
+        RectangleMutant result = tmp.merge(vecs);
+        assertEquals(0f, result.x, 0.001);
+        assertEquals(1f, result.y, 0.001);
+        assertEquals(10f, result.width, 0.001);
+        assertEquals(10f, result.height, 0.001);
+    }
+
+    @Test
+    public void testMergeWithNegativeVectors() {
+        Vector2[] vecs = new Vector2[3];
+        vecs[0] = new Vector2(-1f, -2f);
+        vecs[1] = new Vector2(6f, 7f);
+        vecs[2] = new Vector2(8f, 9f);
+        RectangleMutant result = tmp.merge(vecs);
+        assertEquals(-1f, result.x, 0.001);
+        assertEquals(-2f, result.y, 0.001);
+        assertEquals(10f, result.width, 0.001);
+        assertEquals(10f, result.height, 0.001);
+    }
+
+    @Test
+    public void testMergeWithZeroVectors() {
+        Vector2[] vecs = new Vector2[3];
+        vecs[0] = new Vector2(0f, 0f);
+        vecs[1] = new Vector2(6f, 7f);
+        vecs[2] = new Vector2(8f, 9f);
+        RectangleMutant result = tmp.merge(vecs);
+        assertEquals(0f, result.x, 0.001);
+        assertEquals(0f, result.y, 0.001);
+        assertEquals(10f, result.width, 0.001);
+        assertEquals(10f, result.height, 0.001);
+    }
+
+    @Test
+    public void testMergeWithSingleVector() {
+        Vector2[] vecs = new Vector2[1];
+        vecs[0] = new Vector2(3f, 4f);
+        RectangleMutant result = tmp.merge(vecs);
+        assertEquals(3f, result.x, 0.001);
+        assertEquals(4f, result.y, 0.001);
+        assertEquals(0f, result.width, 0.001);
+        assertEquals(0f, result.height, 0.001);
+    }
+
+    @Test
+    public void testMergeWithEmptyArray() {
+        Vector2[] vecs = new Vector2[0];
+        RectangleMutant result = tmp.merge(vecs);
+        assertEquals(0f, result.x, 0.001);
+        assertEquals(0f, result.y, 0.001);
+        assertEquals(0f, result.width, 0.001);
+        assertEquals(0f, result.height, 0.001);
+    }
+
+    @Test
+    public void testMergeWithNullArray() {
+        RectangleMutant result = tmp.merge(null);
+    }
+}
+
+--------------------------------------------
+Error in RectangleMutant_merge_24_0_Test: line 22 : cannot assign a value to final variable tmp
+Error in RectangleMutant_merge_24_0_Test: line 23 : cannot assign a value to final variable tmp2
+Error in RectangleMutant_merge_24_0_Test: line 88 : reference to merge is ambiguous
+  both method merge(com.badlogic.gdx.math.Vector2) in com.badlogic.gdx.mutants.RectangleMutant and method merge(com.badlogic.gdx.math.Vector2[]) in com.badlogic.gdx.mutants.RectangleMutant match

@@ -1,0 +1,22 @@
+{
+  "className": "GridPoint2Mutant",
+  "methodName": "dst2",
+  "brief": "public float dst2(GridPoint2Mutant other){}",
+  "methodSignature": "dst2(GridPoint2Mutant)",
+  "sourceCode": "public float dst2(GridPoint2Mutant other) {\n\t\tint xd = other.x - x;\n\t\tint yd = other.y - y;\n\n\t\treturn xd * xd + yd * yd;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "GridPoint2Mutant"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.mutants.GridPoint2Mutant": []
+  },
+  "full_method_info": "/**\n * @param other The other point\n * @return the squared distance between this point and the other point.\n */\npublic float dst2(GridPoint2Mutant other) {\n    int xd = other.x - x;\n    int yd = other.y - y;\n    return xd * xd + yd * yd;\n}",
+  "method_comment": "\n\t * @param other The other point\n\t * @return the squared distance between this point and the other point.\n\t ",
+  "method_annotation": ""
+}

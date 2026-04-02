@@ -1,0 +1,24 @@
+{
+  "className": "MathUtils",
+  "methodName": "randomBoolean",
+  "brief": "static public boolean randomBoolean (float chance){}",
+  "methodSignature": "randomBoolean(float)",
+  "sourceCode": "static public boolean randomBoolean (float chance) {\n\t\treturn MathUtils.random() < chance;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.MathUtils": [
+      "random()"
+    ]
+  },
+  "full_method_info": "/**\n * Returns true if a random value between 0 and 1 is less than the specified value.\n */\nstatic public boolean randomBoolean(float chance) {\n    return MathUtils.random() < chance;\n}",
+  "method_comment": " Returns true if a random value between 0 and 1 is less than the specified value. ",
+  "method_annotation": ""
+}

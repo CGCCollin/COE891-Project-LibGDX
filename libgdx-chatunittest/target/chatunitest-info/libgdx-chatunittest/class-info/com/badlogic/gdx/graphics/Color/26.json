@@ -1,0 +1,21 @@
+{
+  "className": "Color",
+  "methodName": "luminanceAlpha",
+  "brief": "public static int luminanceAlpha (float luminance, float alpha){}",
+  "methodSignature": "luminanceAlpha(float, float)",
+  "sourceCode": "public static int luminanceAlpha (float luminance, float alpha) {\n\t\treturn ((int)(luminance * 255.0f) << 8) | (int)(alpha * 255);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "public static int luminanceAlpha(float luminance, float alpha) {\n    return ((int) (luminance * 255.0f) << 8) | (int) (alpha * 255);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

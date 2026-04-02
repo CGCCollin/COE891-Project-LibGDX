@@ -1,0 +1,22 @@
+{
+  "className": "MathUtils",
+  "methodName": "lerpAngle",
+  "brief": "public static float lerpAngle (float fromRadians, float toRadians, float progress){}",
+  "methodSignature": "lerpAngle(float, float, float)",
+  "sourceCode": "public static float lerpAngle (float fromRadians, float toRadians, float progress) {\n\t\tfloat delta = (((toRadians - fromRadians) % PI2 + PI2 + PI) % PI2) - PI;\n\t\treturn ((fromRadians + delta * progress) % PI2 + PI2) % PI2;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Linearly interpolates between two angles in radians. Takes into account that angles wrap at two pi and always takes the\n * direction with the smallest delta angle.\n *\n * @param fromRadians start angle in radians\n * @param toRadians target angle in radians\n * @param progress interpolation value in the range [0, 1]\n * @return the interpolated angle in the range [0, PI2[\n */\npublic static float lerpAngle(float fromRadians, float toRadians, float progress) {\n    float delta = (((toRadians - fromRadians) % PI2 + PI2 + PI) % PI2) - PI;\n    return ((fromRadians + delta * progress) % PI2 + PI2) % PI2;\n}",
+  "method_comment": " Linearly interpolates between two angles in radians. Takes into account that angles wrap at two pi and always takes the\n\t * direction with the smallest delta angle.\n\t * \n\t * @param fromRadians start angle in radians\n\t * @param toRadians target angle in radians\n\t * @param progress interpolation value in the range [0, 1]\n\t * @return the interpolated angle in the range [0, PI2[ ",
+  "method_annotation": ""
+}

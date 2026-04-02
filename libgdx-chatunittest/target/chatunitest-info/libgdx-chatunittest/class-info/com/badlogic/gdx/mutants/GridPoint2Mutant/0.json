@@ -1,0 +1,22 @@
+{
+  "className": "GridPoint2Mutant",
+  "methodName": "set",
+  "brief": "public GridPoint2Mutant set(GridPoint2Mutant point){}",
+  "methodSignature": "set(GridPoint2Mutant)",
+  "sourceCode": "public GridPoint2Mutant set(GridPoint2Mutant point) {\n\t\tthis.x = point.x;\n\t\tthis.y = point.y;\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "GridPoint2Mutant"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.mutants.GridPoint2Mutant": []
+  },
+  "full_method_info": "/**\n * Sets the coordinates of this 2D grid point to that of another.\n *\n * @param point The 2D grid point to copy the coordinates of.\n *\n * @return this 2D grid point for chaining.\n */\npublic GridPoint2Mutant set(GridPoint2Mutant point) {\n    this.x = point.x;\n    this.y = point.y;\n    return this;\n}",
+  "method_comment": "\n\t * Sets the coordinates of this 2D grid point to that of another.\n\t * \n\t * @param point The 2D grid point to copy the coordinates of.\n\t * \n\t * @return this 2D grid point for chaining.\n\t ",
+  "method_annotation": ""
+}

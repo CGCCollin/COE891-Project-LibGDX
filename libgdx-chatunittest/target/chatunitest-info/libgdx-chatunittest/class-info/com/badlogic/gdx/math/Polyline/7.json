@@ -1,0 +1,18 @@
+{
+  "className": "Polyline",
+  "methodName": "getOriginY",
+  "brief": "public float getOriginY (){}",
+  "methodSignature": "getOriginY()",
+  "sourceCode": "public float getOriginY () {\n\t\treturn originY;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "public float getOriginY() {\n    return originY;\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

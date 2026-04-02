@@ -1,0 +1,29 @@
+{
+  "className": "PolygonMutant",
+  "methodName": "getVertex",
+  "brief": "public Vector2 getVertex(int vertexNum, Vector2 pos){}",
+  "methodSignature": "getVertex(int, Vector2)",
+  "sourceCode": "public Vector2 getVertex(int vertexNum, Vector2 pos) {\n\t\tif (vertexNum < 0 || vertexNum > getVertexCount())\n\t\t\tthrow new IllegalArgumentException(\"the vertex \" + vertexNum + \" doesn't exist\");\n\t\tfloat[] vertices = this.getTransformedVertices();\n\t\treturn pos.set(vertices[2 * vertexNum], vertices[2 * vertexNum + 1]);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "int",
+    "Vector2"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector2": [
+      "set(float, float)"
+    ],
+    "com.badlogic.gdx.mutants.PolygonMutant": [
+      "getVertexCount()",
+      "getTransformedVertices()"
+    ]
+  },
+  "full_method_info": "/**\n * @return Position(transformed) of vertex\n */\npublic Vector2 getVertex(int vertexNum, Vector2 pos) {\n    if (vertexNum < 0 || vertexNum > getVertexCount())\n        throw new IllegalArgumentException(\"the vertex \" + vertexNum + \" doesn't exist\");\n    float[] vertices = this.getTransformedVertices();\n    return pos.set(vertices[2 * vertexNum], vertices[2 * vertexNum + 1]);\n}",
+  "method_comment": " @return Position(transformed) of vertex ",
+  "method_annotation": ""
+}

@@ -1,0 +1,96 @@
+package com.badlogic.gdx.mutants;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import com.badlogic.gdx.math.*;
+
+public class PolygonMutant_dirty_11_1_Test {
+
+    @Test
+    void testDirty() throws Exception {
+        PolygonMutant polygon = new PolygonMutant();
+        assertTrue(polygon.isDirty());
+        // Invoke private method using reflection
+        java.lang.reflect.Method dirtyMethod = PolygonMutant.class.getDeclaredMethod("dirty");
+        dirtyMethod.setAccessible(true);
+        dirtyMethod.invoke(polygon);
+        assertFalse(polygon.isDirty());
+    }
+
+    private boolean isDirty(PolygonMutant polygon) throws Exception {
+        java.lang.reflect.Field dirtyField = PolygonMutant.class.getDeclaredField("dirty");
+        dirtyField.setAccessible(true);
+        return (boolean) dirtyField.get(polygon);
+    }
+
+    @Test
+    void testGetVertices() throws Exception {
+        PolygonMutant polygon = new PolygonMutant();
+        float[] vertices = polygon.getVertices();
+        assertEquals(0, vertices.length);
+        // Set some vertices and check if they are returned correctly
+        polygon.setVertices(new float[] { 1, 2, 3, 4 });
+        vertices = polygon.getVertices();
+        assertEquals(4, vertices.length);
+        assertEquals(1, vertices[0]);
+        assertEquals(2, vertices[1]);
+        assertEquals(3, vertices[2]);
+        assertEquals(4, vertices[3]);
+        // Check if dirty flag is set after setting vertices
+        assertTrue(isDirty(polygon));
+    }
+
+    @Test
+    void testGetTransformedVertices() throws Exception {
+        PolygonMutant polygon = new PolygonMutant();
+        float[] transformedVertices = polygon.getTransformedVertices();
+        assertEquals(0, transformedVertices.length);
+        // Set some vertices and check if they are returned correctly
+        polygon.setVertices(new float[] { 1, 2, 3, 4 });
+        transformedVertices = polygon.getTransformedVertices();
+        assertEquals(4, transformedVertices.length);
+        assertEquals(1, transformedVertices[0]);
+        assertEquals(2, transformedVertices[1]);
+        assertEquals(3, transformedVertices[2]);
+        assertEquals(4, transformedVertices[3]);
+        // Check if dirty flag is set after setting vertices
+        assertTrue(isDirty(polygon));
+    }
+
+    @Test
+    void testSetOrigin() throws Exception {
+        PolygonMutant polygon = new PolygonMutant();
+        assertEquals(0, polygon.getOriginX());
+        assertEquals(0, polygon.getOriginY());
+        // Set origin and check if it is set correctly
+        polygon.setOrigin(1, 2);
+        assertEquals(1, polygon.getOriginX());
+        assertEquals(2, polygon.getOriginY());
+        // Check if dirty flag is set after setting origin
+        assertTrue(isDirty(polygon));
+    }
+
+    @Test
+    void testSetPosition() throws Exception {
+        PolygonMutant polygon = new PolygonMutant();
+        assertEquals(0, polygon.getX());
+        assertEquals(0, polygon.getY());
+        // Set position and check if it is set correctly
+        polygon.setPosition(1, 2);
+        assertEquals(1, polygon.getX());
+        assertEquals(2, polygon.getY());
+        // Check if dirty flag is set after setting position
+    }
+}
+
+--------------------------------------------
+Error in PolygonMutant_dirty_11_1_Test: line 16 : cannot find symbol
+  symbol:   method isDirty()
+  location: variable polygon of type com.badlogic.gdx.mutants.PolygonMutant
+Error in PolygonMutant_dirty_11_1_Test: line 21 : cannot find symbol
+  symbol:   method isDirty()
+  location: variable polygon of type com.badlogic.gdx.mutants.PolygonMutant

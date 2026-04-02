@@ -1,0 +1,22 @@
+{
+  "className": "Rectangle",
+  "methodName": "getCenter",
+  "brief": "public Vector2 getCenter (Vector2 vector){}",
+  "methodSignature": "getCenter(Vector2)",
+  "sourceCode": "public Vector2 getCenter (Vector2 vector) {\n\t\tvector.x = x + width / 2;\n\t\tvector.y = y + height / 2;\n\t\treturn vector;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector2"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector2": []
+  },
+  "full_method_info": "/**\n * Calculates the center of the rectangle. Results are located in the given Vector2\n * @param vector the Vector2 to use\n * @return the given vector with results stored inside\n */\npublic Vector2 getCenter(Vector2 vector) {\n    vector.x = x + width / 2;\n    vector.y = y + height / 2;\n    return vector;\n}",
+  "method_comment": " Calculates the center of the rectangle. Results are located in the given Vector2\n\t * @param vector the Vector2 to use\n\t * @return the given vector with results stored inside ",
+  "method_annotation": ""
+}

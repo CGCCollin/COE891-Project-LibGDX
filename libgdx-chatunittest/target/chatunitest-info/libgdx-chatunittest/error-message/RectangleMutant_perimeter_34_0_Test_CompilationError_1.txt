@@ -1,0 +1,33 @@
+package com.badlogic.gdx.mutants;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.Serializable;
+import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.NumberUtils;
+import com.badlogic.gdx.utils.Scaling;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import com.badlogic.gdx.math.*;
+
+class RectangleMutant_perimeter_34_0_Test {
+
+    @Test
+    void perimeter() throws Exception {
+        RectangleMutant rectangle = new RectangleMutant(0, 0, 10, 5);
+        float expectedPerimeter = 2 * (10 + 5);
+        float actualPerimeter = invokePrivateMethod("perimeter", rectangle);
+        Assertions.assertEquals(expectedPerimeter, actualPerimeter);
+    }
+
+    private Object invokePrivateMethod(String methodName, Object instance) throws Exception {
+        java.lang.reflect.Method method = RectangleMutant.class.getDeclaredMethod(methodName);
+        method.setAccessible(true);
+        return method.invoke(instance);
+    }
+}
+
+--------------------------------------------
+Error in RectangleMutant_perimeter_34_0_Test: line 21 : incompatible types: java.lang.Object cannot be converted to float

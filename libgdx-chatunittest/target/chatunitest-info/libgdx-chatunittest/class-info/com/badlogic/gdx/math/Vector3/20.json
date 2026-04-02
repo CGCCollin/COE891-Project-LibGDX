@@ -1,0 +1,22 @@
+{
+  "className": "Vector3",
+  "methodName": "len2",
+  "brief": "public static float len2 (final float x, final float y, final float z){}",
+  "methodSignature": "len2(float, float, float)",
+  "sourceCode": "public static float len2 (final float x, final float y, final float z) {\n\t\treturn x * x + y * y + z * z;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * @return The squared Euclidean length\n */\npublic static float len2(final float x, final float y, final float z) {\n    return x * x + y * y + z * z;\n}",
+  "method_comment": " @return The squared Euclidean length ",
+  "method_annotation": ""
+}

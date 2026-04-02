@@ -1,0 +1,18 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "toString",
+  "brief": "public String toString(){}",
+  "methodSignature": "toString()",
+  "sourceCode": "public String toString() {\n\t\treturn \"[\" + x + \",\" + y + \",\" + width + \",\" + height + \"]\";\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Converts this {@code Rectangle} to a string in the format\n * {@code [x,y,width,height]}.\n *\n * @return a string representation of this object.\n */\npublic String toString() {\n    return \"[\" + x + \",\" + y + \",\" + width + \",\" + height + \"]\";\n}",
+  "method_comment": "\n\t * Converts this {@code Rectangle} to a string in the format\n\t * {@code [x,y,width,height]}.\n\t * \n\t * @return a string representation of this object.\n\t ",
+  "method_annotation": ""
+}

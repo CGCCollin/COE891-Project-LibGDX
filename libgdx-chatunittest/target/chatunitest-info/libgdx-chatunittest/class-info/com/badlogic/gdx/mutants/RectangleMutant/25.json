@@ -1,0 +1,18 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "getAspectRatio",
+  "brief": "public float getAspectRatio(){}",
+  "methodSignature": "getAspectRatio()",
+  "sourceCode": "public float getAspectRatio() {\n\t\treturn (height == 0) ? Float.NaN : width / height;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Calculates the aspect ratio ( width / height ) of this rectangle\n *\n * @return the aspect ratio of this rectangle. Returns Float.NaN if height is 0\n *         to avoid ArithmeticException\n */\npublic float getAspectRatio() {\n    return (height == 0) ? Float.NaN : width / height;\n}",
+  "method_comment": "\n\t * Calculates the aspect ratio ( width / height ) of this rectangle\n\t * \n\t * @return the aspect ratio of this rectangle. Returns Float.NaN if height is 0\n\t *         to avoid ArithmeticException\n\t ",
+  "method_annotation": ""
+}

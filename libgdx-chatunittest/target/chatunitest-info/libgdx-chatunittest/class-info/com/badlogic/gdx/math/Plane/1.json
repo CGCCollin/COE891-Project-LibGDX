@@ -1,0 +1,27 @@
+{
+  "className": "Plane",
+  "methodName": "set",
+  "brief": "public void set (float nx, float ny, float nz, float d){}",
+  "methodSignature": "set(float, float, float, float)",
+  "sourceCode": "public void set (float nx, float ny, float nz, float d) {\n\t\tnormal.set(nx, ny, nz);\n\t\tthis.d = d;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "set(float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets the plane normal and distance\n *\n * @param nx normal x-component\n * @param ny normal y-component\n * @param nz normal z-component\n * @param d distance to origin\n */\npublic void set(float nx, float ny, float nz, float d) {\n    normal.set(nx, ny, nz);\n    this.d = d;\n}",
+  "method_comment": " Sets the plane normal and distance\n\t * \n\t * @param nx normal x-component\n\t * @param ny normal y-component\n\t * @param nz normal z-component\n\t * @param d distance to origin ",
+  "method_annotation": ""
+}

@@ -1,0 +1,23 @@
+{
+  "className": "Polyline",
+  "methodName": "getTransformedVertices",
+  "brief": "public float[] getTransformedVertices (){}",
+  "methodSignature": "getTransformedVertices()",
+  "sourceCode": "public float[] getTransformedVertices () {\n\t\tif (!dirty) return worldVertices;\n\t\tdirty = false;\n\n\t\tfinal float[] localVertices = this.localVertices;\n\t\tif (worldVertices == null || worldVertices.length < localVertices.length) worldVertices = new float[localVertices.length];\n\n\t\tfinal float[] worldVertices = this.worldVertices;\n\t\tfinal float positionX = x;\n\t\tfinal float positionY = y;\n\t\tfinal float originX = this.originX;\n\t\tfinal float originY = this.originY;\n\t\tfinal float scaleX = this.scaleX;\n\t\tfinal float scaleY = this.scaleY;\n\t\tfinal boolean scale = scaleX != 1 || scaleY != 1;\n\t\tfinal float rotation = this.rotation;\n\t\tfinal float cos = MathUtils.cosDeg(rotation);\n\t\tfinal float sin = MathUtils.sinDeg(rotation);\n\n\t\tfor (int i = 0, n = localVertices.length; i < n; i += 2) {\n\t\t\tfloat x = localVertices[i] - originX;\n\t\t\tfloat y = localVertices[i + 1] - originY;\n\n\t\t\t// scale if needed\n\t\t\tif (scale) {\n\t\t\t\tx *= scaleX;\n\t\t\t\ty *= scaleY;\n\t\t\t}\n\n\t\t\t// rotate if needed\n\t\t\tif (rotation != 0) {\n\t\t\t\tfloat oldX = x;\n\t\t\t\tx = cos * x - sin * y;\n\t\t\t\ty = sin * oldX + cos * y;\n\t\t\t}\n\n\t\t\tworldVertices[i] = positionX + x + originX;\n\t\t\tworldVertices[i + 1] = positionY + y + originY;\n\t\t}\n\t\treturn worldVertices;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.MathUtils": [
+      "cosDeg(float)",
+      "sinDeg(float)"
+    ]
+  },
+  "full_method_info": "/**\n * Returns vertices scaled, rotated, and offset by the polygon position.\n */\npublic float[] getTransformedVertices() {\n    if (!dirty)\n        return worldVertices;\n    dirty = false;\n    final float[] localVertices = this.localVertices;\n    if (worldVertices == null || worldVertices.length < localVertices.length)\n        worldVertices = new float[localVertices.length];\n    final float[] worldVertices = this.worldVertices;\n    final float positionX = x;\n    final float positionY = y;\n    final float originX = this.originX;\n    final float originY = this.originY;\n    final float scaleX = this.scaleX;\n    final float scaleY = this.scaleY;\n    final boolean scale = scaleX != 1 || scaleY != 1;\n    final float rotation = this.rotation;\n    final float cos = MathUtils.cosDeg(rotation);\n    final float sin = MathUtils.sinDeg(rotation);\n    for (int i = 0, n = localVertices.length; i < n; i += 2) {\n        float x = localVertices[i] - originX;\n        float y = localVertices[i + 1] - originY;\n        // scale if needed\n        if (scale) {\n            x *= scaleX;\n            y *= scaleY;\n        }\n        // rotate if needed\n        if (rotation != 0) {\n            float oldX = x;\n            x = cos * x - sin * y;\n            y = sin * oldX + cos * y;\n        }\n        worldVertices[i] = positionX + x + originX;\n        worldVertices[i + 1] = positionY + y + originY;\n    }\n    return worldVertices;\n}",
+  "method_comment": " Returns vertices scaled, rotated, and offset by the polygon position. ",
+  "method_annotation": ""
+}

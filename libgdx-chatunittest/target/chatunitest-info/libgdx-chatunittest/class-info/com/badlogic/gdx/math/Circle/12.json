@@ -1,0 +1,22 @@
+{
+  "className": "Circle",
+  "methodName": "overlaps",
+  "brief": "public boolean overlaps (Circle c){}",
+  "methodSignature": "overlaps(Circle)",
+  "sourceCode": "public boolean overlaps (Circle c) {\n\t\tfloat dx = x - c.x;\n\t\tfloat dy = y - c.y;\n\t\tfloat distance = dx * dx + dy * dy;\n\t\tfloat radiusSum = radius + c.radius;\n\t\treturn distance < radiusSum * radiusSum;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Circle"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Circle": []
+  },
+  "full_method_info": "/**\n * @param c the other {@link Circle}\n * @return whether this circle overlaps the other circle.\n */\npublic boolean overlaps(Circle c) {\n    float dx = x - c.x;\n    float dy = y - c.y;\n    float distance = dx * dx + dy * dy;\n    float radiusSum = radius + c.radius;\n    return distance < radiusSum * radiusSum;\n}",
+  "method_comment": " @param c the other {@link Circle}\n\t * @return whether this circle overlaps the other circle. ",
+  "method_annotation": ""
+}

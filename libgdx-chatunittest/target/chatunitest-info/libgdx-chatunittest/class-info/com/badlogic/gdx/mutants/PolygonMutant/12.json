@@ -1,0 +1,25 @@
+{
+  "className": "PolygonMutant",
+  "methodName": "area",
+  "brief": "public float area(){}",
+  "methodSignature": "area()",
+  "sourceCode": "public float area() {\n\t\tfloat[] vertices = getTransformedVertices();\n\t\treturn GeometryUtils.polygonArea(vertices, 0, vertices.length);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {
+    "com.badlogic.gdx.mutants.PolygonMutant": [
+      "getTransformedVertices()"
+    ],
+    "com.badlogic.gdx.math.GeometryUtils": [
+      "polygonArea(float[], int, int)"
+    ]
+  },
+  "full_method_info": "/**\n * Returns the area contained within the polygon.\n */\npublic float area() {\n    float[] vertices = getTransformedVertices();\n    return GeometryUtils.polygonArea(vertices, 0, vertices.length);\n}",
+  "method_comment": " Returns the area contained within the polygon. ",
+  "method_annotation": ""
+}

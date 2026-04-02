@@ -1,0 +1,26 @@
+{
+  "className": "Color",
+  "methodName": "fromHsv",
+  "brief": "public Color fromHsv (float h, float s, float v){}",
+  "methodSignature": "fromHsv(float, float, float)",
+  "sourceCode": "public Color fromHsv (float h, float s, float v) {\n\t\tfloat x = (h / 60f + 6) % 6;\n\t\tint i = (int)x;\n\t\tfloat f = x - i;\n\t\tfloat p = v * (1 - s);\n\t\tfloat q = v * (1 - s * f);\n\t\tfloat t = v * (1 - s * (1 - f));\n\t\tswitch (i) {\n\t\tcase 0:\n\t\t\tr = v;\n\t\t\tg = t;\n\t\t\tb = p;\n\t\t\tbreak;\n\t\tcase 1:\n\t\t\tr = q;\n\t\t\tg = v;\n\t\t\tb = p;\n\t\t\tbreak;\n\t\tcase 2:\n\t\t\tr = p;\n\t\t\tg = v;\n\t\t\tb = t;\n\t\t\tbreak;\n\t\tcase 3:\n\t\t\tr = p;\n\t\t\tg = q;\n\t\t\tb = v;\n\t\t\tbreak;\n\t\tcase 4:\n\t\t\tr = t;\n\t\t\tg = p;\n\t\t\tb = v;\n\t\t\tbreak;\n\t\tdefault:\n\t\t\tr = v;\n\t\t\tg = p;\n\t\t\tb = q;\n\t\t}\n\n\t\treturn clamp();\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.graphics.Color": [
+      "clamp()"
+    ]
+  },
+  "full_method_info": "/**\n * Sets the RGB Color components using the specified Hue-Saturation-Value. Note that HSV components are voluntary not clamped\n * to preserve high range color and can range beyond typical values.\n * @param h The Hue in degree from 0 to 360\n * @param s The Saturation from 0 to 1\n * @param v The Value (brightness) from 0 to 1\n * @return The modified Color for chaining.\n */\npublic Color fromHsv(float h, float s, float v) {\n    float x = (h / 60f + 6) % 6;\n    int i = (int) x;\n    float f = x - i;\n    float p = v * (1 - s);\n    float q = v * (1 - s * f);\n    float t = v * (1 - s * (1 - f));\n    switch(i) {\n        case 0:\n            r = v;\n            g = t;\n            b = p;\n            break;\n        case 1:\n            r = q;\n            g = v;\n            b = p;\n            break;\n        case 2:\n            r = p;\n            g = v;\n            b = t;\n            break;\n        case 3:\n            r = p;\n            g = q;\n            b = v;\n            break;\n        case 4:\n            r = t;\n            g = p;\n            b = v;\n            break;\n        default:\n            r = v;\n            g = p;\n            b = q;\n    }\n    return clamp();\n}",
+  "method_comment": " Sets the RGB Color components using the specified Hue-Saturation-Value. Note that HSV components are voluntary not clamped\n\t * to preserve high range color and can range beyond typical values.\n\t * @param h The Hue in degree from 0 to 360\n\t * @param s The Saturation from 0 to 1\n\t * @param v The Value (brightness) from 0 to 1\n\t * @return The modified Color for chaining. ",
+  "method_annotation": ""
+}

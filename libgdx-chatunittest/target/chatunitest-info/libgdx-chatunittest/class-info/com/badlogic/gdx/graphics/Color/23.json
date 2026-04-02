@@ -1,0 +1,27 @@
+{
+  "className": "Color",
+  "methodName": "toFloatBits",
+  "brief": "public static float toFloatBits (float r, float g, float b, float a){}",
+  "methodSignature": "toFloatBits(float, float, float, float)",
+  "sourceCode": "public static float toFloatBits (float r, float g, float b, float a) {\n\t\tint color = ((int)(255 * a) << 24) | ((int)(255 * b) << 16) | ((int)(255 * g) << 8) | ((int)(255 * r));\n\t\treturn NumberUtils.intToFloatColor(color);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.utils.NumberUtils": [
+      "intToFloatColor(int)"
+    ]
+  },
+  "full_method_info": "/**\n * Packs the color components into a 32-bit integer with the format ABGR and then converts it to a float.\n * @return the packed color as a 32-bit float\n * @see NumberUtils#intToFloatColor(int)\n */\npublic static float toFloatBits(float r, float g, float b, float a) {\n    int color = ((int) (255 * a) << 24) | ((int) (255 * b) << 16) | ((int) (255 * g) << 8) | ((int) (255 * r));\n    return NumberUtils.intToFloatColor(color);\n}",
+  "method_comment": " Packs the color components into a 32-bit integer with the format ABGR and then converts it to a float.\n\t * @return the packed color as a 32-bit float\n\t * @see NumberUtils#intToFloatColor(int) ",
+  "method_annotation": ""
+}

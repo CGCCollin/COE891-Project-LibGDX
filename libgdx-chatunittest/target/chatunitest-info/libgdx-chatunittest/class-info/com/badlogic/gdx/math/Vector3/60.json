@@ -1,0 +1,28 @@
+{
+  "className": "Vector3",
+  "methodName": "isPerpendicular",
+  "brief": "@Override\r\n\tpublic boolean isPerpendicular (Vector3 vector, float epsilon){}",
+  "methodSignature": "isPerpendicular(Vector3, float)",
+  "sourceCode": "@Override\n\tpublic boolean isPerpendicular (Vector3 vector, float epsilon) {\n\t\treturn MathUtils.isZero(dot(vector), epsilon);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector3",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "dot(Vector3)"
+    ],
+    "com.badlogic.gdx.math.MathUtils": [
+      "isZero(float, float)"
+    ]
+  },
+  "full_method_info": "@Override\npublic boolean isPerpendicular(Vector3 vector, float epsilon) {\n    return MathUtils.isZero(dot(vector), epsilon);\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

@@ -1,0 +1,23 @@
+{
+  "className": "Color",
+  "methodName": "rgba4444ToColor",
+  "brief": "public static void rgba4444ToColor (Color color, int value){}",
+  "methodSignature": "rgba4444ToColor(Color, int)",
+  "sourceCode": "public static void rgba4444ToColor (Color color, int value) {\n\t\tcolor.r = ((value & 0x0000f000) >>> 12) / 15f;\n\t\tcolor.g = ((value & 0x00000f00) >>> 8) / 15f;\n\t\tcolor.b = ((value & 0x000000f0) >>> 4) / 15f;\n\t\tcolor.a = ((value & 0x0000000f)) / 15f;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Color",
+    "int"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.graphics.Color": []
+  },
+  "full_method_info": "/**\n * Sets the Color components using the specified integer value in the format RGBA4444. This is inverse to the rgba4444(r, g,\n * b, a) method.\n *\n * @param color The Color to be modified.\n * @param value An integer color value in RGBA4444 format.\n */\npublic static void rgba4444ToColor(Color color, int value) {\n    color.r = ((value & 0x0000f000) >>> 12) / 15f;\n    color.g = ((value & 0x00000f00) >>> 8) / 15f;\n    color.b = ((value & 0x000000f0) >>> 4) / 15f;\n    color.a = ((value & 0x0000000f)) / 15f;\n}",
+  "method_comment": " Sets the Color components using the specified integer value in the format RGBA4444. This is inverse to the rgba4444(r, g,\n\t * b, a) method.\n\t * \n\t * @param color The Color to be modified.\n\t * @param value An integer color value in RGBA4444 format. ",
+  "method_annotation": ""
+}

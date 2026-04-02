@@ -1,0 +1,24 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "getSize",
+  "brief": "public Vector2 getSize(Vector2 size){}",
+  "methodSignature": "getSize(Vector2)",
+  "sourceCode": "public Vector2 getSize(Vector2 size) {\n\t\treturn size.set(width, height);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector2"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector2": [
+      "set(float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * @return the Vector2 with size of this rectangle\n * @param size The Vector2\n */\npublic Vector2 getSize(Vector2 size) {\n    return size.set(width, height);\n}",
+  "method_comment": "\n\t * @return the Vector2 with size of this rectangle\n\t * @param size The Vector2\n\t ",
+  "method_annotation": ""
+}

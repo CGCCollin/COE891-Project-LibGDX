@@ -1,0 +1,18 @@
+{
+  "className": "CircleMutant",
+  "methodName": "toString",
+  "brief": "@Override\r\n\tpublic String toString(){}",
+  "methodSignature": "toString()",
+  "sourceCode": "@Override\n\tpublic String toString() {\n\t\treturn x + \",\" + y + \",\" + radius;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns a {@link String} representation of this {@link Circle} of the form\n * {@code x,y,radius}.\n */\n@Override\npublic String toString() {\n    return x + \",\" + y + \",\" + radius;\n}",
+  "method_comment": "\n\t * Returns a {@link String} representation of this {@link Circle} of the form\n\t * {@code x,y,radius}.\n\t ",
+  "method_annotation": "@Override\n"
+}

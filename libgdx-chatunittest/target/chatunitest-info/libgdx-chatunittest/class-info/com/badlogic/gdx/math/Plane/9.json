@@ -1,0 +1,29 @@
+{
+  "className": "Plane",
+  "methodName": "set",
+  "brief": "public void set (float pointX, float pointY, float pointZ, float norX, float norY, float norZ){}",
+  "methodSignature": "set(float, float, float, float, float, float)",
+  "sourceCode": "public void set (float pointX, float pointY, float pointZ, float norX, float norY, float norZ) {\n\t\tthis.normal.set(norX, norY, norZ);\n\t\td = -(pointX * norX + pointY * norY + pointZ * norZ);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "set(float, float, float)"
+    ]
+  },
+  "full_method_info": "public void set(float pointX, float pointY, float pointZ, float norX, float norY, float norZ) {\n    this.normal.set(norX, norY, norZ);\n    d = -(pointX * norX + pointY * norY + pointZ * norZ);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

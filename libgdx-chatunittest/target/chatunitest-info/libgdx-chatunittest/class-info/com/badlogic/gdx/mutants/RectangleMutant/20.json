@@ -1,0 +1,22 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "set",
+  "brief": "public RectangleMutant set(RectangleMutant rect){}",
+  "methodSignature": "set(RectangleMutant)",
+  "sourceCode": "public RectangleMutant set(RectangleMutant rect) {\n\t\tthis.x = rect.x;\n\t\tthis.y = rect.y;\n\t\tthis.width = rect.width;\n\t\tthis.height = rect.height;\n\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "RectangleMutant"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.mutants.RectangleMutant": []
+  },
+  "full_method_info": "/**\n * Sets the values of the given rectangle to this rectangle.\n *\n * @param rect the other rectangle\n * @return this rectangle for chaining\n */\npublic RectangleMutant set(RectangleMutant rect) {\n    this.x = rect.x;\n    this.y = rect.y;\n    this.width = rect.width;\n    this.height = rect.height;\n    return this;\n}",
+  "method_comment": "\n\t * Sets the values of the given rectangle to this rectangle.\n\t * \n\t * @param rect the other rectangle\n\t * @return this rectangle for chaining\n\t ",
+  "method_annotation": ""
+}

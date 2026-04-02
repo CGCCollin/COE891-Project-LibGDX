@@ -1,0 +1,26 @@
+{
+  "className": "Vector3",
+  "methodName": "epsilonEquals",
+  "brief": "public boolean epsilonEquals (float x, float y, float z){}",
+  "methodSignature": "epsilonEquals(float, float, float)",
+  "sourceCode": "public boolean epsilonEquals (float x, float y, float z) {\n\t\treturn epsilonEquals(x, y, z, MathUtils.FLOAT_ROUNDING_ERROR);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "epsilonEquals(float, float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Compares this vector with the other vector using MathUtils.FLOAT_ROUNDING_ERROR for fuzzy equality testing\n *\n * @param x x component of the other vector to compare\n * @param y y component of the other vector to compare\n * @param z z component of the other vector to compare\n * @return true if vector are equal, otherwise false\n */\npublic boolean epsilonEquals(float x, float y, float z) {\n    return epsilonEquals(x, y, z, MathUtils.FLOAT_ROUNDING_ERROR);\n}",
+  "method_comment": " Compares this vector with the other vector using MathUtils.FLOAT_ROUNDING_ERROR for fuzzy equality testing\n\t *\n\t * @param x x component of the other vector to compare\n\t * @param y y component of the other vector to compare\n\t * @param z z component of the other vector to compare\n\t * @return true if vector are equal, otherwise false ",
+  "method_annotation": ""
+}

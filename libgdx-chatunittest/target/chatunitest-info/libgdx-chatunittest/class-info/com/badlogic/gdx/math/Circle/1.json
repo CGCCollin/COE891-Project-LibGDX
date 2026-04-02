@@ -1,0 +1,23 @@
+{
+  "className": "Circle",
+  "methodName": "set",
+  "brief": "public void set (Vector2 position, float radius){}",
+  "methodSignature": "set(Vector2, float)",
+  "sourceCode": "public void set (Vector2 position, float radius) {\n\t\tthis.x = position.x;\n\t\tthis.y = position.y;\n\t\tthis.radius = radius;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector2",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector2": []
+  },
+  "full_method_info": "/**\n * Sets a new location and radius for this circle.\n *\n * @param position Position {@link Vector2} for this circle.\n * @param radius Circle radius\n */\npublic void set(Vector2 position, float radius) {\n    this.x = position.x;\n    this.y = position.y;\n    this.radius = radius;\n}",
+  "method_comment": " Sets a new location and radius for this circle.\n\t * \n\t * @param position Position {@link Vector2} for this circle.\n\t * @param radius Circle radius ",
+  "method_annotation": ""
+}

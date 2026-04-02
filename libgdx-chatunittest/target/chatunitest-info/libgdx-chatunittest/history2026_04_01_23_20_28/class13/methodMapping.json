@@ -1,0 +1,242 @@
+{
+  "method0": {
+    "methodName": "set",
+    "signature": "set(float, float, float, float)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method1": {
+    "methodName": "getX",
+    "signature": "getX()",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method10": {
+    "methodName": "setPosition",
+    "signature": "setPosition(Vector2)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method11": {
+    "methodName": "setPosition",
+    "signature": "setPosition(float, float)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method12": {
+    "methodName": "setSize",
+    "signature": "setSize(float, float)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method13": {
+    "methodName": "setSize",
+    "signature": "setSize(float)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method14": {
+    "methodName": "getSize",
+    "signature": "getSize(Vector2)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method15": {
+    "methodName": "contains",
+    "signature": "contains(float, float)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method16": {
+    "methodName": "contains",
+    "signature": "contains(Vector2)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method17": {
+    "methodName": "contains",
+    "signature": "contains(Circle)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method18": {
+    "methodName": "contains",
+    "signature": "contains(RectangleMutant)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method19": {
+    "methodName": "overlaps",
+    "signature": "overlaps(RectangleMutant)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method2": {
+    "methodName": "setX",
+    "signature": "setX(float)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method20": {
+    "methodName": "set",
+    "signature": "set(RectangleMutant)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method21": {
+    "methodName": "merge",
+    "signature": "merge(RectangleMutant)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method22": {
+    "methodName": "merge",
+    "signature": "merge(float, float)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method23": {
+    "methodName": "merge",
+    "signature": "merge(Vector2)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method24": {
+    "methodName": "merge",
+    "signature": "merge(Vector2[])",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method25": {
+    "methodName": "getAspectRatio",
+    "signature": "getAspectRatio()",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method26": {
+    "methodName": "getCenter",
+    "signature": "getCenter(Vector2)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method27": {
+    "methodName": "setCenter",
+    "signature": "setCenter(float, float)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method28": {
+    "methodName": "setCenter",
+    "signature": "setCenter(Vector2)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method29": {
+    "methodName": "fitOutside",
+    "signature": "fitOutside(RectangleMutant)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method3": {
+    "methodName": "getY",
+    "signature": "getY()",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method30": {
+    "methodName": "fitInside",
+    "signature": "fitInside(RectangleMutant)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method31": {
+    "methodName": "toString",
+    "signature": "toString()",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method32": {
+    "methodName": "fromString",
+    "signature": "fromString(String)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method33": {
+    "methodName": "area",
+    "signature": "area()",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method34": {
+    "methodName": "perimeter",
+    "signature": "perimeter()",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method35": {
+    "methodName": "hashCode",
+    "signature": "hashCode()",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method36": {
+    "methodName": "equals",
+    "signature": "equals(Object)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method37": {
+    "methodName": "RectangleMutant",
+    "signature": "RectangleMutant()",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method38": {
+    "methodName": "RectangleMutant",
+    "signature": "RectangleMutant(float, float, float, float)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method39": {
+    "methodName": "RectangleMutant",
+    "signature": "RectangleMutant(RectangleMutant)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method4": {
+    "methodName": "setY",
+    "signature": "setY(float)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method5": {
+    "methodName": "getWidth",
+    "signature": "getWidth()",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method6": {
+    "methodName": "setWidth",
+    "signature": "setWidth(float)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method7": {
+    "methodName": "getHeight",
+    "signature": "getHeight()",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method8": {
+    "methodName": "setHeight",
+    "signature": "setHeight(float)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method9": {
+    "methodName": "getPosition",
+    "signature": "getPosition(Vector2)",
+    "className": "RectangleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  }
+}

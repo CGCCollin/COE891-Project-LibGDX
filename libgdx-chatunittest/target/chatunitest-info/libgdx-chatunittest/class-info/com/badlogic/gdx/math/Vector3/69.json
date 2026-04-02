@@ -1,0 +1,28 @@
+{
+  "className": "Vector3",
+  "methodName": "limit2",
+  "brief": "@Override\r\n\tpublic Vector3 limit2 (float limit2){}",
+  "methodSignature": "limit2(float)",
+  "sourceCode": "@Override\n\tpublic Vector3 limit2 (float limit2) {\n\t\tfloat len2 = len2();\n\t\tif (len2 > limit2) {\n\t\t\tscl((float)Math.sqrt(limit2 / len2));\n\t\t}\n\t\treturn this;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "len2()",
+      "scl(float)"
+    ],
+    "java.lang.Math": [
+      "sqrt(double)"
+    ]
+  },
+  "full_method_info": "@Override\npublic Vector3 limit2(float limit2) {\n    float len2 = len2();\n    if (len2 > limit2) {\n        scl((float) Math.sqrt(limit2 / len2));\n    }\n    return this;\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

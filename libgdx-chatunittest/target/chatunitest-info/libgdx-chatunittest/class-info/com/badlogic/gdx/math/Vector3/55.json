@@ -1,0 +1,26 @@
+{
+  "className": "Vector3",
+  "methodName": "isCollinear",
+  "brief": "@Override\r\n\tpublic boolean isCollinear (Vector3 other, float epsilon){}",
+  "methodSignature": "isCollinear(Vector3, float)",
+  "sourceCode": "@Override\n\tpublic boolean isCollinear (Vector3 other, float epsilon) {\n\t\treturn isOnLine(other, epsilon) && hasSameDirection(other);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector3",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "isOnLine(Vector3, float)",
+      "hasSameDirection(Vector3)"
+    ]
+  },
+  "full_method_info": "@Override\npublic boolean isCollinear(Vector3 other, float epsilon) {\n    return isOnLine(other, epsilon) && hasSameDirection(other);\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

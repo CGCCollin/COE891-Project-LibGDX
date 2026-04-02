@@ -1,0 +1,22 @@
+{
+  "className": "MathUtils",
+  "methodName": "norm",
+  "brief": "static public float norm (float rangeStart, float rangeEnd, float value){}",
+  "methodSignature": "norm(float, float, float)",
+  "sourceCode": "static public float norm (float rangeStart, float rangeEnd, float value) {\n\t\treturn (value - rangeStart) / (rangeEnd - rangeStart);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Linearly normalizes value from a range. Range must not be empty. This is the inverse of {@link #lerp(float, float, float)}.\n * @param rangeStart Range start normalized to 0\n * @param rangeEnd Range end normalized to 1\n * @param value Value to normalize\n * @return Normalized value. Values outside of the range are not clamped to 0 and 1\n */\nstatic public float norm(float rangeStart, float rangeEnd, float value) {\n    return (value - rangeStart) / (rangeEnd - rangeStart);\n}",
+  "method_comment": " Linearly normalizes value from a range. Range must not be empty. This is the inverse of {@link #lerp(float, float, float)}.\n\t * @param rangeStart Range start normalized to 0\n\t * @param rangeEnd Range end normalized to 1\n\t * @param value Value to normalize\n\t * @return Normalized value. Values outside of the range are not clamped to 0 and 1 ",
+  "method_annotation": ""
+}

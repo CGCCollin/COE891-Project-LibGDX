@@ -1,0 +1,24 @@
+{
+  "className": "Rectangle",
+  "methodName": "getPosition",
+  "brief": "public Vector2 getPosition (Vector2 position){}",
+  "methodSignature": "getPosition(Vector2)",
+  "sourceCode": "public Vector2 getPosition (Vector2 position) {\n\t\treturn position.set(x, y);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector2"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector2": [
+      "set(float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * return the Vector2 with coordinates of this rectangle\n * @param position The Vector2\n */\npublic Vector2 getPosition(Vector2 position) {\n    return position.set(x, y);\n}",
+  "method_comment": " return the Vector2 with coordinates of this rectangle\n\t * @param position The Vector2 ",
+  "method_annotation": ""
+}

@@ -1,0 +1,33 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "fromString",
+  "brief": "public RectangleMutant fromString(String v){}",
+  "methodSignature": "fromString(String)",
+  "sourceCode": "public RectangleMutant fromString(String v) {\n\t\tint s0 = v.indexOf(',', 1);\n\t\tint s1 = v.indexOf(',', s0 + 1);\n\t\tint s2 = v.indexOf(',', s1 + 1);\n\t\tif (s0 != -1 && s1 != -1 && s2 != -1 && v.charAt(0) == '[' && v.charAt(v.length() - 1) == ']') {\n\t\t\ttry {\n\t\t\t\tfloat x = Float.parseFloat(v.substring(1, s0));\n\t\t\t\tfloat y = Float.parseFloat(v.substring(s0 + 1, s1));\n\t\t\t\tfloat width = Float.parseFloat(v.substring(s1 + 1, s2));\n\t\t\t\tfloat height = Float.parseFloat(v.substring(s2 + 1, v.length() - 1));\n\t\t\t\treturn this.set(x, y, width, height);\n\t\t\t} catch (NumberFormatException ex) {\n\t\t\t\t// Throw a GdxRuntimeException\n\t\t\t}\n\t\t}\n\t\tthrow new GdxRuntimeException(\"Malformed Rectangle: \" + v);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "String"
+  ],
+  "dependentMethods": {
+    "java.lang.String": [
+      "substring(int, int)",
+      "indexOf(int, int)",
+      "length()",
+      "charAt(int)"
+    ],
+    "java.lang.Float": [
+      "parseFloat(String)"
+    ],
+    "com.badlogic.gdx.mutants.RectangleMutant": [
+      "set(float, float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets this {@code Rectangle} to the value represented by the specified string\n * according to the format of\n * {@link #toString()}.\n *\n * @param v the string.\n * @return this rectangle for chaining\n */\npublic RectangleMutant fromString(String v) {\n    int s0 = v.indexOf(',', 1);\n    int s1 = v.indexOf(',', s0 + 1);\n    int s2 = v.indexOf(',', s1 + 1);\n    if (s0 != -1 && s1 != -1 && s2 != -1 && v.charAt(0) == '[' && v.charAt(v.length() - 1) == ']') {\n        try {\n            float x = Float.parseFloat(v.substring(1, s0));\n            float y = Float.parseFloat(v.substring(s0 + 1, s1));\n            float width = Float.parseFloat(v.substring(s1 + 1, s2));\n            float height = Float.parseFloat(v.substring(s2 + 1, v.length() - 1));\n            return this.set(x, y, width, height);\n        } catch (NumberFormatException ex) {\n            // Throw a GdxRuntimeException\n        }\n    }\n    throw new GdxRuntimeException(\"Malformed Rectangle: \" + v);\n}",
+  "method_comment": "\n\t * Sets this {@code Rectangle} to the value represented by the specified string\n\t * according to the format of\n\t * {@link #toString()}.\n\t * \n\t * @param v the string.\n\t * @return this rectangle for chaining\n\t ",
+  "method_annotation": ""
+}

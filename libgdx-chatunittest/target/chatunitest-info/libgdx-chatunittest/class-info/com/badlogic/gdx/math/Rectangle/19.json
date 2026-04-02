@@ -1,0 +1,22 @@
+{
+  "className": "Rectangle",
+  "methodName": "overlaps",
+  "brief": "public boolean overlaps (Rectangle r){}",
+  "methodSignature": "overlaps(Rectangle)",
+  "sourceCode": "public boolean overlaps (Rectangle r) {\n\t\treturn x < r.x + r.width && x + width > r.x && y < r.y + r.height && y + height > r.y;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Rectangle"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Rectangle": []
+  },
+  "full_method_info": "/**\n * @param r the other {@link Rectangle}\n * @return whether this rectangle overlaps the other rectangle.\n */\npublic boolean overlaps(Rectangle r) {\n    return x < r.x + r.width && x + width > r.x && y < r.y + r.height && y + height > r.y;\n}",
+  "method_comment": " @param r the other {@link Rectangle}\n\t * @return whether this rectangle overlaps the other rectangle. ",
+  "method_annotation": ""
+}

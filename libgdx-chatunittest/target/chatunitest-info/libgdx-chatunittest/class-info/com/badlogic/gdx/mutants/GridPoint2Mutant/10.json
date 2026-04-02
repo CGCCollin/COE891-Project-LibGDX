@@ -1,0 +1,18 @@
+{
+  "className": "GridPoint2Mutant",
+  "methodName": "cpy",
+  "brief": "public GridPoint2Mutant cpy(){}",
+  "methodSignature": "cpy()",
+  "sourceCode": "public GridPoint2Mutant cpy() {\n\t\treturn new GridPoint2Mutant(this);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * @return a copy of this grid point\n */\npublic GridPoint2Mutant cpy() {\n    return new GridPoint2Mutant(this);\n}",
+  "method_comment": " @return a copy of this grid point ",
+  "method_annotation": ""
+}

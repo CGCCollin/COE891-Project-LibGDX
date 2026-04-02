@@ -1,0 +1,26 @@
+{
+  "className": "MathUtils",
+  "methodName": "atan",
+  "brief": "public static float atan (float i){}",
+  "methodSignature": "atan(float)",
+  "sourceCode": "public static float atan (float i) {\n\t\t// We use double precision internally, because some constants need double precision.\n\t\t// This clips infinite inputs at Double.MAX_VALUE, which still probably becomes infinite\n\t\t// again when converted back to float.\n\t\tdouble n = Math.min(Math.abs(i), Double.MAX_VALUE);\n\t\t// c uses the \"equally-good\" formulation that permits n to be from 0 to almost infinity.\n\t\tdouble c = (n - 1.0) / (n + 1.0);\n\t\t// The approximation needs 6 odd powers of c.\n\t\tdouble c2 = c * c;\n\t\tdouble c3 = c * c2;\n\t\tdouble c5 = c3 * c2;\n\t\tdouble c7 = c5 * c2;\n\t\tdouble c9 = c7 * c2;\n\t\tdouble c11 = c9 * c2;\n\t\treturn Math.signum(i) * (float)((Math.PI * 0.25)\n\t\t\t+ (0.99997726 * c - 0.33262347 * c3 + 0.19354346 * c5 - 0.11643287 * c7 + 0.05265332 * c9 - 0.0117212 * c11));\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {
+    "java.lang.Math": [
+      "abs(float)",
+      "min(double, double)",
+      "signum(float)"
+    ]
+  },
+  "full_method_info": "/**\n * Arc tangent approximation with very low error, using an algorithm from the 1955 research study \"Approximations for Digital\n * Computers,\" by RAND Corporation (this is sheet 11's algorithm, which is the fourth-fastest and fourth-least precise). This\n * method is usually about 4x faster than {@link Math#atan(double)}, but is somewhat less precise than Math's implementation.\n * For finite inputs only, you may get a tiny speedup by using {@link #atanUnchecked(double)}, but this method will be correct\n * enough for infinite inputs, and atanUnchecked() will not be.\n * @param i an input to the inverse tangent function; any float is accepted\n * @return an output from the inverse tangent function, from {@code -HALF_PI} to {@code HALF_PI} inclusive\n * @see #atanUnchecked(double) If you know the input will be finite, you can use atanUnchecked() instead.\n */\npublic static float atan(float i) {\n    // We use double precision internally, because some constants need double precision.\n    // This clips infinite inputs at Double.MAX_VALUE, which still probably becomes infinite\n    // again when converted back to float.\n    double n = Math.min(Math.abs(i), Double.MAX_VALUE);\n    // c uses the \"equally-good\" formulation that permits n to be from 0 to almost infinity.\n    double c = (n - 1.0) / (n + 1.0);\n    // The approximation needs 6 odd powers of c.\n    double c2 = c * c;\n    double c3 = c * c2;\n    double c5 = c3 * c2;\n    double c7 = c5 * c2;\n    double c9 = c7 * c2;\n    double c11 = c9 * c2;\n    return Math.signum(i) * (float) ((Math.PI * 0.25) + (0.99997726 * c - 0.33262347 * c3 + 0.19354346 * c5 - 0.11643287 * c7 + 0.05265332 * c9 - 0.0117212 * c11));\n}",
+  "method_comment": " Arc tangent approximation with very low error, using an algorithm from the 1955 research study \"Approximations for Digital\n\t * Computers,\" by RAND Corporation (this is sheet 11's algorithm, which is the fourth-fastest and fourth-least precise). This\n\t * method is usually about 4x faster than {@link Math#atan(double)}, but is somewhat less precise than Math's implementation.\n\t * For finite inputs only, you may get a tiny speedup by using {@link #atanUnchecked(double)}, but this method will be correct\n\t * enough for infinite inputs, and atanUnchecked() will not be.\n\t * @param i an input to the inverse tangent function; any float is accepted\n\t * @return an output from the inverse tangent function, from {@code -HALF_PI} to {@code HALF_PI} inclusive\n\t * @see #atanUnchecked(double) If you know the input will be finite, you can use atanUnchecked() instead. ",
+  "method_annotation": ""
+}

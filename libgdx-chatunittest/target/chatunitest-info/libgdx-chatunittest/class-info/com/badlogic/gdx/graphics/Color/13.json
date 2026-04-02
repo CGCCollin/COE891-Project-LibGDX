@@ -1,0 +1,28 @@
+{
+  "className": "Color",
+  "methodName": "lerp",
+  "brief": "public Color lerp (final float r, final float g, final float b, final float a, final float t){}",
+  "methodSignature": "lerp(float, float, float, float, float)",
+  "sourceCode": "public Color lerp (final float r, final float g, final float b, final float a, final float t) {\n\t\tthis.r += t * (r - this.r);\n\t\tthis.g += t * (g - this.g);\n\t\tthis.b += t * (b - this.b);\n\t\tthis.a += t * (a - this.a);\n\t\treturn clamp();\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.graphics.Color": [
+      "clamp()"
+    ]
+  },
+  "full_method_info": "/**\n * Linearly interpolates between this color and the target color by t which is in the range [0,1]. The result is stored in\n * this color.\n * @param r The red component of the target color\n * @param g The green component of the target color\n * @param b The blue component of the target color\n * @param a The alpha component of the target color\n * @param t The interpolation coefficient\n * @return This color for chaining.\n */\npublic Color lerp(final float r, final float g, final float b, final float a, final float t) {\n    this.r += t * (r - this.r);\n    this.g += t * (g - this.g);\n    this.b += t * (b - this.b);\n    this.a += t * (a - this.a);\n    return clamp();\n}",
+  "method_comment": " Linearly interpolates between this color and the target color by t which is in the range [0,1]. The result is stored in\n\t * this color.\n\t * @param r The red component of the target color\n\t * @param g The green component of the target color\n\t * @param b The blue component of the target color\n\t * @param a The alpha component of the target color\n\t * @param t The interpolation coefficient\n\t * @return This color for chaining. ",
+  "method_annotation": ""
+}

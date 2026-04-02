@@ -1,0 +1,29 @@
+{
+  "className": "Vector3",
+  "methodName": "clamp",
+  "brief": "@Override\r\n\tpublic Vector3 clamp (float min, float max){}",
+  "methodSignature": "clamp(float, float)",
+  "sourceCode": "@Override\n\tpublic Vector3 clamp (float min, float max) {\n\t\tfinal float len2 = len2();\n\t\tif (len2 == 0f) return this;\n\t\tfloat max2 = max * max;\n\t\tif (len2 > max2) return scl((float)Math.sqrt(max2 / len2));\n\t\tfloat min2 = min * min;\n\t\tif (len2 < min2) return scl((float)Math.sqrt(min2 / len2));\n\t\treturn this;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "len2()",
+      "scl(float)"
+    ],
+    "java.lang.Math": [
+      "sqrt(double)"
+    ]
+  },
+  "full_method_info": "@Override\npublic Vector3 clamp(float min, float max) {\n    final float len2 = len2();\n    if (len2 == 0f)\n        return this;\n    float max2 = max * max;\n    if (len2 > max2)\n        return scl((float) Math.sqrt(max2 / len2));\n    float min2 = min * min;\n    if (len2 < min2)\n        return scl((float) Math.sqrt(min2 / len2));\n    return this;\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

@@ -1,0 +1,18 @@
+{
+  "className": "Color",
+  "methodName": "cpy",
+  "brief": "public Color cpy (){}",
+  "methodSignature": "cpy()",
+  "sourceCode": "public Color cpy () {\n\t\treturn new Color(this);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * @return a copy of this color\n */\npublic Color cpy() {\n    return new Color(this);\n}",
+  "method_comment": " @return a copy of this color ",
+  "method_annotation": ""
+}

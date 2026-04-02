@@ -1,0 +1,22 @@
+{
+  "className": "Polygon",
+  "methodName": "getBoundingRectangle",
+  "brief": "public Rectangle getBoundingRectangle (){}",
+  "methodSignature": "getBoundingRectangle()",
+  "sourceCode": "public Rectangle getBoundingRectangle () {\n\t\tfloat[] vertices = getTransformedVertices();\n\n\t\tfloat minX = vertices[0];\n\t\tfloat minY = vertices[1];\n\t\tfloat maxX = vertices[0];\n\t\tfloat maxY = vertices[1];\n\n\t\tfinal int numFloats = vertices.length;\n\t\tfor (int i = 2; i < numFloats; i += 2) {\n\t\t\tminX = minX > vertices[i] ? vertices[i] : minX;\n\t\t\tminY = minY > vertices[i + 1] ? vertices[i + 1] : minY;\n\t\t\tmaxX = maxX < vertices[i] ? vertices[i] : maxX;\n\t\t\tmaxY = maxY < vertices[i + 1] ? vertices[i + 1] : maxY;\n\t\t}\n\n\t\tif (bounds == null) bounds = new Rectangle();\n\t\tbounds.x = minX;\n\t\tbounds.y = minY;\n\t\tbounds.width = maxX - minX;\n\t\tbounds.height = maxY - minY;\n\n\t\treturn bounds;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Polygon": [
+      "getTransformedVertices()"
+    ]
+  },
+  "full_method_info": "/**\n * Returns an axis-aligned bounding box of this polygon.\n *\n * Note the returned Rectangle is cached in this polygon, and will be reused if this Polygon is changed.\n *\n * @return this polygon's bounding box {@link Rectangle}\n */\npublic Rectangle getBoundingRectangle() {\n    float[] vertices = getTransformedVertices();\n    float minX = vertices[0];\n    float minY = vertices[1];\n    float maxX = vertices[0];\n    float maxY = vertices[1];\n    final int numFloats = vertices.length;\n    for (int i = 2; i < numFloats; i += 2) {\n        minX = minX > vertices[i] ? vertices[i] : minX;\n        minY = minY > vertices[i + 1] ? vertices[i + 1] : minY;\n        maxX = maxX < vertices[i] ? vertices[i] : maxX;\n        maxY = maxY < vertices[i + 1] ? vertices[i + 1] : maxY;\n    }\n    if (bounds == null)\n        bounds = new Rectangle();\n    bounds.x = minX;\n    bounds.y = minY;\n    bounds.width = maxX - minX;\n    bounds.height = maxY - minY;\n    return bounds;\n}",
+  "method_comment": " Returns an axis-aligned bounding box of this polygon.\n\t * \n\t * Note the returned Rectangle is cached in this polygon, and will be reused if this Polygon is changed.\n\t * \n\t * @return this polygon's bounding box {@link Rectangle} ",
+  "method_annotation": ""
+}

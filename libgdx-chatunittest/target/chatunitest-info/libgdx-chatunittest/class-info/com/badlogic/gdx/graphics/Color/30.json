@@ -1,0 +1,23 @@
+{
+  "className": "Color",
+  "methodName": "rgba8888",
+  "brief": "public static int rgba8888 (float r, float g, float b, float a){}",
+  "methodSignature": "rgba8888(float, float, float, float)",
+  "sourceCode": "public static int rgba8888 (float r, float g, float b, float a) {\n\t\treturn ((int)(r * 255) << 24) | ((int)(g * 255) << 16) | ((int)(b * 255) << 8) | (int)(a * 255);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "public static int rgba8888(float r, float g, float b, float a) {\n    return ((int) (r * 255) << 24) | ((int) (g * 255) << 16) | ((int) (b * 255) << 8) | (int) (a * 255);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

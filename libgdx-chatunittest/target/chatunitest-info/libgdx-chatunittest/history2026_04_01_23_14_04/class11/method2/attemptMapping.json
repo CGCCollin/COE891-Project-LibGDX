@@ -1,0 +1,47 @@
+{
+  "attempt0": {
+    "testClassName": "PlaneMutant_distance_2_0_Test",
+    "fullName": "com.badlogic.gdx.mutants.PlaneMutant_distance_2_0_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\PlaneMutant_distance_2_0_Test.java",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "distance",
+    "methodSig": "distance(Vector3)"
+  },
+  "attempt1": {
+    "testClassName": "PlaneMutant_distance_2_1_Test",
+    "fullName": "com.badlogic.gdx.mutants.PlaneMutant_distance_2_1_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\PlaneMutant_distance_2_0_Test.java",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "distance",
+    "methodSig": "distance(Vector3)"
+  },
+  "attempt2": {
+    "testClassName": "PlaneMutant_distance_2_2_Test",
+    "fullName": "com.badlogic.gdx.mutants.PlaneMutant_distance_2_2_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\PlaneMutant_distance_2_0_Test.java",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "distance",
+    "methodSig": "distance(Vector3)"
+  },
+  "attempt3": {
+    "testClassName": "PlaneMutant_distance_2_3_Test",
+    "fullName": "com.badlogic.gdx.mutants.PlaneMutant_distance_2_3_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\PlaneMutant_distance_2_0_Test.java",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "distance",
+    "methodSig": "distance(Vector3)"
+  },
+  "attempt4": {
+    "testClassName": "PlaneMutant_distance_2_4_Test",
+    "fullName": "com.badlogic.gdx.mutants.PlaneMutant_distance_2_4_Test",
+    "path": "C:\\Users\\nduha\\Documents\\GitHub\\COE891-Project-LibGDX\\libgdx-chatunittest\\chatunitest-tests\\com\\badlogic\\gdx\\mutants\\PlaneMutant_distance_2_0_Test.java",
+    "className": "PlaneMutant",
+    "packageName": "com.badlogic.gdx.mutants",
+    "methodName": "distance",
+    "methodSig": "distance(Vector3)"
+  }
+}

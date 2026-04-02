@@ -1,0 +1,25 @@
+{
+  "className": "MathUtils",
+  "methodName": "random",
+  "brief": "static public long random (long start, long end){}",
+  "methodSignature": "random(long, long)",
+  "sourceCode": "static public long random (long start, long end) {\n\t\tfinal long rand = random.nextLong();\n\t\t// In order to get the range to go from start to end, instead of overflowing after end and going\n\t\t// back around to start, start must be less than end.\n\t\tif (end < start) {\n\t\t\tlong t = end;\n\t\t\tend = start;\n\t\t\tstart = t;\n\t\t}\n\t\tlong bound = end - start + 1L; // inclusive on end\n\t\t// Credit to https://oroboro.com/large-random-in-range/ for the following technique\n\t\t// It's a 128-bit-product where only the upper 64 of 128 bits are used.\n\t\tfinal long randLow = rand & 0xFFFFFFFFL;\n\t\tfinal long boundLow = bound & 0xFFFFFFFFL;\n\t\tfinal long randHigh = (rand >>> 32);\n\t\tfinal long boundHigh = (bound >>> 32);\n\t\treturn start + (randHigh * boundLow >>> 32) + (randLow * boundHigh >>> 32) + randHigh * boundHigh;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "long",
+    "long"
+  ],
+  "dependentMethods": {
+    "java.util.Random": [
+      "nextLong()"
+    ]
+  },
+  "full_method_info": "/**\n * Returns a random number between start (inclusive) and end (inclusive).\n */\nstatic public long random(long start, long end) {\n    final long rand = random.nextLong();\n    // In order to get the range to go from start to end, instead of overflowing after end and going\n    // back around to start, start must be less than end.\n    if (end < start) {\n        long t = end;\n        end = start;\n        start = t;\n    }\n    // inclusive on end\n    long bound = end - start + 1L;\n    // Credit to https://oroboro.com/large-random-in-range/ for the following technique\n    // It's a 128-bit-product where only the upper 64 of 128 bits are used.\n    final long randLow = rand & 0xFFFFFFFFL;\n    final long boundLow = bound & 0xFFFFFFFFL;\n    final long randHigh = (rand >>> 32);\n    final long boundHigh = (bound >>> 32);\n    return start + (randHigh * boundLow >>> 32) + (randLow * boundHigh >>> 32) + randHigh * boundHigh;\n}",
+  "method_comment": " Returns a random number between start (inclusive) and end (inclusive). ",
+  "method_annotation": ""
+}

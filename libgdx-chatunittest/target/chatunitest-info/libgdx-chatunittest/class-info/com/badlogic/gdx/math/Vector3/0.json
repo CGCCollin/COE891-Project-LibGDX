@@ -1,0 +1,22 @@
+{
+  "className": "Vector3",
+  "methodName": "set",
+  "brief": "public Vector3 set (float x, float y, float z){}",
+  "methodSignature": "set(float, float, float)",
+  "sourceCode": "public Vector3 set (float x, float y, float z) {\n\t\tthis.x = x;\n\t\tthis.y = y;\n\t\tthis.z = z;\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the vector to the given components\n *\n * @param x The x-component\n * @param y The y-component\n * @param z The z-component\n * @return this vector for chaining\n */\npublic Vector3 set(float x, float y, float z) {\n    this.x = x;\n    this.y = y;\n    this.z = z;\n    return this;\n}",
+  "method_comment": " Sets the vector to the given components\n\t *\n\t * @param x The x-component\n\t * @param y The y-component\n\t * @param z The z-component\n\t * @return this vector for chaining ",
+  "method_annotation": ""
+}

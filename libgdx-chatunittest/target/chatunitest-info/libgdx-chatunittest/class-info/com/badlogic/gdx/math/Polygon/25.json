@@ -1,0 +1,18 @@
+{
+  "className": "Polygon",
+  "methodName": "getScaleY",
+  "brief": "public float getScaleY (){}",
+  "methodSignature": "getScaleY()",
+  "sourceCode": "public float getScaleY () {\n\t\treturn scaleY;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the total vertical scaling applied to the polygon.\n */\npublic float getScaleY() {\n    return scaleY;\n}",
+  "method_comment": " Returns the total vertical scaling applied to the polygon. ",
+  "method_annotation": ""
+}

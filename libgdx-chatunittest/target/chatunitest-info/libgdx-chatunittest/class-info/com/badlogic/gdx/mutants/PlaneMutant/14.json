@@ -1,0 +1,27 @@
+{
+  "className": "PlaneMutant",
+  "methodName": "PlaneMutant",
+  "brief": "public PlaneMutant(Vector3 normal, Vector3 point){}",
+  "methodSignature": "PlaneMutant(Vector3, Vector3)",
+  "sourceCode": "public PlaneMutant(Vector3 normal, Vector3 point) {\n\t\tthis.normal.set(normal).nor();\n\t\tthis.d = -this.normal.dot(point);\n\t}",
+  "useField": true,
+  "isConstructor": true,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector3",
+    "Vector3"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "nor()",
+      "set(Vector3)",
+      "dot(Vector3)"
+    ]
+  },
+  "full_method_info": "public PlaneMutant(Vector3 normal, Vector3 point) {\n    this.normal.set(normal).nor();\n    this.d = -this.normal.dot(point);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

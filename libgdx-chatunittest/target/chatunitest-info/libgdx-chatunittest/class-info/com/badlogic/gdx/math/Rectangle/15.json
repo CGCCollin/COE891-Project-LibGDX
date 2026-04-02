@@ -1,0 +1,21 @@
+{
+  "className": "Rectangle",
+  "methodName": "contains",
+  "brief": "public boolean contains (float x, float y){}",
+  "methodSignature": "contains(float, float)",
+  "sourceCode": "public boolean contains (float x, float y) {\n\t\treturn this.x <= x && this.x + this.width >= x && this.y <= y && this.y + this.height >= y;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * @param x point x coordinate\n * @param y point y coordinate\n * @return whether the point is contained in the rectangle\n */\npublic boolean contains(float x, float y) {\n    return this.x <= x && this.x + this.width >= x && this.y <= y && this.y + this.height >= y;\n}",
+  "method_comment": " @param x point x coordinate\n\t * @param y point y coordinate\n\t * @return whether the point is contained in the rectangle ",
+  "method_annotation": ""
+}

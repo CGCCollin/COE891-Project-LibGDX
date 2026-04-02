@@ -1,0 +1,18 @@
+{
+  "className": "Vector3",
+  "methodName": "setZero",
+  "brief": "@Override\r\n\tpublic Vector3 setZero (){}",
+  "methodSignature": "setZero()",
+  "sourceCode": "@Override\n\tpublic Vector3 setZero () {\n\t\tthis.x = 0;\n\t\tthis.y = 0;\n\t\tthis.z = 0;\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "@Override\npublic Vector3 setZero() {\n    this.x = 0;\n    this.y = 0;\n    this.z = 0;\n    return this;\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

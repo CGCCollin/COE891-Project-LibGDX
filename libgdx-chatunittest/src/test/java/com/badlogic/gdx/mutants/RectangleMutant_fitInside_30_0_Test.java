@@ -1,0 +1,48 @@
+package com.badlogic.gdx.mutants;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.Serializable;
+import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.NumberUtils;
+import com.badlogic.gdx.utils.Scaling;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import com.badlogic.gdx.math.*;
+
+public class RectangleMutant_fitInside_30_0_Test {
+
+    @Test
+    void testFitInside() throws Exception {
+        // Create a new instance of the focal class using reflection
+        Class<?> clazz = Class.forName("com.badlogic.gdx.mutants.RectangleMutant");
+        Object rect = clazz.getDeclaredConstructor().newInstance();
+        // Set the position and size of the rectangle to fit inside another rectangle using reflection
+        Method setPositionMethod = clazz.getMethod("setPosition", float.class, float.class);
+        setPositionMethod.invoke(rect, 0f, 0f);
+        Method setSizeMethod = clazz.getMethod("setSize", float.class, float.class);
+        setSizeMethod.invoke(rect, 10f, 5f);
+        // Call the fitInside method using reflection and check that the position and size have been correctly set
+        Method fitInsideMethod = clazz.getMethod("fitInside", RectangleMutant.class);
+        RectangleMutant targetRect = new RectangleMutant();
+        targetRect.setPosition(0f, 0f);
+        targetRect.setSize(10f, 5f);
+        Object result = fitInsideMethod.invoke(rect, targetRect);
+        Field xField = clazz.getDeclaredField("x");
+        xField.setAccessible(true);
+        assertEquals(2.5f, (float) xField.get(rect), 0.0001);
+        Field yField = clazz.getDeclaredField("y");
+        yField.setAccessible(true);
+        assertEquals(2.5f, (float) yField.get(rect), 0.0001);
+        Field widthField = clazz.getDeclaredField("width");
+        widthField.setAccessible(true);
+        assertEquals(5.0f, (float) widthField.get(rect), 0.0001);
+        Field heightField = clazz.getDeclaredField("height");
+        heightField.setAccessible(true);
+        assertEquals(10.0f, (float) heightField.get(rect), 0.0001);
+    }
+}

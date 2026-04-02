@@ -1,0 +1,26 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "merge",
+  "brief": "public RectangleMutant merge(Vector2[] vecs){}",
+  "methodSignature": "merge(Vector2[])",
+  "sourceCode": "public RectangleMutant merge(Vector2[] vecs) {\n\t\tfloat minX = x;\n\t\tfloat maxX = x + width;\n\t\tfloat minY = y;\n\t\tfloat maxY = y + height;\n\t\tfor (int i = 0; i < vecs.length; ++i) {\n\t\t\tVector2 v = vecs[i];\n\t\t\tminX = Math.min(minX, v.x);\n\t\t\tmaxX = Math.max(maxX, v.x);\n\t\t\tminY = Math.min(minY, v.y);\n\t\t\tmaxY = Math.max(maxY, v.y);\n\t\t}\n\t\tx = minX;\n\t\twidth = maxX - minX;\n\t\ty = minY;\n\t\theight = maxY - minY;\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector2[]"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector2": [],
+    "java.lang.Math": [
+      "max(float, float)",
+      "min(float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Merges this rectangle with a list of points. The rectangle should not have\n * negative width or negative height.\n *\n * @param vecs the vectors describing the points\n * @return this rectangle for chaining\n */\npublic RectangleMutant merge(Vector2[] vecs) {\n    float minX = x;\n    float maxX = x + width;\n    float minY = y;\n    float maxY = y + height;\n    for (int i = 0; i < vecs.length; ++i) {\n        Vector2 v = vecs[i];\n        minX = Math.min(minX, v.x);\n        maxX = Math.max(maxX, v.x);\n        minY = Math.min(minY, v.y);\n        maxY = Math.max(maxY, v.y);\n    }\n    x = minX;\n    width = maxX - minX;\n    y = minY;\n    height = maxY - minY;\n    return this;\n}",
+  "method_comment": "\n\t * Merges this rectangle with a list of points. The rectangle should not have\n\t * negative width or negative height.\n\t * \n\t * @param vecs the vectors describing the points\n\t * @return this rectangle for chaining\n\t ",
+  "method_annotation": ""
+}

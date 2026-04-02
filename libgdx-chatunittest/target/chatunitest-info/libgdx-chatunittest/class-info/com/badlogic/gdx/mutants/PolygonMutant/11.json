@@ -1,0 +1,18 @@
+{
+  "className": "PolygonMutant",
+  "methodName": "dirty",
+  "brief": "public void dirty(){}",
+  "methodSignature": "dirty()",
+  "sourceCode": "public void dirty() {\n\t\tdirty = true;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the polygon's world vertices to be recalculated when calling\n * {@link #getTransformedVertices()\n * getTransformedVertices}.\n */\npublic void dirty() {\n    dirty = true;\n}",
+  "method_comment": "\n\t * Sets the polygon's world vertices to be recalculated when calling\n\t * {@link #getTransformedVertices()\n\t * getTransformedVertices}.\n\t ",
+  "method_annotation": ""
+}

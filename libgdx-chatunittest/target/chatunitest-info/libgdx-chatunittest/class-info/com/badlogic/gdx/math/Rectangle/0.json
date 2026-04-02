@@ -1,0 +1,23 @@
+{
+  "className": "Rectangle",
+  "methodName": "set",
+  "brief": "public Rectangle set (float x, float y, float width, float height){}",
+  "methodSignature": "set(float, float, float, float)",
+  "sourceCode": "public Rectangle set (float x, float y, float width, float height) {\n\t\tthis.x = x;\n\t\tthis.y = y;\n\t\tthis.width = width;\n\t\tthis.height = height;\n\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * @param x bottom-left x coordinate\n * @param y bottom-left y coordinate\n * @param width width\n * @param height height\n * @return this rectangle for chaining\n */\npublic Rectangle set(float x, float y, float width, float height) {\n    this.x = x;\n    this.y = y;\n    this.width = width;\n    this.height = height;\n    return this;\n}",
+  "method_comment": " @param x bottom-left x coordinate\n\t * @param y bottom-left y coordinate\n\t * @param width width\n\t * @param height height\n\t * @return this rectangle for chaining ",
+  "method_annotation": ""
+}

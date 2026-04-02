@@ -1,0 +1,24 @@
+{
+  "className": "Vector3",
+  "methodName": "mul",
+  "brief": "public Vector3 mul (final Quaternion quat){}",
+  "methodSignature": "mul(Quaternion)",
+  "sourceCode": "public Vector3 mul (final Quaternion quat) {\n\t\treturn quat.transform(this);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Quaternion"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Quaternion": [
+      "transform(Vector3)"
+    ]
+  },
+  "full_method_info": "/**\n * Multiplies the vector by the given {@link Quaternion}.\n * @return This vector for chaining\n */\npublic Vector3 mul(final Quaternion quat) {\n    return quat.transform(this);\n}",
+  "method_comment": " Multiplies the vector by the given {@link Quaternion}.\n\t * @return This vector for chaining ",
+  "method_annotation": ""
+}

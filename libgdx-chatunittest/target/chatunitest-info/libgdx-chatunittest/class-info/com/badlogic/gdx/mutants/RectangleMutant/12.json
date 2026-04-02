@@ -1,0 +1,21 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "setSize",
+  "brief": "public RectangleMutant setSize(float width, float height){}",
+  "methodSignature": "setSize(float, float)",
+  "sourceCode": "public RectangleMutant setSize(float width, float height) {\n\t\tthis.width = width;\n\t\tthis.height = height;\n\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the width and height of this rectangle\n *\n * @param width  The width\n * @param height The height\n * @return this rectangle for chaining\n */\npublic RectangleMutant setSize(float width, float height) {\n    this.width = width;\n    this.height = height;\n    return this;\n}",
+  "method_comment": "\n\t * Sets the width and height of this rectangle\n\t * \n\t * @param width  The width\n\t * @param height The height\n\t * @return this rectangle for chaining\n\t ",
+  "method_annotation": ""
+}

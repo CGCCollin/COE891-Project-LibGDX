@@ -1,0 +1,20 @@
+{
+  "className": "Circle",
+  "methodName": "setY",
+  "brief": "public void setY (float y){}",
+  "methodSignature": "setY(float)",
+  "sourceCode": "public void setY (float y) {\n\t\tthis.y = y;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the y-coordinate of circle center\n * @param y The y-coordinate\n */\npublic void setY(float y) {\n    this.y = y;\n}",
+  "method_comment": " Sets the y-coordinate of circle center\n\t * @param y The y-coordinate ",
+  "method_annotation": ""
+}

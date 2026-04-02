@@ -1,0 +1,25 @@
+{
+  "className": "CircleMutant",
+  "methodName": "set",
+  "brief": "public void set(Vector2 center, Vector2 edge){}",
+  "methodSignature": "set(Vector2, Vector2)",
+  "sourceCode": "public void set(Vector2 center, Vector2 edge) {\n\t\tthis.x = center.x;\n\t\tthis.y = center.y;\n\t\tthis.radius = Vector2.len(center.x - edge.x, center.y - edge.y);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector2",
+    "Vector2"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector2": [
+      "len(float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets this {@link Circle}'s values in terms of its center and a point on its\n * edge.\n *\n * @param center The new center of the circle\n * @param edge   Any point on the edge of the given circle\n */\npublic void set(Vector2 center, Vector2 edge) {\n    this.x = center.x;\n    this.y = center.y;\n    this.radius = Vector2.len(center.x - edge.x, center.y - edge.y);\n}",
+  "method_comment": "\n\t * Sets this {@link Circle}'s values in terms of its center and a point on its\n\t * edge.\n\t * \n\t * @param center The new center of the circle\n\t * @param edge   Any point on the edge of the given circle\n\t ",
+  "method_annotation": ""
+}

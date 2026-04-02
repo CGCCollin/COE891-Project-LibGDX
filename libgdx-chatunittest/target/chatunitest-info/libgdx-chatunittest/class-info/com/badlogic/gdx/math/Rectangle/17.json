@@ -1,0 +1,22 @@
+{
+  "className": "Rectangle",
+  "methodName": "contains",
+  "brief": "public boolean contains (Circle circle){}",
+  "methodSignature": "contains(Circle)",
+  "sourceCode": "public boolean contains (Circle circle) {\n\t\treturn (circle.x - circle.radius >= x) && (circle.x + circle.radius <= x + width) && (circle.y - circle.radius >= y)\n\t\t\t&& (circle.y + circle.radius <= y + height);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Circle"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Circle": []
+  },
+  "full_method_info": "/**\n * @param circle the circle\n * @return whether the circle is contained in the rectangle\n */\npublic boolean contains(Circle circle) {\n    return (circle.x - circle.radius >= x) && (circle.x + circle.radius <= x + width) && (circle.y - circle.radius >= y) && (circle.y + circle.radius <= y + height);\n}",
+  "method_comment": " @param circle the circle\n\t * @return whether the circle is contained in the rectangle ",
+  "method_annotation": ""
+}

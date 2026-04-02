@@ -1,0 +1,24 @@
+{
+  "className": "MathUtils",
+  "methodName": "random",
+  "brief": "static public int random (int range){}",
+  "methodSignature": "random(int)",
+  "sourceCode": "static public int random (int range) {\n\t\treturn random.nextInt(range + 1);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "int"
+  ],
+  "dependentMethods": {
+    "java.util.Random": [
+      "nextInt(int)"
+    ]
+  },
+  "full_method_info": "/**\n * Returns a random number between 0 (inclusive) and the specified value (inclusive).\n */\nstatic public int random(int range) {\n    return random.nextInt(range + 1);\n}",
+  "method_comment": " Returns a random number between 0 (inclusive) and the specified value (inclusive). ",
+  "method_annotation": ""
+}

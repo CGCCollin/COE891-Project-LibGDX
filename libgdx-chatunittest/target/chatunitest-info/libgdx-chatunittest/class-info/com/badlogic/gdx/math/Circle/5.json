@@ -1,0 +1,21 @@
+{
+  "className": "Circle",
+  "methodName": "setPosition",
+  "brief": "public void setPosition (float x, float y){}",
+  "methodSignature": "setPosition(float, float)",
+  "sourceCode": "public void setPosition (float x, float y) {\n\t\tthis.x = x;\n\t\tthis.y = y;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets the x and y-coordinates of circle center\n * @param x The x-coordinate\n * @param y The y-coordinate\n */\npublic void setPosition(float x, float y) {\n    this.x = x;\n    this.y = y;\n}",
+  "method_comment": " Sets the x and y-coordinates of circle center\n\t * @param x The x-coordinate\n\t * @param y The y-coordinate ",
+  "method_annotation": ""
+}

@@ -1,0 +1,25 @@
+{
+  "className": "Vector3",
+  "methodName": "set",
+  "brief": "public Vector3 set (final float[] values){}",
+  "methodSignature": "set(float[])",
+  "sourceCode": "public Vector3 set (final float[] values) {\n\t\treturn this.set(values[0], values[1], values[2]);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float[]"
+  ],
+  "dependentMethods": {
+    "float": [],
+    "com.badlogic.gdx.math.Vector3": [
+      "set(float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets the components from the array. The array must have at least 3 elements\n *\n * @param values The array\n * @return this vector for chaining\n */\npublic Vector3 set(final float[] values) {\n    return this.set(values[0], values[1], values[2]);\n}",
+  "method_comment": " Sets the components from the array. The array must have at least 3 elements\n\t *\n\t * @param values The array\n\t * @return this vector for chaining ",
+  "method_annotation": ""
+}

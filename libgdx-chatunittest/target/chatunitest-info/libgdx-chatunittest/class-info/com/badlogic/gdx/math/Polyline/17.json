@@ -1,0 +1,20 @@
+{
+  "className": "Polyline",
+  "methodName": "scale",
+  "brief": "public void scale (float amount){}",
+  "methodSignature": "scale(float)",
+  "sourceCode": "public void scale (float amount) {\n\t\tthis.scaleX += amount;\n\t\tthis.scaleY += amount;\n\t\tdirty = true;\n\t\tcalculateScaledLength = true;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "public void scale(float amount) {\n    this.scaleX += amount;\n    this.scaleY += amount;\n    dirty = true;\n    calculateScaledLength = true;\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

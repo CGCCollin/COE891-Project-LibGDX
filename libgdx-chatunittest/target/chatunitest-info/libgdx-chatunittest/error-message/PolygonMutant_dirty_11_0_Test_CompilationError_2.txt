@@ -1,0 +1,35 @@
+package com.badlogic.gdx.mutants;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import com.badlogic.gdx.math.*;
+
+public class PolygonMutant_dirty_11_0_Test {
+
+    @InjectMocks
+    private PolygonMutant polygon;
+
+    @Test
+    public void testDirty() throws Exception {
+        // Arrange
+        // Initially, the dirty flag should be true
+        assertTrue(polygon.getDirty());
+        // Act
+        polygon.dirty();
+        // Assert
+        // After calling dirty(), the dirty flag should be false
+        assertFalse(polygon.getDirty());
+    }
+}
+
+--------------------------------------------
+Error in PolygonMutant_dirty_11_0_Test: line 20 : cannot find symbol
+  symbol:   method getDirty()
+  location: variable polygon of type com.badlogic.gdx.mutants.PolygonMutant
+Error in PolygonMutant_dirty_11_0_Test: line 25 : cannot find symbol
+  symbol:   method getDirty()
+  location: variable polygon of type com.badlogic.gdx.mutants.PolygonMutant

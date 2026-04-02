@@ -1,0 +1,24 @@
+{
+  "className": "NumberUtils",
+  "methodName": "floatToIntColor",
+  "brief": "public static int floatToIntColor (float value){}",
+  "methodSignature": "floatToIntColor(float)",
+  "sourceCode": "public static int floatToIntColor (float value) {\n\t\tint intBits = Float.floatToRawIntBits(value);\n\t\tintBits |= (int)((intBits >>> 24) * (255f / 254f)) << 24;\n\t\treturn intBits;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {
+    "java.lang.Float": [
+      "floatToRawIntBits(float)"
+    ]
+  },
+  "full_method_info": "/**\n * Converts the color from a float ABGR encoding to an int ABGR encoding. The alpha is expanded from 0-254 in the float\n * encoding (see {@link #intToFloatColor(int)}) to 0-255, which means converting from int to float and back to int can be\n * lossy.\n */\npublic static int floatToIntColor(float value) {\n    int intBits = Float.floatToRawIntBits(value);\n    intBits |= (int) ((intBits >>> 24) * (255f / 254f)) << 24;\n    return intBits;\n}",
+  "method_comment": " Converts the color from a float ABGR encoding to an int ABGR encoding. The alpha is expanded from 0-254 in the float\n\t * encoding (see {@link #intToFloatColor(int)}) to 0-255, which means converting from int to float and back to int can be\n\t * lossy. ",
+  "method_annotation": ""
+}

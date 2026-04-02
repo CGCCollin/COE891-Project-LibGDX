@@ -1,0 +1,18 @@
+{
+  "className": "PolygonMutant",
+  "methodName": "getVertices",
+  "brief": "public float[] getVertices(){}",
+  "methodSignature": "getVertices()",
+  "sourceCode": "public float[] getVertices() {\n\t\treturn localVertices;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the polygon's local vertices without scaling or rotation and without\n * being offset by the polygon position.\n */\npublic float[] getVertices() {\n    return localVertices;\n}",
+  "method_comment": "\n\t * Returns the polygon's local vertices without scaling or rotation and without\n\t * being offset by the polygon position.\n\t ",
+  "method_annotation": ""
+}

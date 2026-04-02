@@ -1,0 +1,20 @@
+{
+  "className": "MathUtils",
+  "methodName": "cos",
+  "brief": "static public float cos (float radians){}",
+  "methodSignature": "cos(float)",
+  "sourceCode": "static public float cos (float radians) {\n\t\treturn Sin.table[(int)((radians + HALF_PI) * radToIndex) & SIN_MASK];\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the cosine in radians from a lookup table. For optimal precision, use radians between -PI2 and PI2 (both\n * inclusive).\n */\nstatic public float cos(float radians) {\n    return Sin.table[(int) ((radians + HALF_PI) * radToIndex) & SIN_MASK];\n}",
+  "method_comment": " Returns the cosine in radians from a lookup table. For optimal precision, use radians between -PI2 and PI2 (both\n\t * inclusive). ",
+  "method_annotation": ""
+}

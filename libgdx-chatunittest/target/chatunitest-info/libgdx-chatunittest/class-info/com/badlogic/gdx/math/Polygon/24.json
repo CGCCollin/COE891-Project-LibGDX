@@ -1,0 +1,18 @@
+{
+  "className": "Polygon",
+  "methodName": "getScaleX",
+  "brief": "public float getScaleX (){}",
+  "methodSignature": "getScaleX()",
+  "sourceCode": "public float getScaleX () {\n\t\treturn scaleX;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the total horizontal scaling applied to the polygon.\n */\npublic float getScaleX() {\n    return scaleX;\n}",
+  "method_comment": " Returns the total horizontal scaling applied to the polygon. ",
+  "method_annotation": ""
+}

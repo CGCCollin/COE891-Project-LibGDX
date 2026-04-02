@@ -1,0 +1,24 @@
+{
+  "className": "NumberUtils",
+  "methodName": "intBitsToFloat",
+  "brief": "public static float intBitsToFloat (int value){}",
+  "methodSignature": "intBitsToFloat(int)",
+  "sourceCode": "public static float intBitsToFloat (int value) {\n\t\treturn Float.intBitsToFloat(value);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "int"
+  ],
+  "dependentMethods": {
+    "java.lang.Float": [
+      "intBitsToFloat(int)"
+    ]
+  },
+  "full_method_info": "public static float intBitsToFloat(int value) {\n    return Float.intBitsToFloat(value);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

@@ -1,0 +1,23 @@
+{
+  "className": "Color",
+  "methodName": "rgba4444",
+  "brief": "public static int rgba4444 (float r, float g, float b, float a){}",
+  "methodSignature": "rgba4444(float, float, float, float)",
+  "sourceCode": "public static int rgba4444 (float r, float g, float b, float a) {\n\t\treturn ((int)(r * 15) << 12) | ((int)(g * 15) << 8) | ((int)(b * 15) << 4) | (int)(a * 15);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "public static int rgba4444(float r, float g, float b, float a) {\n    return ((int) (r * 15) << 12) | ((int) (g * 15) << 8) | ((int) (b * 15) << 4) | (int) (a * 15);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

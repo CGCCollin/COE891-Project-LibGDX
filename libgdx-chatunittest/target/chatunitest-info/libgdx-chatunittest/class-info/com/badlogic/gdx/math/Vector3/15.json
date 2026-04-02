@@ -1,0 +1,26 @@
+{
+  "className": "Vector3",
+  "methodName": "scl",
+  "brief": "public Vector3 scl (float vx, float vy, float vz){}",
+  "methodSignature": "scl(float, float, float)",
+  "sourceCode": "public Vector3 scl (float vx, float vy, float vz) {\n\t\treturn this.set(this.x * vx, this.y * vy, this.z * vz);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "set(float, float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Scales this vector by the given values\n * @param vx X value\n * @param vy Y value\n * @param vz Z value\n * @return This vector for chaining\n */\npublic Vector3 scl(float vx, float vy, float vz) {\n    return this.set(this.x * vx, this.y * vy, this.z * vz);\n}",
+  "method_comment": " Scales this vector by the given values\n\t * @param vx X value\n\t * @param vy Y value\n\t * @param vz Z value\n\t * @return This vector for chaining ",
+  "method_annotation": ""
+}

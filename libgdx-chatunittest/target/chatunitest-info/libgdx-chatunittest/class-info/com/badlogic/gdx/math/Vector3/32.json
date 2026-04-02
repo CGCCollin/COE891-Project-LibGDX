@@ -1,0 +1,22 @@
+{
+  "className": "Vector3",
+  "methodName": "dot",
+  "brief": "public float dot (float x, float y, float z){}",
+  "methodSignature": "dot(float, float, float)",
+  "sourceCode": "public float dot (float x, float y, float z) {\n\t\treturn this.x * x + this.y * y + this.z * z;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the dot product between this and the given vector.\n * @param x The x-component of the other vector\n * @param y The y-component of the other vector\n * @param z The z-component of the other vector\n * @return The dot product\n */\npublic float dot(float x, float y, float z) {\n    return this.x * x + this.y * y + this.z * z;\n}",
+  "method_comment": " Returns the dot product between this and the given vector.\n\t * @param x The x-component of the other vector\n\t * @param y The y-component of the other vector\n\t * @param z The z-component of the other vector\n\t * @return The dot product ",
+  "method_annotation": ""
+}

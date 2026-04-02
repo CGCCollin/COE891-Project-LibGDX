@@ -1,0 +1,22 @@
+{
+  "className": "MathUtils",
+  "methodName": "random",
+  "brief": "static public float random (){}",
+  "methodSignature": "random()",
+  "sourceCode": "static public float random () {\n\t\treturn random.nextFloat();\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {
+    "java.util.Random": [
+      "nextFloat()"
+    ]
+  },
+  "full_method_info": "/**\n * Returns random number between 0.0 (inclusive) and 1.0 (exclusive).\n */\nstatic public float random() {\n    return random.nextFloat();\n}",
+  "method_comment": " Returns random number between 0.0 (inclusive) and 1.0 (exclusive). ",
+  "method_annotation": ""
+}

@@ -1,0 +1,25 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "merge",
+  "brief": "public RectangleMutant merge(Vector2 vec){}",
+  "methodSignature": "merge(Vector2)",
+  "sourceCode": "public RectangleMutant merge(Vector2 vec) {\n\t\treturn merge(vec.x, vec.y);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector2"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector2": [],
+    "com.badlogic.gdx.mutants.RectangleMutant": [
+      "merge(float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Merges this rectangle with a point. The rectangle should not have negative\n * width or negative height.\n *\n * @param vec the vector describing the point\n * @return this rectangle for chaining\n */\npublic RectangleMutant merge(Vector2 vec) {\n    return merge(vec.x, vec.y);\n}",
+  "method_comment": "\n\t * Merges this rectangle with a point. The rectangle should not have negative\n\t * width or negative height.\n\t * \n\t * @param vec the vector describing the point\n\t * @return this rectangle for chaining\n\t ",
+  "method_annotation": ""
+}

@@ -1,0 +1,26 @@
+{
+  "className": "Color",
+  "methodName": "abgr8888ToColor",
+  "brief": "public static void abgr8888ToColor (Color color, float value){}",
+  "methodSignature": "abgr8888ToColor(Color, float)",
+  "sourceCode": "public static void abgr8888ToColor (Color color, float value) {\n\t\tint c = NumberUtils.floatToIntColor(value);\n\t\tcolor.a = ((c & 0xff000000) >>> 24) / 255f;\n\t\tcolor.b = ((c & 0x00ff0000) >>> 16) / 255f;\n\t\tcolor.g = ((c & 0x0000ff00) >>> 8) / 255f;\n\t\tcolor.r = ((c & 0x000000ff)) / 255f;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Color",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.graphics.Color": [],
+    "com.badlogic.gdx.utils.NumberUtils": [
+      "floatToIntColor(float)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets the Color components using the specified float value in the format ABGR8888.\n * @param color The Color to be modified.\n */\npublic static void abgr8888ToColor(Color color, float value) {\n    int c = NumberUtils.floatToIntColor(value);\n    color.a = ((c & 0xff000000) >>> 24) / 255f;\n    color.b = ((c & 0x00ff0000) >>> 16) / 255f;\n    color.g = ((c & 0x0000ff00) >>> 8) / 255f;\n    color.r = ((c & 0x000000ff)) / 255f;\n}",
+  "method_comment": " Sets the Color components using the specified float value in the format ABGR8888.\n\t * @param color The Color to be modified. ",
+  "method_annotation": ""
+}

@@ -1,0 +1,22 @@
+{
+  "className": "Polyline",
+  "methodName": "contains",
+  "brief": "@Override\r\n\tpublic boolean contains (Vector2 point){}",
+  "methodSignature": "contains(Vector2)",
+  "sourceCode": "@Override\n\tpublic boolean contains (Vector2 point) {\n\t\treturn false;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector2"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector2": []
+  },
+  "full_method_info": "@Override\npublic boolean contains(Vector2 point) {\n    return false;\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

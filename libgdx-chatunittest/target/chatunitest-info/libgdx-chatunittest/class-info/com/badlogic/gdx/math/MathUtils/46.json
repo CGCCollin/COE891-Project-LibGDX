@@ -1,0 +1,20 @@
+{
+  "className": "MathUtils",
+  "methodName": "ceilPositive",
+  "brief": "static public int ceilPositive (float value){}",
+  "methodSignature": "ceilPositive(float)",
+  "sourceCode": "static public int ceilPositive (float value) {\n\t\treturn (int)(value + CEIL);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the smallest integer greater than or equal to the specified float. This method will only properly ceil floats that\n * are positive.\n */\nstatic public int ceilPositive(float value) {\n    return (int) (value + CEIL);\n}",
+  "method_comment": " Returns the smallest integer greater than or equal to the specified float. This method will only properly ceil floats that\n\t * are positive. ",
+  "method_annotation": ""
+}

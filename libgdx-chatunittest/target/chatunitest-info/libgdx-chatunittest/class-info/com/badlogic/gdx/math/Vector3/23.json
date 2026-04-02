@@ -1,0 +1,29 @@
+{
+  "className": "Vector3",
+  "methodName": "dst",
+  "brief": "public static float dst (final float x1, final float y1, final float z1, final float x2, final float y2, final float z2){}",
+  "methodSignature": "dst(float, float, float, float, float, float)",
+  "sourceCode": "public static float dst (final float x1, final float y1, final float z1, final float x2, final float y2, final float z2) {\n\t\tfinal float a = x2 - x1;\n\t\tfinal float b = y2 - y1;\n\t\tfinal float c = z2 - z1;\n\t\treturn (float)Math.sqrt(a * a + b * b + c * c);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float",
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "java.lang.Math": [
+      "sqrt(double)"
+    ]
+  },
+  "full_method_info": "/**\n * @return The Euclidean distance between the two specified vectors\n */\npublic static float dst(final float x1, final float y1, final float z1, final float x2, final float y2, final float z2) {\n    final float a = x2 - x1;\n    final float b = y2 - y1;\n    final float c = z2 - z1;\n    return (float) Math.sqrt(a * a + b * b + c * c);\n}",
+  "method_comment": " @return The Euclidean distance between the two specified vectors ",
+  "method_annotation": ""
+}

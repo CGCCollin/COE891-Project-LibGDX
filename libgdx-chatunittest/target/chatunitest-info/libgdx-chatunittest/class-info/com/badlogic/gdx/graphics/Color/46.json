@@ -1,0 +1,26 @@
+{
+  "className": "Color",
+  "methodName": "toHsv",
+  "brief": "public float[] toHsv (float[] hsv){}",
+  "methodSignature": "toHsv(float[])",
+  "sourceCode": "public float[] toHsv (float[] hsv) {\n\t\tfloat max = Math.max(Math.max(r, g), b);\n\t\tfloat min = Math.min(Math.min(r, g), b);\n\t\tfloat range = max - min;\n\t\tif (range == 0) {\n\t\t\thsv[0] = 0;\n\t\t} else if (max == r) {\n\t\t\thsv[0] = (60 * (g - b) / range + 360) % 360;\n\t\t} else if (max == g) {\n\t\t\thsv[0] = 60 * (b - r) / range + 120;\n\t\t} else {\n\t\t\thsv[0] = 60 * (r - g) / range + 240;\n\t\t}\n\n\t\tif (max > 0) {\n\t\t\thsv[1] = 1 - min / max;\n\t\t} else {\n\t\t\thsv[1] = 0;\n\t\t}\n\n\t\thsv[2] = max;\n\n\t\treturn hsv;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float[]"
+  ],
+  "dependentMethods": {
+    "float": [],
+    "java.lang.Math": [
+      "max(float, float)",
+      "min(float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Extract Hue-Saturation-Value. This is the inverse of {@link #fromHsv(float[])}.\n * @param hsv The HSV array to be modified.\n * @return HSV components for chaining.\n */\npublic float[] toHsv(float[] hsv) {\n    float max = Math.max(Math.max(r, g), b);\n    float min = Math.min(Math.min(r, g), b);\n    float range = max - min;\n    if (range == 0) {\n        hsv[0] = 0;\n    } else if (max == r) {\n        hsv[0] = (60 * (g - b) / range + 360) % 360;\n    } else if (max == g) {\n        hsv[0] = 60 * (b - r) / range + 120;\n    } else {\n        hsv[0] = 60 * (r - g) / range + 240;\n    }\n    if (max > 0) {\n        hsv[1] = 1 - min / max;\n    } else {\n        hsv[1] = 0;\n    }\n    hsv[2] = max;\n    return hsv;\n}",
+  "method_comment": " Extract Hue-Saturation-Value. This is the inverse of {@link #fromHsv(float[])}.\n\t * @param hsv The HSV array to be modified.\n\t * @return HSV components for chaining. ",
+  "method_annotation": ""
+}

@@ -1,0 +1,25 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "contains",
+  "brief": "public boolean contains(Vector2 point){}",
+  "methodSignature": "contains(Vector2)",
+  "sourceCode": "public boolean contains(Vector2 point) {\n\t\treturn contains(point.x, point.y);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector2"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector2": [],
+    "com.badlogic.gdx.mutants.RectangleMutant": [
+      "contains(float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * @param point The coordinates vector\n * @return whether the point is contained in the rectangle\n */\npublic boolean contains(Vector2 point) {\n    return contains(point.x, point.y);\n}",
+  "method_comment": "\n\t * @param point The coordinates vector\n\t * @return whether the point is contained in the rectangle\n\t ",
+  "method_annotation": ""
+}

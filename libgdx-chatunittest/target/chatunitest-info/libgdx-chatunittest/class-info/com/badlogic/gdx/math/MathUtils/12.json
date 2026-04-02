@@ -1,0 +1,24 @@
+{
+  "className": "MathUtils",
+  "methodName": "asin",
+  "brief": "static public float asin (float a){}",
+  "methodSignature": "asin(float)",
+  "sourceCode": "static public float asin (float a) {\n\t\tfloat a2 = a * a; // a squared\n\t\tfloat a3 = a * a2; // a cubed\n\t\tif (a >= 0f) {\n\t\t\treturn 1.5707963267948966f\n\t\t\t\t- (float)Math.sqrt(1f - a) * (1.5707288f - 0.2121144f * a + 0.0742610f * a2 - 0.0187293f * a3);\n\t\t}\n\t\treturn -1.5707963267948966f + (float)Math.sqrt(1f + a) * (1.5707288f + 0.2121144f * a + 0.0742610f * a2 + 0.0187293f * a3);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {
+    "java.lang.Math": [
+      "sqrt(double)"
+    ]
+  },
+  "full_method_info": "/**\n * Returns asin in radians; less accurate than Math.asin but may be faster. Average error of 0.000028447 radians (0.0016298931\n * degrees), largest error of 0.000067592 radians (0.0038727364 degrees). This implementation does not return NaN if given an\n * out-of-range input (Math.asin does return NaN), unless the input is NaN.\n * @param a asin is defined only when a is between -1f and 1f, inclusive\n * @return between {@code -HALF_PI} and {@code HALF_PI} when a is in the defined range\n */\nstatic public float asin(float a) {\n    // a squared\n    float a2 = a * a;\n    // a cubed\n    float a3 = a * a2;\n    if (a >= 0f) {\n        return 1.5707963267948966f - (float) Math.sqrt(1f - a) * (1.5707288f - 0.2121144f * a + 0.0742610f * a2 - 0.0187293f * a3);\n    }\n    return -1.5707963267948966f + (float) Math.sqrt(1f + a) * (1.5707288f + 0.2121144f * a + 0.0742610f * a2 + 0.0187293f * a3);\n}",
+  "method_comment": " Returns asin in radians; less accurate than Math.asin but may be faster. Average error of 0.000028447 radians (0.0016298931\n\t * degrees), largest error of 0.000067592 radians (0.0038727364 degrees). This implementation does not return NaN if given an\n\t * out-of-range input (Math.asin does return NaN), unless the input is NaN.\n\t * @param a asin is defined only when a is between -1f and 1f, inclusive\n\t * @return between {@code -HALF_PI} and {@code HALF_PI} when a is in the defined range ",
+  "method_annotation": ""
+}

@@ -1,0 +1,140 @@
+{
+  "method0": {
+    "methodName": "set",
+    "signature": "set(float, float, float)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method1": {
+    "methodName": "set",
+    "signature": "set(Vector2, float)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method10": {
+    "methodName": "contains",
+    "signature": "contains(Vector2)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method11": {
+    "methodName": "contains",
+    "signature": "contains(CircleMutant)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method12": {
+    "methodName": "overlaps",
+    "signature": "overlaps(CircleMutant)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method13": {
+    "methodName": "toString",
+    "signature": "toString()",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method14": {
+    "methodName": "circumference",
+    "signature": "circumference()",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method15": {
+    "methodName": "area",
+    "signature": "area()",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method16": {
+    "methodName": "equals",
+    "signature": "equals(Object)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method17": {
+    "methodName": "hashCode",
+    "signature": "hashCode()",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method18": {
+    "methodName": "CircleMutant",
+    "signature": "CircleMutant()",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method19": {
+    "methodName": "CircleMutant",
+    "signature": "CircleMutant(float, float, float)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method2": {
+    "methodName": "set",
+    "signature": "set(Circle)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method20": {
+    "methodName": "CircleMutant",
+    "signature": "CircleMutant(Vector2, float)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method21": {
+    "methodName": "CircleMutant",
+    "signature": "CircleMutant(Circle)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method22": {
+    "methodName": "CircleMutant",
+    "signature": "CircleMutant(Vector2, Vector2)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method3": {
+    "methodName": "set",
+    "signature": "set(Vector2, Vector2)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method4": {
+    "methodName": "setPosition",
+    "signature": "setPosition(Vector2)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method5": {
+    "methodName": "setPosition",
+    "signature": "setPosition(float, float)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method6": {
+    "methodName": "setX",
+    "signature": "setX(float)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method7": {
+    "methodName": "setY",
+    "signature": "setY(float)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method8": {
+    "methodName": "setRadius",
+    "signature": "setRadius(float)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  },
+  "method9": {
+    "methodName": "contains",
+    "signature": "contains(float, float)",
+    "className": "CircleMutant",
+    "packageName": "com.badlogic.gdx.mutants"
+  }
+}

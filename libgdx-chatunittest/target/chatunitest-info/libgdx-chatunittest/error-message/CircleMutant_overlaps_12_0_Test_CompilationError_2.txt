@@ -1,0 +1,78 @@
+package com.badlogic.gdx.mutants;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.Serializable;
+import com.badlogic.gdx.utils.NumberUtils;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import com.badlogic.gdx.math.*;
+
+@ExtendWith(MockitoExtension.class)
+public class CircleMutant_overlaps_12_0_Test {
+
+    @Mock
+    Circle circle1, circle2;
+
+    @InjectMocks
+    CircleMutant mutant1, mutant2;
+
+    @BeforeEach
+    void setUp() throws Exception {
+        when(circle1.getX()).thenReturn(0);
+        when(circle1.getY()).thenReturn(0);
+        when(circle1.radius).thenReturn(5);
+        mutant1.set(circle1.getX(), circle1.getY(), circle1.radius);
+        when(circle2.getX()).thenReturn(3);
+        when(circle2.getY()).thenReturn(4);
+        when(circle2.radius).thenReturn(10);
+        mutant2.set(circle2.getX(), circle2.getY(), circle2.radius);
+    }
+
+    @Test
+    public void testOverlaps() throws Exception {
+        boolean result = mutant1.overlaps(mutant2);
+        assertThat(result, is.is(circle1.overlaps(circle2)));
+    }
+}
+
+--------------------------------------------
+Error in CircleMutant_overlaps_12_0_Test: line 24 : cannot find symbol
+  symbol:   method getX()
+  location: variable circle1 of type com.badlogic.gdx.math.Circle
+Error in CircleMutant_overlaps_12_0_Test: line 25 : cannot find symbol
+  symbol:   method getY()
+  location: variable circle1 of type com.badlogic.gdx.math.Circle
+Error in CircleMutant_overlaps_12_0_Test: line 26 : no suitable method found for thenReturn(int)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Float) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.Float)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Float,java.lang.Float...) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.Float)
+Error in CircleMutant_overlaps_12_0_Test: line 27 : cannot find symbol
+  symbol:   method getX()
+  location: variable circle1 of type com.badlogic.gdx.math.Circle
+Error in CircleMutant_overlaps_12_0_Test: line 27 : cannot find symbol
+  symbol:   method getY()
+  location: variable circle1 of type com.badlogic.gdx.math.Circle
+Error in CircleMutant_overlaps_12_0_Test: line 28 : cannot find symbol
+  symbol:   method getX()
+  location: variable circle2 of type com.badlogic.gdx.math.Circle
+Error in CircleMutant_overlaps_12_0_Test: line 29 : cannot find symbol
+  symbol:   method getY()
+  location: variable circle2 of type com.badlogic.gdx.math.Circle
+Error in CircleMutant_overlaps_12_0_Test: line 30 : no suitable method found for thenReturn(int)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Float) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.Float)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Float,java.lang.Float...) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.Float)
+Error in CircleMutant_overlaps_12_0_Test: line 31 : cannot find symbol
+  symbol:   method getX()
+  location: variable circle2 of type com.badlogic.gdx.math.Circle
+Error in CircleMutant_overlaps_12_0_Test: line 31 : cannot find symbol
+  symbol:   method getY()
+  location: variable circle2 of type com.badlogic.gdx.math.Circle
+Error in CircleMutant_overlaps_12_0_Test: line 37 : cannot find symbol
+  symbol:   variable is
+  location: class com.badlogic.gdx.mutants.CircleMutant_overlaps_12_0_Test

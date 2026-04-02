@@ -1,0 +1,80 @@
+package com.badlogic.gdx.mutants;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import com.badlogic.gdx.math.*;
+import java.io.Serializable;
+import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.NumberUtils;
+import com.badlogic.gdx.utils.Scaling;
+
+public class RectangleMutant_fitInside_30_0_Test {
+
+    @Test
+    void testFitInside() throws Exception {
+        // Create a new instance of the focal class
+        RectangleMutant rect = new RectangleMutant();
+        // Set the x, y, width, and height of the rectangle to fit inside another rectangle
+        rect.fitInside(new Rectangle(0, 0, 10, 5));
+        // Check that the position and size of the rectangle have been correctly set
+        assertEquals(2.5f, rect.getX(), 0.0001);
+        assertEquals(2.5f, rect.getY(), 0.0001);
+        assertEquals(5.0f, rect.getWidth(), 0.0001);
+        assertEquals(10.0f, rect.getHeight(), 0.0001);
+        // Create another instance of the focal class and set its position and size to fit inside a rectangle
+        RectangleMutant rect2 = new RectangleMutant();
+        rect2.setPosition(new Vector2(5, 5));
+        rect2.setSize(15, 10);
+        rect2.fitInside(new Rectangle(0, 0, 20, 30));
+        // Check that the position and size of the rectangle have been correctly set
+        assertEquals(7.5f, rect2.getX(), 0.0001);
+        assertEquals(7.5f, rect2.getY(), 0.0001);
+        assertEquals(15.0f, rect2.getWidth(), 0.0001);
+        assertEquals(30.0f, rect2.getHeight(), 0.0001);
+    }
+
+    @Test
+    void testFitInsideWithZeroSize() throws Exception {
+        // Create a new instance of the focal class and set its size to zero
+        RectangleMutant rect = new RectangleMutant();
+        rect.setSize(0, 0);
+        // Set the position of the rectangle to fit inside another rectangle with non-zero size
+        rect.fitInside(new Rectangle(0, 0, 10, 5));
+        // Check that the position and size of the rectangle have been correctly set
+        assertEquals(0.0f, rect.getX(), 0.0001);
+        assertEquals(0.0f, rect.getY(), 0.0001);
+        assertEquals(10.0f, rect.getWidth(), 0.0001);
+        assertEquals(5.0f, rect.getHeight(), 0.0001);
+        // Create another instance of the focal class and set its size to zero and position to fit inside a rectangle with non-zero size
+        RectangleMutant rect2 = new RectangleMutant();
+        rect2.setSize(0, 0);
+        rect2.setPosition(new Vector2(5, 5));
+        rect2.fitInside(new Rectangle(0, 0, 20, 30));
+        // Check that the position and size of the rectangle have been correctly set
+        assertEquals(5.0f, rect2.getX(), 0.0001);
+        assertEquals(5.0f, rect2.getY(), 0.0001);
+        assertEquals(20.0f, rect2.getWidth(), 0.0001);
+        assertEquals(30.0f, rect2.getHeight(), 0.0001);
+    }
+
+    @Test
+    void testFitInsideWithZeroSizeAndNonZeroPosition() throws Exception {
+        // Create a new instance of the focal class and set its size to zero and position to fit inside a rectangle with non-zero size
+        RectangleMutant rect = new RectangleMutant();
+        rect.setSize(0, 0);
+        rect.setPosition(new Vector2(5, 5));
+    }
+}
+
+--------------------------------------------
+Error in RectangleMutant_fitInside_30_0_Test: line 24 : incompatible types: com.badlogic.gdx.math.Rectangle cannot be converted to com.badlogic.gdx.mutants.RectangleMutant
+Error in RectangleMutant_fitInside_30_0_Test: line 34 : incompatible types: com.badlogic.gdx.math.Rectangle cannot be converted to com.badlogic.gdx.mutants.RectangleMutant
+Error in RectangleMutant_fitInside_30_0_Test: line 48 : incompatible types: com.badlogic.gdx.math.Rectangle cannot be converted to com.badlogic.gdx.mutants.RectangleMutant
+Error in RectangleMutant_fitInside_30_0_Test: line 58 : incompatible types: com.badlogic.gdx.math.Rectangle cannot be converted to com.badlogic.gdx.mutants.RectangleMutant
+Error in RectangleMutant_fitInside_30_0_Test: line -1 : Some messages have been simplified; recompile with -Xdiags:verbose to get full output

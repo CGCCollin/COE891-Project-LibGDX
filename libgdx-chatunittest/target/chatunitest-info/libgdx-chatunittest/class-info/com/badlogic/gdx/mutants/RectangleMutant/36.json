@@ -1,0 +1,27 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "equals",
+  "brief": "public boolean equals(Object obj){}",
+  "methodSignature": "equals(Object)",
+  "sourceCode": "public boolean equals(Object obj) {\n\t\tif (this == obj)\n\t\t\treturn true;\n\t\tif (obj == null)\n\t\t\treturn false;\n\t\tif (getClass() != obj.getClass())\n\t\t\treturn false;\n\t\tRectangleMutant other = (RectangleMutant) obj;\n\t\tif (NumberUtils.floatToRawIntBits(height) != NumberUtils.floatToRawIntBits(other.height))\n\t\t\treturn false;\n\t\tif (NumberUtils.floatToRawIntBits(width) != NumberUtils.floatToRawIntBits(other.width))\n\t\t\treturn false;\n\t\tif (NumberUtils.floatToRawIntBits(x) != NumberUtils.floatToRawIntBits(other.x))\n\t\t\treturn false;\n\t\tif (NumberUtils.floatToRawIntBits(y) != NumberUtils.floatToRawIntBits(other.y))\n\t\t\treturn false;\n\t\treturn true;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Object"
+  ],
+  "dependentMethods": {
+    "java.lang.Object": [
+      "getClass()"
+    ],
+    "com.badlogic.gdx.utils.NumberUtils": [
+      "floatToRawIntBits(float)"
+    ]
+  },
+  "full_method_info": "public boolean equals(Object obj) {\n    if (this == obj)\n        return true;\n    if (obj == null)\n        return false;\n    if (getClass() != obj.getClass())\n        return false;\n    RectangleMutant other = (RectangleMutant) obj;\n    if (NumberUtils.floatToRawIntBits(height) != NumberUtils.floatToRawIntBits(other.height))\n        return false;\n    if (NumberUtils.floatToRawIntBits(width) != NumberUtils.floatToRawIntBits(other.width))\n        return false;\n    if (NumberUtils.floatToRawIntBits(x) != NumberUtils.floatToRawIntBits(other.x))\n        return false;\n    if (NumberUtils.floatToRawIntBits(y) != NumberUtils.floatToRawIntBits(other.y))\n        return false;\n    return true;\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

@@ -1,0 +1,25 @@
+{
+  "className": "Rectangle",
+  "methodName": "setCenter",
+  "brief": "public Rectangle setCenter (float x, float y){}",
+  "methodSignature": "setCenter(float, float)",
+  "sourceCode": "public Rectangle setCenter (float x, float y) {\n\t\tsetPosition(x - width / 2, y - height / 2);\n\t\treturn this;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Rectangle": [
+      "setPosition(float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Moves this rectangle so that its center point is located at a given position\n * @param x the position's x\n * @param y the position's y\n * @return this for chaining\n */\npublic Rectangle setCenter(float x, float y) {\n    setPosition(x - width / 2, y - height / 2);\n    return this;\n}",
+  "method_comment": " Moves this rectangle so that its center point is located at a given position\n\t * @param x the position's x\n\t * @param y the position's y\n\t * @return this for chaining ",
+  "method_annotation": ""
+}

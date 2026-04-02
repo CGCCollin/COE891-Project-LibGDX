@@ -1,0 +1,20 @@
+{
+  "className": "MathUtils",
+  "methodName": "floorPositive",
+  "brief": "static public int floorPositive (float value){}",
+  "methodSignature": "floorPositive(float)",
+  "sourceCode": "static public int floorPositive (float value) {\n\t\treturn (int)value;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Returns the largest integer less than or equal to the specified float. This method will only properly floor floats that are\n * positive. Note this method simply casts the float to int.\n */\nstatic public int floorPositive(float value) {\n    return (int) value;\n}",
+  "method_comment": " Returns the largest integer less than or equal to the specified float. This method will only properly floor floats that are\n\t * positive. Note this method simply casts the float to int. ",
+  "method_annotation": ""
+}

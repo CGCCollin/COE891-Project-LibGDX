@@ -1,0 +1,25 @@
+{
+  "className": "Vector3",
+  "methodName": "Vector3",
+  "brief": "public Vector3 (final float[] values){}",
+  "methodSignature": "Vector3(float[])",
+  "sourceCode": "public Vector3 (final float[] values) {\n\t\tthis.set(values[0], values[1], values[2]);\n\t}",
+  "useField": false,
+  "isConstructor": true,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float[]"
+  ],
+  "dependentMethods": {
+    "float": [],
+    "com.badlogic.gdx.math.Vector3": [
+      "set(float, float, float)"
+    ]
+  },
+  "full_method_info": "public Vector3(final float[] values) {\n    this.set(values[0], values[1], values[2]);\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

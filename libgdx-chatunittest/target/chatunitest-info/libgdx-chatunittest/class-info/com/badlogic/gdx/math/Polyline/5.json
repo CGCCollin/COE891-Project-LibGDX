@@ -1,0 +1,18 @@
+{
+  "className": "Polyline",
+  "methodName": "getY",
+  "brief": "public float getY (){}",
+  "methodSignature": "getY()",
+  "sourceCode": "public float getY () {\n\t\treturn y;\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "public float getY() {\n    return y;\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

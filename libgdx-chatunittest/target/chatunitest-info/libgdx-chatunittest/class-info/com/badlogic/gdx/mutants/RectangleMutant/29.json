@@ -1,0 +1,26 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "fitOutside",
+  "brief": "public RectangleMutant fitOutside(RectangleMutant rect){}",
+  "methodSignature": "fitOutside(RectangleMutant)",
+  "sourceCode": "public RectangleMutant fitOutside(RectangleMutant rect) {\n\t\tfloat ratio = getAspectRatio();\n\n\t\tif (ratio > rect.getAspectRatio()) {\n\t\t\t// Wider than tall\n\t\t\tsetSize(rect.height * ratio, rect.height);\n\t\t} else {\n\t\t\t// Taller than wide\n\t\t\tsetSize(rect.width, rect.width / ratio);\n\t\t}\n\n\t\tsetPosition((rect.x + rect.width / 2) - width / 2, (rect.y + rect.height / 2) - height / 2);\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "RectangleMutant"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.mutants.RectangleMutant": [
+      "setSize(float, float)",
+      "setPosition(float, float)",
+      "getAspectRatio()"
+    ]
+  },
+  "full_method_info": "/**\n * Fits this rectangle around another rectangle while maintaining aspect ratio.\n * This scales and centers the rectangle to the\n * other rectangle (e.g. Having a camera translate and scale to show a given\n * area)\n *\n * @param rect the other rectangle to fit this rectangle around\n * @return this rectangle for chaining\n * @see Scaling\n */\npublic RectangleMutant fitOutside(RectangleMutant rect) {\n    float ratio = getAspectRatio();\n    if (ratio > rect.getAspectRatio()) {\n        // Wider than tall\n        setSize(rect.height * ratio, rect.height);\n    } else {\n        // Taller than wide\n        setSize(rect.width, rect.width / ratio);\n    }\n    setPosition((rect.x + rect.width / 2) - width / 2, (rect.y + rect.height / 2) - height / 2);\n    return this;\n}",
+  "method_comment": "\n\t * Fits this rectangle around another rectangle while maintaining aspect ratio.\n\t * This scales and centers the rectangle to the\n\t * other rectangle (e.g. Having a camera translate and scale to show a given\n\t * area)\n\t * \n\t * @param rect the other rectangle to fit this rectangle around\n\t * @return this rectangle for chaining\n\t * @see Scaling\n\t ",
+  "method_annotation": ""
+}

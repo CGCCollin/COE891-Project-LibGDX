@@ -1,0 +1,26 @@
+{
+  "className": "RectangleMutant",
+  "methodName": "merge",
+  "brief": "public RectangleMutant merge(RectangleMutant rect){}",
+  "methodSignature": "merge(RectangleMutant)",
+  "sourceCode": "public RectangleMutant merge(RectangleMutant rect) {\n\t\tfloat minX = Math.min(x, rect.x);\n\t\tfloat maxX = Math.max(x + width, rect.x + rect.width);\n\t\tthis.x = minX;\n\t\tthis.width = maxX - minX;\n\n\t\tfloat minY = Math.min(y, rect.y);\n\t\tfloat maxY = Math.max(y + height, rect.y + rect.height);\n\t\tthis.y = minY;\n\t\tthis.height = maxY - minY;\n\n\t\treturn this;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "RectangleMutant"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.mutants.RectangleMutant": [],
+    "java.lang.Math": [
+      "max(float, float)",
+      "min(float, float)"
+    ]
+  },
+  "full_method_info": "/**\n * Merges this rectangle with the other rectangle. The rectangle should not have\n * negative width or negative height.\n *\n * @param rect the other rectangle\n * @return this rectangle for chaining\n */\npublic RectangleMutant merge(RectangleMutant rect) {\n    float minX = Math.min(x, rect.x);\n    float maxX = Math.max(x + width, rect.x + rect.width);\n    this.x = minX;\n    this.width = maxX - minX;\n    float minY = Math.min(y, rect.y);\n    float maxY = Math.max(y + height, rect.y + rect.height);\n    this.y = minY;\n    this.height = maxY - minY;\n    return this;\n}",
+  "method_comment": "\n\t * Merges this rectangle with the other rectangle. The rectangle should not have\n\t * negative width or negative height.\n\t * \n\t * @param rect the other rectangle\n\t * @return this rectangle for chaining\n\t ",
+  "method_annotation": ""
+}

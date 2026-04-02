@@ -1,0 +1,22 @@
+{
+  "className": "CircleMutant",
+  "methodName": "set",
+  "brief": "public void set(float x, float y, float radius){}",
+  "methodSignature": "set(float, float, float)",
+  "sourceCode": "public void set(float x, float y, float radius) {\n\t\tthis.x = x;\n\t\tthis.y = y;\n\t\tthis.radius = radius;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float",
+    "float"
+  ],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * Sets a new location and radius for this circle.\n *\n * @param x      X coordinate of the center of the circle\n * @param y      Y coordinate of the center of the circle\n * @param radius Circle radius\n */\npublic void set(float x, float y, float radius) {\n    this.x = x;\n    this.y = y;\n    this.radius = radius;\n}",
+  "method_comment": "\n\t * Sets a new location and radius for this circle.\n\t * \n\t * @param x      X coordinate of the center of the circle\n\t * @param y      Y coordinate of the center of the circle\n\t * @param radius Circle radius\n\t ",
+  "method_annotation": ""
+}

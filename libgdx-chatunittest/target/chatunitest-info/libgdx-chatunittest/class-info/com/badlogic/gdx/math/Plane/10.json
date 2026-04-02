@@ -1,0 +1,25 @@
+{
+  "className": "Plane",
+  "methodName": "set",
+  "brief": "public void set (Plane plane){}",
+  "methodSignature": "set(Plane)",
+  "sourceCode": "public void set (Plane plane) {\n\t\tthis.normal.set(plane.normal);\n\t\tthis.d = plane.d;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Plane"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Plane": [],
+    "com.badlogic.gdx.math.Vector3": [
+      "set(Vector3)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets this plane from the given plane\n *\n * @param plane the plane\n */\npublic void set(Plane plane) {\n    this.normal.set(plane.normal);\n    this.d = plane.d;\n}",
+  "method_comment": " Sets this plane from the given plane\n\t * \n\t * @param plane the plane ",
+  "method_annotation": ""
+}

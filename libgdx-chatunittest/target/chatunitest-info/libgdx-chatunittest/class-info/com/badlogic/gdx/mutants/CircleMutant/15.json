@@ -1,0 +1,18 @@
+{
+  "className": "CircleMutant",
+  "methodName": "area",
+  "brief": "public float area(){}",
+  "methodSignature": "area()",
+  "sourceCode": "public float area() {\n\t\treturn this.radius * this.radius * MathUtils.PI;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {},
+  "full_method_info": "/**\n * @return The area of this circle (as {@link MathUtils#PI} * radius * radius).\n */\npublic float area() {\n    return this.radius * this.radius * MathUtils.PI;\n}",
+  "method_comment": "\n\t * @return The area of this circle (as {@link MathUtils#PI} * radius * radius).\n\t ",
+  "method_annotation": ""
+}

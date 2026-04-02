@@ -1,0 +1,26 @@
+{
+  "className": "Plane",
+  "methodName": "set",
+  "brief": "public void set (Vector3 point, Vector3 normal){}",
+  "methodSignature": "set(Vector3, Vector3)",
+  "sourceCode": "public void set (Vector3 point, Vector3 normal) {\n\t\tthis.normal.set(normal);\n\t\td = -point.dot(normal);\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": true,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "Vector3",
+    "Vector3"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Vector3": [
+      "set(Vector3)",
+      "dot(Vector3)"
+    ]
+  },
+  "full_method_info": "/**\n * Sets the plane to the given point and normal.\n *\n * @param point the point on the plane\n * @param normal the normal of the plane\n */\npublic void set(Vector3 point, Vector3 normal) {\n    this.normal.set(normal);\n    d = -point.dot(normal);\n}",
+  "method_comment": " Sets the plane to the given point and normal.\n\t * \n\t * @param point the point on the plane\n\t * @param normal the normal of the plane ",
+  "method_annotation": ""
+}

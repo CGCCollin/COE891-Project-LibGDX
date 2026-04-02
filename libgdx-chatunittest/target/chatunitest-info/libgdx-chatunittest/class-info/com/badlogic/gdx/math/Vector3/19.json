@@ -1,0 +1,22 @@
+{
+  "className": "Vector3",
+  "methodName": "len",
+  "brief": "@Override\r\n\tpublic float len (){}",
+  "methodSignature": "len()",
+  "sourceCode": "@Override\n\tpublic float len () {\n\t\treturn (float)Math.sqrt(x * x + y * y + z * z);\n\t}",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [],
+  "dependentMethods": {
+    "java.lang.Math": [
+      "sqrt(double)"
+    ]
+  },
+  "full_method_info": "@Override\npublic float len() {\n    return (float) Math.sqrt(x * x + y * y + z * z);\n}",
+  "method_comment": "",
+  "method_annotation": "@Override\n"
+}

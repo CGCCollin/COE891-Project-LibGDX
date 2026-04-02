@@ -1,0 +1,105 @@
+package com.badlogic.gdx.mutants;
+
+import static java.lang.reflect.Method.*;
+import com.badlogic.gdx.mutants.*;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import com.badlogic.gdx.math.*;
+import java.io.Serializable;
+import com.badlogic.gdx.utils.NumberUtils;
+
+class CircleMutant_overlaps_12_1_Test {
+
+    private final Class<CircleMutant> circleClass = CircleMutant.class;
+
+    @BeforeEach
+    public void setUp() throws Exception {
+        // Create an instance of the focal class
+        circleInstance = circleClass.newInstance();
+    }
+
+    @Test
+    public void testOverlapsPositiveCases() throws Exception {
+        // Test overlapping circles with different positions and radii
+        CircleMutant c1 = new CircleMutant(0, 0, 5);
+        CircleMutant c2 = new CircleMutant(3, 4, 6);
+        assertTrue(circleClass.getMethod("overlaps", CircleMutant.class).invoke(circleInstance, c1));
+        assertTrue(circleClass.getMethod("overlaps", CircleMutant.class).invoke(circleInstance, c2));
+        // Test overlapping circles with same position and different radii
+        c1 = new CircleMutant(0, 0, 5);
+        c2 = new CircleMutant(0, 0, 6);
+        assertTrue(circleClass.getMethod("overlaps", CircleMutant.class).invoke(circleInstance, c1));
+        assertFalse(circleClass.getMethod("overlaps", CircleMutant.class).invoke(circleInstance, c2));
+        // Test overlapping circles with same position and radii
+        c1 = new CircleMutant(0, 0, 5);
+        c2 = new CircleMutant(0, 0, 5);
+        assertTrue(circleClass.getMethod("overlaps", CircleMutant.class).invoke(circleInstance, c1));
+        assertFalse(circleClass.getMethod("overlaps", CircleMutant.class).invoke(circleInstance, c2));
+    }
+
+    @Test
+    public void testOverlapsNegativeCases() throws Exception {
+        // Test non-overlapping circles with different positions and radii
+        CircleMutant c1 = new CircleMutant(0, 0, 5);
+        CircleMutant c2 = new CircleMutant(6, 8, 10);
+        assertFalse(circleClass.getMethod("overlaps", CircleMutant.class).invoke(circleInstance, c1));
+        assertFalse(circleClass.getMethod("overlaps", CircleMutant.class).invoke(circleInstance, c2));
+        // Test non-overlapping circles with same position and different radii
+        c1 = new CircleMutant(0, 0, 5);
+        c2 = new CircleMutant(0, 0, 10);
+        assertFalse(circleClass.getMethod("overlaps", CircleMutant.class).invoke(circleInstance, c1));
+        assertFalse(circleClass.getMethod("overlaps", CircleMutant.class).invoke(circleInstance, c2));
+        // Test non-overlapping circles with same position and radii
+        c1 = new CircleMutant(0, 0, 5);
+        c2 = new CircleMutant(0, 0, 5);
+        assertFalse(circleClass.getMethod("overlaps", CircleMutant.class).invoke(circleInstance, c1));
+        assertFalse(circleClass.getMethod("overlaps", CircleMutant.class).invoke(circleInstance, c2));
+    }
+}
+
+--------------------------------------------
+Error in CircleMutant_overlaps_12_1_Test: line 22 : cannot find symbol
+  symbol:   variable circleInstance
+  location: class com.badlogic.gdx.mutants.CircleMutant_overlaps_12_1_Test
+Error in CircleMutant_overlaps_12_1_Test: line 30 : cannot find symbol
+  symbol:   variable circleInstance
+  location: class com.badlogic.gdx.mutants.CircleMutant_overlaps_12_1_Test
+Error in CircleMutant_overlaps_12_1_Test: line 31 : cannot find symbol
+  symbol:   variable circleInstance
+  location: class com.badlogic.gdx.mutants.CircleMutant_overlaps_12_1_Test
+Error in CircleMutant_overlaps_12_1_Test: line 35 : cannot find symbol
+  symbol:   variable circleInstance
+  location: class com.badlogic.gdx.mutants.CircleMutant_overlaps_12_1_Test
+Error in CircleMutant_overlaps_12_1_Test: line 36 : cannot find symbol
+  symbol:   variable circleInstance
+  location: class com.badlogic.gdx.mutants.CircleMutant_overlaps_12_1_Test
+Error in CircleMutant_overlaps_12_1_Test: line 40 : cannot find symbol
+  symbol:   variable circleInstance
+  location: class com.badlogic.gdx.mutants.CircleMutant_overlaps_12_1_Test
+Error in CircleMutant_overlaps_12_1_Test: line 41 : cannot find symbol
+  symbol:   variable circleInstance
+  location: class com.badlogic.gdx.mutants.CircleMutant_overlaps_12_1_Test
+Error in CircleMutant_overlaps_12_1_Test: line 49 : cannot find symbol
+  symbol:   variable circleInstance
+  location: class com.badlogic.gdx.mutants.CircleMutant_overlaps_12_1_Test
+Error in CircleMutant_overlaps_12_1_Test: line 50 : cannot find symbol
+  symbol:   variable circleInstance
+  location: class com.badlogic.gdx.mutants.CircleMutant_overlaps_12_1_Test
+Error in CircleMutant_overlaps_12_1_Test: line 54 : cannot find symbol
+  symbol:   variable circleInstance
+  location: class com.badlogic.gdx.mutants.CircleMutant_overlaps_12_1_Test
+Error in CircleMutant_overlaps_12_1_Test: line 55 : cannot find symbol
+  symbol:   variable circleInstance
+  location: class com.badlogic.gdx.mutants.CircleMutant_overlaps_12_1_Test
+Error in CircleMutant_overlaps_12_1_Test: line 59 : cannot find symbol
+  symbol:   variable circleInstance
+  location: class com.badlogic.gdx.mutants.CircleMutant_overlaps_12_1_Test
+Error in CircleMutant_overlaps_12_1_Test: line 60 : cannot find symbol
+  symbol:   variable circleInstance
+  location: class com.badlogic.gdx.mutants.CircleMutant_overlaps_12_1_Test
+Error in CircleMutant_overlaps_12_1_Test: line -1 : CircleMutant_overlaps_12_1_Test.java uses or overrides a deprecated API.
+Error in CircleMutant_overlaps_12_1_Test: line -1 : Recompile with -Xlint:deprecation for details.

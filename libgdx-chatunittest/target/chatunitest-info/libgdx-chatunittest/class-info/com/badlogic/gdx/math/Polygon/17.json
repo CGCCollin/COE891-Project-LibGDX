@@ -1,0 +1,25 @@
+{
+  "className": "Polygon",
+  "methodName": "contains",
+  "brief": "@Override\r\n\tpublic boolean contains (float x, float y){}",
+  "methodSignature": "contains(float, float)",
+  "sourceCode": "@Override\n\tpublic boolean contains (float x, float y) {\n\t\tfinal float[] vertices = getTransformedVertices();\n\t\tfinal int numFloats = vertices.length;\n\t\tint intersects = 0;\n\n\t\tfor (int i = 0; i < numFloats; i += 2) {\n\t\t\tfloat x1 = vertices[i];\n\t\t\tfloat y1 = vertices[i + 1];\n\t\t\tfloat x2 = vertices[(i + 2) % numFloats];\n\t\t\tfloat y2 = vertices[(i + 3) % numFloats];\n\t\t\tif (((y1 <= y && y < y2) || (y2 <= y && y < y1)) && x < ((x2 - x1) / (y2 - y1) * (y - y1) + x1)) intersects++;\n\t\t}\n\t\treturn (intersects & 1) == 1;\n\t}",
+  "useField": true,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "float",
+    "float"
+  ],
+  "dependentMethods": {
+    "com.badlogic.gdx.math.Polygon": [
+      "getTransformedVertices()"
+    ]
+  },
+  "full_method_info": "/**\n * Returns whether an x, y pair is contained within the polygon.\n */\n@Override\npublic boolean contains(float x, float y) {\n    final float[] vertices = getTransformedVertices();\n    final int numFloats = vertices.length;\n    int intersects = 0;\n    for (int i = 0; i < numFloats; i += 2) {\n        float x1 = vertices[i];\n        float y1 = vertices[i + 1];\n        float x2 = vertices[(i + 2) % numFloats];\n        float y2 = vertices[(i + 3) % numFloats];\n        if (((y1 <= y && y < y2) || (y2 <= y && y < y1)) && x < ((x2 - x1) / (y2 - y1) * (y - y1) + x1))\n            intersects++;\n    }\n    return (intersects & 1) == 1;\n}",
+  "method_comment": " Returns whether an x, y pair is contained within the polygon. ",
+  "method_annotation": "@Override\n"
+}
