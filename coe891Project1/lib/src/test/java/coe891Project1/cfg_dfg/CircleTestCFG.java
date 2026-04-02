@@ -5,7 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
-import com.badlogic.gdx.math.Circle;
+import coe891Project1.Circle;
 import com.badlogic.gdx.*;
 
 public class CircleTestCFG {

@@ -1,0 +1,3 @@
+[submodule "coe891Project1/lib/libgdx"]
+	path = coe891Project1/lib/libgdx
+	url = https://github.com/libgdx/libgdx.git
