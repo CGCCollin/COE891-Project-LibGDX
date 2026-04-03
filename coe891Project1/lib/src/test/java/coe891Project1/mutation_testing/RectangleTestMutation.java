@@ -48,7 +48,7 @@ public class RectangleTestMutation {
     
     @Test
     public void getPositionOverwritesOriginalTest() {
-        rect = new Rectangle(1, 2, 3, 4);
+        rect = new Rectangle(5, 6, 3, 4);
         pos  = new Vector2(5, 6);
         
         rect.getPosition(pos);
